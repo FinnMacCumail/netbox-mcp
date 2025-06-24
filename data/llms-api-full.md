@@ -1,0 +1,17897 @@
+# NetBox REST API
+
+> Full documentation of the NetBox REST API for NetBox 4.2
+
+## Endpoints
+
+- **GET /api/circuits/circuit-group-assignments/**
+  - Get a list of Circuit group assignment objects.
+  - **Parameters:**
+    - `circuit`: No description
+    - `circuit_id`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `group`: Circuit group (slug)
+    - `group__n`: Circuit group (slug)
+    - `group_id`: Circuit group (ID)
+    - `group_id__n`: Circuit group (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `member_id`: No description
+    - `member_id__empty`: No description
+    - `member_id__gt`: No description
+    - `member_id__gte`: No description
+    - `member_id__lt`: No description
+    - `member_id__lte`: No description
+    - `member_id__n`: No description
+    - `member_type`: No description
+    - `member_type__n`: No description
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `priority`: * `primary` - Primary
+* `secondary` - Secondary
+* `tertiary` - Tertiary
+* `inactive` - Inactive
+    - `provider`: No description
+    - `provider_id`: No description
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+    - `virtual_circuit`: No description
+    - `virtual_circuit_id`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/circuits/circuit-group-assignments/**
+  - Post a list of Circuit group assignment objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/circuits/circuit-group-assignments/**
+  - Put a list of Circuit group assignment objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/circuit-group-assignments/**
+  - Patch a list of Circuit group assignment objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/circuit-group-assignments/**
+  - Delete a list of Circuit group assignment objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/circuit-group-assignments/{id}/**
+  - Get a Circuit group assignment object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this Circuit group assignment.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/circuits/circuit-group-assignments/{id}/**
+  - Put a Circuit group assignment object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this Circuit group assignment.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/circuit-group-assignments/{id}/**
+  - Patch a Circuit group assignment object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this Circuit group assignment.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/circuit-group-assignments/{id}/**
+  - Delete a Circuit group assignment object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this Circuit group assignment.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/circuit-groups/**
+  - Get a list of circuit group objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/circuits/circuit-groups/**
+  - Post a list of circuit group objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/circuits/circuit-groups/**
+  - Put a list of circuit group objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/circuit-groups/**
+  - Patch a list of circuit group objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/circuit-groups/**
+  - Delete a list of circuit group objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/circuit-groups/{id}/**
+  - Get a circuit group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit group.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/circuits/circuit-groups/{id}/**
+  - Put a circuit group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit group.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/circuit-groups/{id}/**
+  - Patch a circuit group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit group.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/circuit-groups/{id}/**
+  - Delete a circuit group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit group.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/circuit-terminations/**
+  - Get a list of circuit termination objects.
+  - **Parameters:**
+    - `cable_end`: * `A` - A
+* `B` - B
+    - `cable_id`: Cable (ID)
+    - `cable_id__n`: Cable (ID)
+    - `cabled`: No description
+    - `circuit_id`: Circuit
+    - `circuit_id__n`: Circuit
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: No description
+    - `location__n`: No description
+    - `location_id`: No description
+    - `location_id__n`: No description
+    - `mark_connected`: No description
+    - `modified_by_request`: No description
+    - `occupied`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `port_speed`: No description
+    - `port_speed__empty`: No description
+    - `port_speed__gt`: No description
+    - `port_speed__gte`: No description
+    - `port_speed__lt`: No description
+    - `port_speed__lte`: No description
+    - `port_speed__n`: No description
+    - `pp_info`: No description
+    - `pp_info__empty`: No description
+    - `pp_info__ic`: No description
+    - `pp_info__ie`: No description
+    - `pp_info__iew`: No description
+    - `pp_info__isw`: No description
+    - `pp_info__n`: No description
+    - `pp_info__nic`: No description
+    - `pp_info__nie`: No description
+    - `pp_info__niew`: No description
+    - `pp_info__nisw`: No description
+    - `provider`: Provider (slug)
+    - `provider__n`: Provider (slug)
+    - `provider_id`: Provider (ID)
+    - `provider_id__n`: Provider (ID)
+    - `provider_network_id`: ProviderNetwork (ID)
+    - `provider_network_id__n`: ProviderNetwork (ID)
+    - `q`: Search
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site (slug)
+    - `site__n`: Site (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `tag`: No description
+    - `tag__n`: No description
+    - `term_side`: * `A` - A
+* `Z` - Z
+    - `termination_id`: No description
+    - `termination_id__empty`: No description
+    - `termination_id__gt`: No description
+    - `termination_id__gte`: No description
+    - `termination_id__lt`: No description
+    - `termination_id__lte`: No description
+    - `termination_id__n`: No description
+    - `termination_type`: No description
+    - `termination_type__n`: No description
+    - `updated_by_request`: No description
+    - `upstream_speed`: No description
+    - `upstream_speed__empty`: No description
+    - `upstream_speed__gt`: No description
+    - `upstream_speed__gte`: No description
+    - `upstream_speed__lt`: No description
+    - `upstream_speed__lte`: No description
+    - `upstream_speed__n`: No description
+    - `xconnect_id`: No description
+    - `xconnect_id__empty`: No description
+    - `xconnect_id__ic`: No description
+    - `xconnect_id__ie`: No description
+    - `xconnect_id__iew`: No description
+    - `xconnect_id__isw`: No description
+    - `xconnect_id__n`: No description
+    - `xconnect_id__nic`: No description
+    - `xconnect_id__nie`: No description
+    - `xconnect_id__niew`: No description
+    - `xconnect_id__nisw`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/circuits/circuit-terminations/**
+  - Post a list of circuit termination objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/circuits/circuit-terminations/**
+  - Put a list of circuit termination objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/circuit-terminations/**
+  - Patch a list of circuit termination objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/circuit-terminations/**
+  - Delete a list of circuit termination objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/circuit-terminations/{id}/**
+  - Get a circuit termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit termination.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/circuits/circuit-terminations/{id}/**
+  - Put a circuit termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit termination.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/circuit-terminations/{id}/**
+  - Patch a circuit termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit termination.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/circuit-terminations/{id}/**
+  - Delete a circuit termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit termination.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/circuit-terminations/{id}/paths/**
+  - Return all CablePaths which traverse a given pass-through port.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit termination.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/circuits/circuit-types/**
+  - Get a list of circuit type objects.
+  - **Parameters:**
+    - `color`: No description
+    - `color__empty`: No description
+    - `color__ic`: No description
+    - `color__ie`: No description
+    - `color__iew`: No description
+    - `color__isw`: No description
+    - `color__n`: No description
+    - `color__nic`: No description
+    - `color__nie`: No description
+    - `color__niew`: No description
+    - `color__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/circuits/circuit-types/**
+  - Post a list of circuit type objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/circuits/circuit-types/**
+  - Put a list of circuit type objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/circuit-types/**
+  - Patch a list of circuit type objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/circuit-types/**
+  - Delete a list of circuit type objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/circuit-types/{id}/**
+  - Get a circuit type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit type.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/circuits/circuit-types/{id}/**
+  - Put a circuit type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit type.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/circuit-types/{id}/**
+  - Patch a circuit type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit type.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/circuit-types/{id}/**
+  - Delete a circuit type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit type.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/circuits/**
+  - Get a list of circuit objects.
+  - **Parameters:**
+    - `cid`: No description
+    - `cid__empty`: No description
+    - `cid__ic`: No description
+    - `cid__ie`: No description
+    - `cid__iew`: No description
+    - `cid__isw`: No description
+    - `cid__n`: No description
+    - `cid__nic`: No description
+    - `cid__nie`: No description
+    - `cid__niew`: No description
+    - `cid__nisw`: No description
+    - `commit_rate`: No description
+    - `commit_rate__empty`: No description
+    - `commit_rate__gt`: No description
+    - `commit_rate__gte`: No description
+    - `commit_rate__lt`: No description
+    - `commit_rate__lte`: No description
+    - `commit_rate__n`: No description
+    - `contact`: Contact
+    - `contact__n`: Contact
+    - `contact_group`: No description
+    - `contact_group__n`: No description
+    - `contact_role`: Contact Role
+    - `contact_role__n`: Contact Role
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `distance`: No description
+    - `distance__empty`: No description
+    - `distance__gt`: No description
+    - `distance__gte`: No description
+    - `distance__lt`: No description
+    - `distance__lte`: No description
+    - `distance__n`: No description
+    - `distance_unit`: * `km` - Kilometers
+* `m` - Meters
+* `mi` - Miles
+* `ft` - Feet
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `install_date`: No description
+    - `install_date__empty`: No description
+    - `install_date__gt`: No description
+    - `install_date__gte`: No description
+    - `install_date__lt`: No description
+    - `install_date__lte`: No description
+    - `install_date__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `provider`: Provider (slug)
+    - `provider__n`: Provider (slug)
+    - `provider_account`: Provider account (account)
+    - `provider_account__n`: Provider account (account)
+    - `provider_account_id`: Provider account (ID)
+    - `provider_account_id__n`: Provider account (ID)
+    - `provider_id`: Provider (ID)
+    - `provider_id__n`: Provider (ID)
+    - `provider_network_id`: Provider network (ID)
+    - `provider_network_id__n`: Provider network (ID)
+    - `q`: Search
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site (slug)
+    - `site__n`: Site (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `termination_a_id`: Termination A (ID)
+    - `termination_a_id__n`: Termination A (ID)
+    - `termination_date`: No description
+    - `termination_date__empty`: No description
+    - `termination_date__gt`: No description
+    - `termination_date__gte`: No description
+    - `termination_date__lt`: No description
+    - `termination_date__lte`: No description
+    - `termination_date__n`: No description
+    - `termination_z_id`: Termination A (ID)
+    - `termination_z_id__n`: Termination A (ID)
+    - `type`: Circuit type (slug)
+    - `type__n`: Circuit type (slug)
+    - `type_id`: Circuit type (ID)
+    - `type_id__n`: Circuit type (ID)
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/circuits/circuits/**
+  - Post a list of circuit objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/circuits/circuits/**
+  - Put a list of circuit objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/circuits/**
+  - Patch a list of circuit objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/circuits/**
+  - Delete a list of circuit objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/circuits/{id}/**
+  - Get a circuit object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/circuits/circuits/{id}/**
+  - Put a circuit object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/circuits/{id}/**
+  - Patch a circuit object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/circuits/{id}/**
+  - Delete a circuit object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this circuit.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/provider-accounts/**
+  - Get a list of provider account objects.
+  - **Parameters:**
+    - `account`: No description
+    - `account__empty`: No description
+    - `account__ic`: No description
+    - `account__ie`: No description
+    - `account__iew`: No description
+    - `account__isw`: No description
+    - `account__n`: No description
+    - `account__nic`: No description
+    - `account__nie`: No description
+    - `account__niew`: No description
+    - `account__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `provider`: Provider (slug)
+    - `provider__n`: Provider (slug)
+    - `provider_id`: Provider (ID)
+    - `provider_id__n`: Provider (ID)
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/circuits/provider-accounts/**
+  - Post a list of provider account objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/circuits/provider-accounts/**
+  - Put a list of provider account objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/provider-accounts/**
+  - Patch a list of provider account objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/provider-accounts/**
+  - Delete a list of provider account objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/provider-accounts/{id}/**
+  - Get a provider account object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this provider account.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/circuits/provider-accounts/{id}/**
+  - Put a provider account object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this provider account.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/provider-accounts/{id}/**
+  - Patch a provider account object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this provider account.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/provider-accounts/{id}/**
+  - Delete a provider account object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this provider account.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/provider-networks/**
+  - Get a list of provider network objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `provider`: Provider (slug)
+    - `provider__n`: Provider (slug)
+    - `provider_id`: Provider (ID)
+    - `provider_id__n`: Provider (ID)
+    - `q`: Search
+    - `service_id`: No description
+    - `service_id__empty`: No description
+    - `service_id__ic`: No description
+    - `service_id__ie`: No description
+    - `service_id__iew`: No description
+    - `service_id__isw`: No description
+    - `service_id__n`: No description
+    - `service_id__nic`: No description
+    - `service_id__nie`: No description
+    - `service_id__niew`: No description
+    - `service_id__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/circuits/provider-networks/**
+  - Post a list of provider network objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/circuits/provider-networks/**
+  - Put a list of provider network objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/provider-networks/**
+  - Patch a list of provider network objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/provider-networks/**
+  - Delete a list of provider network objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/provider-networks/{id}/**
+  - Get a provider network object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this provider network.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/circuits/provider-networks/{id}/**
+  - Put a provider network object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this provider network.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/provider-networks/{id}/**
+  - Patch a provider network object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this provider network.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/provider-networks/{id}/**
+  - Delete a provider network object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this provider network.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/providers/**
+  - Get a list of provider objects.
+  - **Parameters:**
+    - `asn`: ASN
+    - `asn__n`: ASN
+    - `asn_id`: ASN (ID)
+    - `asn_id__n`: ASN (ID)
+    - `contact`: Contact
+    - `contact__n`: Contact
+    - `contact_group`: No description
+    - `contact_group__n`: No description
+    - `contact_role`: Contact Role
+    - `contact_role__n`: Contact Role
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site (slug)
+    - `site__n`: Site (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site
+    - `site_id__n`: Site
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/circuits/providers/**
+  - Post a list of provider objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/circuits/providers/**
+  - Put a list of provider objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/providers/**
+  - Patch a list of provider objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/providers/**
+  - Delete a list of provider objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/providers/{id}/**
+  - Get a provider object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this provider.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/circuits/providers/{id}/**
+  - Put a provider object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this provider.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/providers/{id}/**
+  - Patch a provider object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this provider.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/providers/{id}/**
+  - Delete a provider object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this provider.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/virtual-circuit-terminations/**
+  - Get a list of virtual circuit termination objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `interface_id`: Interface (ID)
+    - `interface_id__n`: Interface (ID)
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `provider`: Provider (slug)
+    - `provider__n`: Provider (slug)
+    - `provider_account`: Provider account (account)
+    - `provider_account__n`: Provider account (account)
+    - `provider_account_id`: Provider account (ID)
+    - `provider_account_id__n`: Provider account (ID)
+    - `provider_id`: Provider (ID)
+    - `provider_id__n`: Provider (ID)
+    - `provider_network_id`: Provider network (ID)
+    - `provider_network_id__n`: Provider network (ID)
+    - `q`: Search
+    - `role`: No description
+    - `role__empty`: No description
+    - `role__ic`: No description
+    - `role__ie`: No description
+    - `role__iew`: No description
+    - `role__isw`: No description
+    - `role__n`: No description
+    - `role__nic`: No description
+    - `role__nie`: No description
+    - `role__niew`: No description
+    - `role__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+    - `virtual_circuit_id`: Virtual circuit
+    - `virtual_circuit_id__n`: Virtual circuit
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/circuits/virtual-circuit-terminations/**
+  - Post a list of virtual circuit termination objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/circuits/virtual-circuit-terminations/**
+  - Put a list of virtual circuit termination objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/virtual-circuit-terminations/**
+  - Patch a list of virtual circuit termination objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/virtual-circuit-terminations/**
+  - Delete a list of virtual circuit termination objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/virtual-circuit-terminations/{id}/**
+  - Get a virtual circuit termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual circuit termination.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/circuits/virtual-circuit-terminations/{id}/**
+  - Put a virtual circuit termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual circuit termination.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/virtual-circuit-terminations/{id}/**
+  - Patch a virtual circuit termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual circuit termination.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/virtual-circuit-terminations/{id}/**
+  - Delete a virtual circuit termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual circuit termination.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/virtual-circuit-terminations/{id}/paths/**
+  - Return all CablePaths which traverse a given pass-through port.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual circuit termination.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/circuits/virtual-circuit-types/**
+  - Get a list of virtual circuit type objects.
+  - **Parameters:**
+    - `color`: No description
+    - `color__empty`: No description
+    - `color__ic`: No description
+    - `color__ie`: No description
+    - `color__iew`: No description
+    - `color__isw`: No description
+    - `color__n`: No description
+    - `color__nic`: No description
+    - `color__nie`: No description
+    - `color__niew`: No description
+    - `color__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/circuits/virtual-circuit-types/**
+  - Post a list of virtual circuit type objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/circuits/virtual-circuit-types/**
+  - Put a list of virtual circuit type objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/virtual-circuit-types/**
+  - Patch a list of virtual circuit type objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/virtual-circuit-types/**
+  - Delete a list of virtual circuit type objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/virtual-circuit-types/{id}/**
+  - Get a virtual circuit type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual circuit type.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/circuits/virtual-circuit-types/{id}/**
+  - Put a virtual circuit type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual circuit type.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/virtual-circuit-types/{id}/**
+  - Patch a virtual circuit type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual circuit type.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/virtual-circuit-types/{id}/**
+  - Delete a virtual circuit type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual circuit type.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/virtual-circuits/**
+  - Get a list of virtual circuit objects.
+  - **Parameters:**
+    - `cid`: No description
+    - `cid__empty`: No description
+    - `cid__ic`: No description
+    - `cid__ie`: No description
+    - `cid__iew`: No description
+    - `cid__isw`: No description
+    - `cid__n`: No description
+    - `cid__nic`: No description
+    - `cid__nie`: No description
+    - `cid__niew`: No description
+    - `cid__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `provider`: Provider (slug)
+    - `provider__n`: Provider (slug)
+    - `provider_account`: Provider account (account)
+    - `provider_account__n`: Provider account (account)
+    - `provider_account_id`: Provider account (ID)
+    - `provider_account_id__n`: Provider account (ID)
+    - `provider_id`: Provider (ID)
+    - `provider_id__n`: Provider (ID)
+    - `provider_network_id`: Provider network (ID)
+    - `provider_network_id__n`: Provider network (ID)
+    - `q`: Search
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `type`: Virtual circuit type (slug)
+    - `type__n`: Virtual circuit type (slug)
+    - `type_id`: Virtual circuit type (ID)
+    - `type_id__n`: Virtual circuit type (ID)
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/circuits/virtual-circuits/**
+  - Post a list of virtual circuit objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/circuits/virtual-circuits/**
+  - Put a list of virtual circuit objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/virtual-circuits/**
+  - Patch a list of virtual circuit objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/virtual-circuits/**
+  - Delete a list of virtual circuit objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/circuits/virtual-circuits/{id}/**
+  - Get a virtual circuit object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual circuit.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/circuits/virtual-circuits/{id}/**
+  - Put a virtual circuit object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual circuit.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/circuits/virtual-circuits/{id}/**
+  - Patch a virtual circuit object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual circuit.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/circuits/virtual-circuits/{id}/**
+  - Delete a virtual circuit object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual circuit.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/core/background-queues/**
+  - Retrieve a list of RQ Queues.
+  - Note: Queue names are not URL safe so not returning a detail view.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/core/background-queues/{name}/**
+  - Retrieve a list of RQ Queues.
+  - Note: Queue names are not URL safe so not returning a detail view.
+  - **Parameters:**
+    - `name`: No description
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/core/background-tasks/**
+  - Retrieve a list of RQ Tasks.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/core/background-tasks/{id}/**
+  - Retrieve a list of RQ Tasks.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/core/background-tasks/{id}/delete/**
+  - Retrieve a list of RQ Tasks.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `200`: No response body
+
+- **POST /api/core/background-tasks/{id}/enqueue/**
+  - Retrieve a list of RQ Tasks.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `200`: No response body
+
+- **POST /api/core/background-tasks/{id}/requeue/**
+  - Retrieve a list of RQ Tasks.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `200`: No response body
+
+- **POST /api/core/background-tasks/{id}/stop/**
+  - Retrieve a list of RQ Tasks.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `200`: No response body
+
+- **GET /api/core/background-workers/**
+  - Retrieve a list of RQ Workers.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/core/background-workers/{name}/**
+  - Retrieve a list of RQ Workers.
+  - **Parameters:**
+    - `name`: No description
+  - **Responses:**
+    - `200`: No response body
+
+- **GET /api/core/data-files/**
+  - Get a list of data file objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `hash`: No description
+    - `hash__empty`: No description
+    - `hash__ic`: No description
+    - `hash__ie`: No description
+    - `hash__iew`: No description
+    - `hash__isw`: No description
+    - `hash__n`: No description
+    - `hash__nic`: No description
+    - `hash__nie`: No description
+    - `hash__niew`: No description
+    - `hash__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `path`: No description
+    - `path__empty`: No description
+    - `path__ic`: No description
+    - `path__ie`: No description
+    - `path__iew`: No description
+    - `path__isw`: No description
+    - `path__n`: No description
+    - `path__nic`: No description
+    - `path__nie`: No description
+    - `path__niew`: No description
+    - `path__nisw`: No description
+    - `q`: No description
+    - `size`: No description
+    - `size__empty`: No description
+    - `size__gt`: No description
+    - `size__gte`: No description
+    - `size__lt`: No description
+    - `size__lte`: No description
+    - `size__n`: No description
+    - `source`: Data source (name)
+    - `source__n`: Data source (name)
+    - `source_id`: Data source (ID)
+    - `source_id__n`: Data source (ID)
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/core/data-files/{id}/**
+  - Get a data file object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this data file.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/core/data-sources/**
+  - Get a list of data source objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `enabled`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_synced`: No description
+    - `last_synced__empty`: No description
+    - `last_synced__gt`: No description
+    - `last_synced__gte`: No description
+    - `last_synced__lt`: No description
+    - `last_synced__lte`: No description
+    - `last_synced__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `source_url`: No description
+    - `source_url__empty`: No description
+    - `source_url__ic`: No description
+    - `source_url__ie`: No description
+    - `source_url__iew`: No description
+    - `source_url__isw`: No description
+    - `source_url__n`: No description
+    - `source_url__nic`: No description
+    - `source_url__nie`: No description
+    - `source_url__niew`: No description
+    - `source_url__nisw`: No description
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `type`: No description
+    - `type__empty`: No description
+    - `type__ic`: No description
+    - `type__ie`: No description
+    - `type__iew`: No description
+    - `type__isw`: No description
+    - `type__n`: No description
+    - `type__nic`: No description
+    - `type__nie`: No description
+    - `type__niew`: No description
+    - `type__nisw`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/core/data-sources/**
+  - Post a list of data source objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/core/data-sources/**
+  - Put a list of data source objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/core/data-sources/**
+  - Patch a list of data source objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/core/data-sources/**
+  - Delete a list of data source objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/core/data-sources/{id}/**
+  - Get a data source object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this data source.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/core/data-sources/{id}/**
+  - Put a data source object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this data source.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/core/data-sources/{id}/**
+  - Patch a data source object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this data source.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/core/data-sources/{id}/**
+  - Delete a data source object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this data source.
+  - **Responses:**
+    - `204`: No response body
+
+- **POST /api/core/data-sources/{id}/sync/**
+  - Enqueue a job to synchronize the DataSource.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this data source.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/core/jobs/**
+  - Retrieve a list of job results
+  - **Parameters:**
+    - `completed`: No description
+    - `completed__after`: No description
+    - `completed__before`: No description
+    - `created`: No description
+    - `created__after`: No description
+    - `created__before`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `interval`: No description
+    - `interval__empty`: No description
+    - `interval__gt`: No description
+    - `interval__gte`: No description
+    - `interval__lt`: No description
+    - `interval__lte`: No description
+    - `interval__n`: No description
+    - `job_id`: No description
+    - `limit`: Number of results to return per page.
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `object_id`: No description
+    - `object_id__empty`: No description
+    - `object_id__gt`: No description
+    - `object_id__gte`: No description
+    - `object_id__lt`: No description
+    - `object_id__lte`: No description
+    - `object_id__n`: No description
+    - `object_type`: No description
+    - `object_type__n`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `scheduled`: No description
+    - `scheduled__after`: No description
+    - `scheduled__before`: No description
+    - `started`: No description
+    - `started__after`: No description
+    - `started__before`: No description
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `user`: No description
+    - `user__n`: No description
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/core/jobs/{id}/**
+  - Retrieve a list of job results
+  - **Parameters:**
+    - `id`: A unique integer value identifying this job.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/core/object-changes/**
+  - Retrieve a list of recent changes.
+  - **Parameters:**
+    - `action`: * `create` - Created
+* `update` - Updated
+* `delete` - Deleted
+    - `changed_object_id`: No description
+    - `changed_object_id__empty`: No description
+    - `changed_object_id__gt`: No description
+    - `changed_object_id__gte`: No description
+    - `changed_object_id__lt`: No description
+    - `changed_object_id__lte`: No description
+    - `changed_object_id__n`: No description
+    - `changed_object_type`: No description
+    - `changed_object_type__n`: No description
+    - `changed_object_type_id`: No description
+    - `changed_object_type_id__n`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `limit`: Number of results to return per page.
+    - `object_repr`: No description
+    - `object_repr__empty`: No description
+    - `object_repr__ic`: No description
+    - `object_repr__ie`: No description
+    - `object_repr__iew`: No description
+    - `object_repr__isw`: No description
+    - `object_repr__n`: No description
+    - `object_repr__nic`: No description
+    - `object_repr__nie`: No description
+    - `object_repr__niew`: No description
+    - `object_repr__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `related_object_id`: No description
+    - `related_object_id__empty`: No description
+    - `related_object_id__gt`: No description
+    - `related_object_id__gte`: No description
+    - `related_object_id__lt`: No description
+    - `related_object_id__lte`: No description
+    - `related_object_id__n`: No description
+    - `related_object_type`: No description
+    - `related_object_type__n`: No description
+    - `request_id`: No description
+    - `time_after`: No description
+    - `time_before`: No description
+    - `user`: User name
+    - `user__n`: User name
+    - `user_id`: User (ID)
+    - `user_id__n`: User (ID)
+    - `user_name`: No description
+    - `user_name__empty`: No description
+    - `user_name__ic`: No description
+    - `user_name__ie`: No description
+    - `user_name__iew`: No description
+    - `user_name__isw`: No description
+    - `user_name__n`: No description
+    - `user_name__nic`: No description
+    - `user_name__nie`: No description
+    - `user_name__niew`: No description
+    - `user_name__nisw`: No description
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/core/object-changes/{id}/**
+  - Retrieve a list of recent changes.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this object change.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/dcim/cable-terminations/**
+  - Get a list of cable termination objects.
+  - **Parameters:**
+    - `cable`: No description
+    - `cable__n`: No description
+    - `cable_end`: * `A` - A
+* `B` - B
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `termination_id`: No description
+    - `termination_id__empty`: No description
+    - `termination_id__gt`: No description
+    - `termination_id__gte`: No description
+    - `termination_id__lt`: No description
+    - `termination_id__lte`: No description
+    - `termination_id__n`: No description
+    - `termination_type`: No description
+    - `termination_type__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/cable-terminations/**
+  - Post a list of cable termination objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/cable-terminations/**
+  - Put a list of cable termination objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/cable-terminations/**
+  - Patch a list of cable termination objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/cable-terminations/**
+  - Delete a list of cable termination objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/cable-terminations/{id}/**
+  - Get a cable termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cable termination.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/cable-terminations/{id}/**
+  - Put a cable termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cable termination.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/cable-terminations/{id}/**
+  - Patch a cable termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cable termination.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/cable-terminations/{id}/**
+  - Delete a cable termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cable termination.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/cables/**
+  - Get a list of cable objects.
+  - **Parameters:**
+    - `circuittermination_id`: No description
+    - `color`: No description
+    - `color__empty`: No description
+    - `color__ic`: No description
+    - `color__ie`: No description
+    - `color__iew`: No description
+    - `color__isw`: No description
+    - `color__n`: No description
+    - `color__nic`: No description
+    - `color__nie`: No description
+    - `color__niew`: No description
+    - `color__nisw`: No description
+    - `consoleport_id`: No description
+    - `consoleserverport_id`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: No description
+    - `device_id`: No description
+    - `frontport_id`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `interface_id`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `length`: No description
+    - `length__empty`: No description
+    - `length__gt`: No description
+    - `length__gte`: No description
+    - `length__lt`: No description
+    - `length__lte`: No description
+    - `length__n`: No description
+    - `length_unit`: * `km` - Kilometers
+* `m` - Meters
+* `cm` - Centimeters
+* `mi` - Miles
+* `ft` - Feet
+* `in` - Inches
+    - `limit`: Number of results to return per page.
+    - `location`: No description
+    - `location_id`: No description
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `powerfeed_id`: No description
+    - `poweroutlet_id`: No description
+    - `powerport_id`: No description
+    - `q`: Search
+    - `rack`: No description
+    - `rack_id`: No description
+    - `rearport_id`: No description
+    - `site`: No description
+    - `site_id`: No description
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `termination_a_id`: No description
+    - `termination_a_type`: No description
+    - `termination_a_type__n`: No description
+    - `termination_b_id`: No description
+    - `termination_b_type`: No description
+    - `termination_b_type__n`: No description
+    - `type`: No description
+    - `type__empty`: No description
+    - `type__ic`: No description
+    - `type__ie`: No description
+    - `type__iew`: No description
+    - `type__isw`: No description
+    - `type__n`: No description
+    - `type__nic`: No description
+    - `type__nie`: No description
+    - `type__niew`: No description
+    - `type__nisw`: No description
+    - `unterminated`: Unterminated
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/cables/**
+  - Post a list of cable objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/cables/**
+  - Put a list of cable objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/cables/**
+  - Patch a list of cable objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/cables/**
+  - Delete a list of cable objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/cables/{id}/**
+  - Get a cable object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cable.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/cables/{id}/**
+  - Put a cable object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cable.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/cables/{id}/**
+  - Patch a cable object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cable.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/cables/{id}/**
+  - Delete a cable object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cable.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/connected-device/**
+  - This endpoint allows a user to determine what device (if any) is connected to a given peer device and peer
+  - interface. This is useful in a situation where a device boots with no configuration, but can detect its neighbors
+  - via a protocol such as LLDP. Two query parameters must be included in the request:
+  - 
+  - * `peer_device`: The name of the peer device
+  - * `peer_interface`: The name of the peer interface
+  - **Parameters:**
+    - `peer_device`: The name of the peer device
+    - `peer_interface`: The name of the peer interface
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/dcim/console-port-templates/**
+  - Get a list of console port template objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `module_type_id`: Module type (ID)
+    - `module_type_id__n`: Module type (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `type`: * `Serial` - [('de-9', 'DE-9'), ('db-25', 'DB-25'), ('rj-11', 'RJ-11'), ('rj-12', 'RJ-12'), ('rj-45', 'RJ-45'), ('mini-din-8', 'Mini-DIN 8')]
+* `USB` - [('usb-a', 'USB Type A'), ('usb-b', 'USB Type B'), ('usb-c', 'USB Type C'), ('usb-mini-a', 'USB Mini A'), ('usb-mini-b', 'USB Mini B'), ('usb-micro-a', 'USB Micro A'), ('usb-micro-b', 'USB Micro B'), ('usb-micro-ab', 'USB Micro AB')]
+* `Other` - [('other', 'Other')]
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/console-port-templates/**
+  - Post a list of console port template objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/console-port-templates/**
+  - Put a list of console port template objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/console-port-templates/**
+  - Patch a list of console port template objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/console-port-templates/**
+  - Delete a list of console port template objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/console-port-templates/{id}/**
+  - Get a console port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console port template.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/console-port-templates/{id}/**
+  - Put a console port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console port template.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/console-port-templates/{id}/**
+  - Patch a console port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console port template.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/console-port-templates/{id}/**
+  - Delete a console port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console port template.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/console-ports/**
+  - Get a list of console port objects.
+  - **Parameters:**
+    - `cable_end`: * `A` - A
+* `B` - B
+    - `cable_id`: Cable (ID)
+    - `cable_id__n`: Cable (ID)
+    - `cabled`: No description
+    - `connected`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: Device (name)
+    - `device__n`: Device (name)
+    - `device_id`: Device (ID)
+    - `device_id__n`: Device (ID)
+    - `device_role`: Device role (slug)
+    - `device_role__n`: Device role (slug)
+    - `device_role_id`: Device role (ID)
+    - `device_role_id__n`: Device role (ID)
+    - `device_status`: No description
+    - `device_status__empty`: No description
+    - `device_status__ic`: No description
+    - `device_status__ie`: No description
+    - `device_status__iew`: No description
+    - `device_status__isw`: No description
+    - `device_status__n`: No description
+    - `device_status__nic`: No description
+    - `device_status__nie`: No description
+    - `device_status__niew`: No description
+    - `device_status__nisw`: No description
+    - `device_type`: Device type (model)
+    - `device_type__n`: Device type (model)
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: Location (slug)
+    - `location__n`: Location (slug)
+    - `location_id`: Location (ID)
+    - `location_id__n`: Location (ID)
+    - `mark_connected`: No description
+    - `modified_by_request`: No description
+    - `module_id`: Module (ID)
+    - `module_id__n`: Module (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `occupied`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `rack`: Rack (name)
+    - `rack__n`: Rack (name)
+    - `rack_id`: Rack (ID)
+    - `rack_id__n`: Rack (ID)
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site name (slug)
+    - `site__n`: Site name (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `speed`: Port speed in bits per second
+
+* `1200` - 1200 bps
+* `2400` - 2400 bps
+* `4800` - 4800 bps
+* `9600` - 9600 bps
+* `19200` - 19.2 kbps
+* `38400` - 38.4 kbps
+* `57600` - 57.6 kbps
+* `115200` - 115.2 kbps
+    - `tag`: No description
+    - `tag__n`: No description
+    - `type`: Physical port type
+    - `type__empty`: No description
+    - `type__ic`: Physical port type
+    - `type__ie`: Physical port type
+    - `type__iew`: Physical port type
+    - `type__isw`: Physical port type
+    - `type__n`: Physical port type
+    - `type__nic`: Physical port type
+    - `type__nie`: Physical port type
+    - `type__niew`: Physical port type
+    - `type__nisw`: Physical port type
+    - `updated_by_request`: No description
+    - `virtual_chassis`: Virtual Chassis
+    - `virtual_chassis__n`: Virtual Chassis
+    - `virtual_chassis_id`: Virtual Chassis (ID)
+    - `virtual_chassis_id__n`: Virtual Chassis (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/console-ports/**
+  - Post a list of console port objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/console-ports/**
+  - Put a list of console port objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/console-ports/**
+  - Patch a list of console port objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/console-ports/**
+  - Delete a list of console port objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/console-ports/{id}/**
+  - Get a console port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console port.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/console-ports/{id}/**
+  - Put a console port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console port.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/console-ports/{id}/**
+  - Patch a console port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console port.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/console-ports/{id}/**
+  - Delete a console port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console port.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/console-ports/{id}/trace/**
+  - Trace a complete cable path and return each segment as a three-tuple of (termination, cable, termination).
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console port.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/dcim/console-server-port-templates/**
+  - Get a list of console server port template objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `module_type_id`: Module type (ID)
+    - `module_type_id__n`: Module type (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `type`: * `Serial` - [('de-9', 'DE-9'), ('db-25', 'DB-25'), ('rj-11', 'RJ-11'), ('rj-12', 'RJ-12'), ('rj-45', 'RJ-45'), ('mini-din-8', 'Mini-DIN 8')]
+* `USB` - [('usb-a', 'USB Type A'), ('usb-b', 'USB Type B'), ('usb-c', 'USB Type C'), ('usb-mini-a', 'USB Mini A'), ('usb-mini-b', 'USB Mini B'), ('usb-micro-a', 'USB Micro A'), ('usb-micro-b', 'USB Micro B'), ('usb-micro-ab', 'USB Micro AB')]
+* `Other` - [('other', 'Other')]
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/console-server-port-templates/**
+  - Post a list of console server port template objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/console-server-port-templates/**
+  - Put a list of console server port template objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/console-server-port-templates/**
+  - Patch a list of console server port template objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/console-server-port-templates/**
+  - Delete a list of console server port template objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/console-server-port-templates/{id}/**
+  - Get a console server port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console server port template.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/console-server-port-templates/{id}/**
+  - Put a console server port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console server port template.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/console-server-port-templates/{id}/**
+  - Patch a console server port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console server port template.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/console-server-port-templates/{id}/**
+  - Delete a console server port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console server port template.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/console-server-ports/**
+  - Get a list of console server port objects.
+  - **Parameters:**
+    - `cable_end`: * `A` - A
+* `B` - B
+    - `cable_id`: Cable (ID)
+    - `cable_id__n`: Cable (ID)
+    - `cabled`: No description
+    - `connected`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: Device (name)
+    - `device__n`: Device (name)
+    - `device_id`: Device (ID)
+    - `device_id__n`: Device (ID)
+    - `device_role`: Device role (slug)
+    - `device_role__n`: Device role (slug)
+    - `device_role_id`: Device role (ID)
+    - `device_role_id__n`: Device role (ID)
+    - `device_status`: No description
+    - `device_status__empty`: No description
+    - `device_status__ic`: No description
+    - `device_status__ie`: No description
+    - `device_status__iew`: No description
+    - `device_status__isw`: No description
+    - `device_status__n`: No description
+    - `device_status__nic`: No description
+    - `device_status__nie`: No description
+    - `device_status__niew`: No description
+    - `device_status__nisw`: No description
+    - `device_type`: Device type (model)
+    - `device_type__n`: Device type (model)
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: Location (slug)
+    - `location__n`: Location (slug)
+    - `location_id`: Location (ID)
+    - `location_id__n`: Location (ID)
+    - `mark_connected`: No description
+    - `modified_by_request`: No description
+    - `module_id`: Module (ID)
+    - `module_id__n`: Module (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `occupied`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `rack`: Rack (name)
+    - `rack__n`: Rack (name)
+    - `rack_id`: Rack (ID)
+    - `rack_id__n`: Rack (ID)
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site name (slug)
+    - `site__n`: Site name (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `speed`: Port speed in bits per second
+
+* `1200` - 1200 bps
+* `2400` - 2400 bps
+* `4800` - 4800 bps
+* `9600` - 9600 bps
+* `19200` - 19.2 kbps
+* `38400` - 38.4 kbps
+* `57600` - 57.6 kbps
+* `115200` - 115.2 kbps
+    - `tag`: No description
+    - `tag__n`: No description
+    - `type`: Physical port type
+    - `type__empty`: No description
+    - `type__ic`: Physical port type
+    - `type__ie`: Physical port type
+    - `type__iew`: Physical port type
+    - `type__isw`: Physical port type
+    - `type__n`: Physical port type
+    - `type__nic`: Physical port type
+    - `type__nie`: Physical port type
+    - `type__niew`: Physical port type
+    - `type__nisw`: Physical port type
+    - `updated_by_request`: No description
+    - `virtual_chassis`: Virtual Chassis
+    - `virtual_chassis__n`: Virtual Chassis
+    - `virtual_chassis_id`: Virtual Chassis (ID)
+    - `virtual_chassis_id__n`: Virtual Chassis (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/console-server-ports/**
+  - Post a list of console server port objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/console-server-ports/**
+  - Put a list of console server port objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/console-server-ports/**
+  - Patch a list of console server port objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/console-server-ports/**
+  - Delete a list of console server port objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/console-server-ports/{id}/**
+  - Get a console server port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console server port.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/console-server-ports/{id}/**
+  - Put a console server port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console server port.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/console-server-ports/{id}/**
+  - Patch a console server port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console server port.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/console-server-ports/{id}/**
+  - Delete a console server port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console server port.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/console-server-ports/{id}/trace/**
+  - Trace a complete cable path and return each segment as a three-tuple of (termination, cable, termination).
+  - **Parameters:**
+    - `id`: A unique integer value identifying this console server port.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/dcim/device-bay-templates/**
+  - Get a list of device bay template objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/device-bay-templates/**
+  - Post a list of device bay template objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/device-bay-templates/**
+  - Put a list of device bay template objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/device-bay-templates/**
+  - Patch a list of device bay template objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/device-bay-templates/**
+  - Delete a list of device bay template objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/device-bay-templates/{id}/**
+  - Get a device bay template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device bay template.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/device-bay-templates/{id}/**
+  - Put a device bay template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device bay template.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/device-bay-templates/{id}/**
+  - Patch a device bay template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device bay template.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/device-bay-templates/{id}/**
+  - Delete a device bay template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device bay template.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/device-bays/**
+  - Get a list of device bay objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: Device (name)
+    - `device__n`: Device (name)
+    - `device_id`: Device (ID)
+    - `device_id__n`: Device (ID)
+    - `device_role`: Device role (slug)
+    - `device_role__n`: Device role (slug)
+    - `device_role_id`: Device role (ID)
+    - `device_role_id__n`: Device role (ID)
+    - `device_status`: No description
+    - `device_status__empty`: No description
+    - `device_status__ic`: No description
+    - `device_status__ie`: No description
+    - `device_status__iew`: No description
+    - `device_status__isw`: No description
+    - `device_status__n`: No description
+    - `device_status__nic`: No description
+    - `device_status__nie`: No description
+    - `device_status__niew`: No description
+    - `device_status__nisw`: No description
+    - `device_type`: Device type (model)
+    - `device_type__n`: Device type (model)
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `installed_device`: Installed device (name)
+    - `installed_device__n`: Installed device (name)
+    - `installed_device_id`: Installed device (ID)
+    - `installed_device_id__n`: Installed device (ID)
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: Location (slug)
+    - `location__n`: Location (slug)
+    - `location_id`: Location (ID)
+    - `location_id__n`: Location (ID)
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `rack`: Rack (name)
+    - `rack__n`: Rack (name)
+    - `rack_id`: Rack (ID)
+    - `rack_id__n`: Rack (ID)
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site name (slug)
+    - `site__n`: Site name (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+    - `virtual_chassis`: Virtual Chassis
+    - `virtual_chassis__n`: Virtual Chassis
+    - `virtual_chassis_id`: Virtual Chassis (ID)
+    - `virtual_chassis_id__n`: Virtual Chassis (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/device-bays/**
+  - Post a list of device bay objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/device-bays/**
+  - Put a list of device bay objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/device-bays/**
+  - Patch a list of device bay objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/device-bays/**
+  - Delete a list of device bay objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/device-bays/{id}/**
+  - Get a device bay object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device bay.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/device-bays/{id}/**
+  - Put a device bay object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device bay.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/device-bays/{id}/**
+  - Patch a device bay object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device bay.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/device-bays/{id}/**
+  - Delete a device bay object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device bay.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/device-roles/**
+  - Get a list of device role objects.
+  - **Parameters:**
+    - `color`: No description
+    - `color__empty`: No description
+    - `color__ic`: No description
+    - `color__ie`: No description
+    - `color__iew`: No description
+    - `color__isw`: No description
+    - `color__n`: No description
+    - `color__nic`: No description
+    - `color__nie`: No description
+    - `color__niew`: No description
+    - `color__nisw`: No description
+    - `config_template_id`: Config template (ID)
+    - `config_template_id__n`: Config template (ID)
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+    - `vm_role`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/device-roles/**
+  - Post a list of device role objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/device-roles/**
+  - Put a list of device role objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/device-roles/**
+  - Patch a list of device role objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/device-roles/**
+  - Delete a list of device role objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/device-roles/{id}/**
+  - Get a device role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device role.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/device-roles/{id}/**
+  - Put a device role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device role.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/device-roles/{id}/**
+  - Patch a device role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device role.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/device-roles/{id}/**
+  - Delete a device role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device role.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/device-types/**
+  - Get a list of device type objects.
+  - **Parameters:**
+    - `airflow`: * `front-to-rear` - Front to rear
+* `rear-to-front` - Rear to front
+* `left-to-right` - Left to right
+* `right-to-left` - Right to left
+* `side-to-rear` - Side to rear
+* `rear-to-side` - Rear to side
+* `bottom-to-top` - Bottom to top
+* `top-to-bottom` - Top to bottom
+* `passive` - Passive
+* `mixed` - Mixed
+    - `console_port_template_count`: No description
+    - `console_port_template_count__empty`: No description
+    - `console_port_template_count__gt`: No description
+    - `console_port_template_count__gte`: No description
+    - `console_port_template_count__lt`: No description
+    - `console_port_template_count__lte`: No description
+    - `console_port_template_count__n`: No description
+    - `console_ports`: Has console ports
+    - `console_server_port_template_count`: No description
+    - `console_server_port_template_count__empty`: No description
+    - `console_server_port_template_count__gt`: No description
+    - `console_server_port_template_count__gte`: No description
+    - `console_server_port_template_count__lt`: No description
+    - `console_server_port_template_count__lte`: No description
+    - `console_server_port_template_count__n`: No description
+    - `console_server_ports`: Has console server ports
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `default_platform`: Default platform (slug)
+    - `default_platform__n`: Default platform (slug)
+    - `default_platform_id`: Default platform (ID)
+    - `default_platform_id__n`: Default platform (ID)
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device_bay_template_count`: No description
+    - `device_bay_template_count__empty`: No description
+    - `device_bay_template_count__gt`: No description
+    - `device_bay_template_count__gte`: No description
+    - `device_bay_template_count__lt`: No description
+    - `device_bay_template_count__lte`: No description
+    - `device_bay_template_count__n`: No description
+    - `device_bays`: Has device bays
+    - `exclude_from_utilization`: No description
+    - `front_port_template_count`: No description
+    - `front_port_template_count__empty`: No description
+    - `front_port_template_count__gt`: No description
+    - `front_port_template_count__gte`: No description
+    - `front_port_template_count__lt`: No description
+    - `front_port_template_count__lte`: No description
+    - `front_port_template_count__n`: No description
+    - `has_front_image`: Has a front image
+    - `has_rear_image`: Has a rear image
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `interface_template_count`: No description
+    - `interface_template_count__empty`: No description
+    - `interface_template_count__gt`: No description
+    - `interface_template_count__gte`: No description
+    - `interface_template_count__lt`: No description
+    - `interface_template_count__lte`: No description
+    - `interface_template_count__n`: No description
+    - `interfaces`: Has interfaces
+    - `inventory_item_template_count`: No description
+    - `inventory_item_template_count__empty`: No description
+    - `inventory_item_template_count__gt`: No description
+    - `inventory_item_template_count__gte`: No description
+    - `inventory_item_template_count__lt`: No description
+    - `inventory_item_template_count__lte`: No description
+    - `inventory_item_template_count__n`: No description
+    - `inventory_items`: Has inventory items
+    - `is_full_depth`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `manufacturer`: Manufacturer (slug)
+    - `manufacturer__n`: Manufacturer (slug)
+    - `manufacturer_id`: Manufacturer (ID)
+    - `manufacturer_id__n`: Manufacturer (ID)
+    - `model`: No description
+    - `model__empty`: No description
+    - `model__ic`: No description
+    - `model__ie`: No description
+    - `model__iew`: No description
+    - `model__isw`: No description
+    - `model__n`: No description
+    - `model__nic`: No description
+    - `model__nie`: No description
+    - `model__niew`: No description
+    - `model__nisw`: No description
+    - `modified_by_request`: No description
+    - `module_bay_template_count`: No description
+    - `module_bay_template_count__empty`: No description
+    - `module_bay_template_count__gt`: No description
+    - `module_bay_template_count__gte`: No description
+    - `module_bay_template_count__lt`: No description
+    - `module_bay_template_count__lte`: No description
+    - `module_bay_template_count__n`: No description
+    - `module_bays`: Has module bays
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `part_number`: No description
+    - `part_number__empty`: No description
+    - `part_number__ic`: No description
+    - `part_number__ie`: No description
+    - `part_number__iew`: No description
+    - `part_number__isw`: No description
+    - `part_number__n`: No description
+    - `part_number__nic`: No description
+    - `part_number__nie`: No description
+    - `part_number__niew`: No description
+    - `part_number__nisw`: No description
+    - `pass_through_ports`: Has pass-through ports
+    - `power_outlet_template_count`: No description
+    - `power_outlet_template_count__empty`: No description
+    - `power_outlet_template_count__gt`: No description
+    - `power_outlet_template_count__gte`: No description
+    - `power_outlet_template_count__lt`: No description
+    - `power_outlet_template_count__lte`: No description
+    - `power_outlet_template_count__n`: No description
+    - `power_outlets`: Has power outlets
+    - `power_port_template_count`: No description
+    - `power_port_template_count__empty`: No description
+    - `power_port_template_count__gt`: No description
+    - `power_port_template_count__gte`: No description
+    - `power_port_template_count__lt`: No description
+    - `power_port_template_count__lte`: No description
+    - `power_port_template_count__n`: No description
+    - `power_ports`: Has power ports
+    - `q`: Search
+    - `rear_port_template_count`: No description
+    - `rear_port_template_count__empty`: No description
+    - `rear_port_template_count__gt`: No description
+    - `rear_port_template_count__gte`: No description
+    - `rear_port_template_count__lt`: No description
+    - `rear_port_template_count__lte`: No description
+    - `rear_port_template_count__n`: No description
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `subdevice_role`: Parent devices house child devices in device bays. Leave blank if this device type is neither a parent nor a child.
+
+* `parent` - Parent
+* `child` - Child
+    - `tag`: No description
+    - `tag__n`: No description
+    - `u_height`: No description
+    - `u_height__empty`: No description
+    - `u_height__gt`: No description
+    - `u_height__gte`: No description
+    - `u_height__lt`: No description
+    - `u_height__lte`: No description
+    - `u_height__n`: No description
+    - `updated_by_request`: No description
+    - `weight`: No description
+    - `weight__empty`: No description
+    - `weight__gt`: No description
+    - `weight__gte`: No description
+    - `weight__lt`: No description
+    - `weight__lte`: No description
+    - `weight__n`: No description
+    - `weight_unit`: * `kg` - Kilograms
+* `g` - Grams
+* `lb` - Pounds
+* `oz` - Ounces
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/device-types/**
+  - Post a list of device type objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/device-types/**
+  - Put a list of device type objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/device-types/**
+  - Patch a list of device type objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/device-types/**
+  - Delete a list of device type objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/device-types/{id}/**
+  - Get a device type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device type.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/device-types/{id}/**
+  - Put a device type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device type.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/device-types/{id}/**
+  - Patch a device type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device type.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/device-types/{id}/**
+  - Delete a device type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device type.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/devices/**
+  - Get a list of device objects.
+  - **Parameters:**
+    - `airflow`: * `front-to-rear` - Front to rear
+* `rear-to-front` - Rear to front
+* `left-to-right` - Left to right
+* `right-to-left` - Right to left
+* `side-to-rear` - Side to rear
+* `rear-to-side` - Rear to side
+* `bottom-to-top` - Bottom to top
+* `top-to-bottom` - Top to bottom
+* `passive` - Passive
+* `mixed` - Mixed
+    - `asset_tag`: No description
+    - `asset_tag__empty`: No description
+    - `asset_tag__ic`: No description
+    - `asset_tag__ie`: No description
+    - `asset_tag__iew`: No description
+    - `asset_tag__isw`: No description
+    - `asset_tag__n`: No description
+    - `asset_tag__nic`: No description
+    - `asset_tag__nie`: No description
+    - `asset_tag__niew`: No description
+    - `asset_tag__nisw`: No description
+    - `cluster_group`: Cluster group (slug)
+    - `cluster_group__n`: Cluster group (slug)
+    - `cluster_group_id`: Cluster group (ID)
+    - `cluster_group_id__n`: Cluster group (ID)
+    - `cluster_id`: VM cluster (ID)
+    - `cluster_id__n`: VM cluster (ID)
+    - `config_template_id`: Config template (ID)
+    - `config_template_id__n`: Config template (ID)
+    - `console_port_count`: No description
+    - `console_port_count__empty`: No description
+    - `console_port_count__gt`: No description
+    - `console_port_count__gte`: No description
+    - `console_port_count__lt`: No description
+    - `console_port_count__lte`: No description
+    - `console_port_count__n`: No description
+    - `console_ports`: Has console ports
+    - `console_server_port_count`: No description
+    - `console_server_port_count__empty`: No description
+    - `console_server_port_count__gt`: No description
+    - `console_server_port_count__gte`: No description
+    - `console_server_port_count__lt`: No description
+    - `console_server_port_count__lte`: No description
+    - `console_server_port_count__n`: No description
+    - `console_server_ports`: Has console server ports
+    - `contact`: Contact
+    - `contact__n`: Contact
+    - `contact_group`: No description
+    - `contact_group__n`: No description
+    - `contact_role`: Contact Role
+    - `contact_role__n`: Contact Role
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device_bay_count`: No description
+    - `device_bay_count__empty`: No description
+    - `device_bay_count__gt`: No description
+    - `device_bay_count__gte`: No description
+    - `device_bay_count__lt`: No description
+    - `device_bay_count__lte`: No description
+    - `device_bay_count__n`: No description
+    - `device_bays`: Has device bays
+    - `device_type`: Device type (slug)
+    - `device_type__n`: Device type (slug)
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `face`: * `front` - Front
+* `rear` - Rear
+    - `front_port_count`: No description
+    - `front_port_count__empty`: No description
+    - `front_port_count__gt`: No description
+    - `front_port_count__gte`: No description
+    - `front_port_count__lt`: No description
+    - `front_port_count__lte`: No description
+    - `front_port_count__n`: No description
+    - `has_oob_ip`: Has an out-of-band IP
+    - `has_primary_ip`: Has a primary IP
+    - `has_virtual_device_context`: Has virtual device context
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `interface_count`: No description
+    - `interface_count__empty`: No description
+    - `interface_count__gt`: No description
+    - `interface_count__gte`: No description
+    - `interface_count__lt`: No description
+    - `interface_count__lte`: No description
+    - `interface_count__n`: No description
+    - `interfaces`: Has interfaces
+    - `inventory_item_count`: No description
+    - `inventory_item_count__empty`: No description
+    - `inventory_item_count__gt`: No description
+    - `inventory_item_count__gte`: No description
+    - `inventory_item_count__lt`: No description
+    - `inventory_item_count__lte`: No description
+    - `inventory_item_count__n`: No description
+    - `is_full_depth`: Is full depth
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `latitude`: No description
+    - `latitude__empty`: No description
+    - `latitude__gt`: No description
+    - `latitude__gte`: No description
+    - `latitude__lt`: No description
+    - `latitude__lte`: No description
+    - `latitude__n`: No description
+    - `limit`: Number of results to return per page.
+    - `local_context_data`: Has local config context data
+    - `location_id`: No description
+    - `location_id__n`: No description
+    - `longitude`: No description
+    - `longitude__empty`: No description
+    - `longitude__gt`: No description
+    - `longitude__gte`: No description
+    - `longitude__lt`: No description
+    - `longitude__lte`: No description
+    - `longitude__n`: No description
+    - `mac_address`: No description
+    - `mac_address__ic`: No description
+    - `mac_address__ie`: No description
+    - `mac_address__iew`: No description
+    - `mac_address__isw`: No description
+    - `mac_address__n`: No description
+    - `mac_address__nic`: No description
+    - `mac_address__nie`: No description
+    - `mac_address__niew`: No description
+    - `mac_address__nisw`: No description
+    - `manufacturer`: Manufacturer (slug)
+    - `manufacturer__n`: Manufacturer (slug)
+    - `manufacturer_id`: Manufacturer (ID)
+    - `manufacturer_id__n`: Manufacturer (ID)
+    - `model`: Device model (slug)
+    - `model__n`: Device model (slug)
+    - `modified_by_request`: No description
+    - `module_bay_count`: No description
+    - `module_bay_count__empty`: No description
+    - `module_bay_count__gt`: No description
+    - `module_bay_count__gte`: No description
+    - `module_bay_count__lt`: No description
+    - `module_bay_count__lte`: No description
+    - `module_bay_count__n`: No description
+    - `module_bays`: Has module bays
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `oob_ip_id`: OOB IP (ID)
+    - `oob_ip_id__n`: OOB IP (ID)
+    - `ordering`: Which field to use when ordering the results.
+    - `parent_bay_id`: Parent bay (ID)
+    - `parent_bay_id__n`: Parent bay (ID)
+    - `parent_device_id`: Parent Device (ID)
+    - `parent_device_id__n`: Parent Device (ID)
+    - `pass_through_ports`: Has pass-through ports
+    - `platform`: Platform (slug)
+    - `platform__n`: Platform (slug)
+    - `platform_id`: Platform (ID)
+    - `platform_id__n`: Platform (ID)
+    - `position`: No description
+    - `position__empty`: No description
+    - `position__gt`: No description
+    - `position__gte`: No description
+    - `position__lt`: No description
+    - `position__lte`: No description
+    - `position__n`: No description
+    - `power_outlet_count`: No description
+    - `power_outlet_count__empty`: No description
+    - `power_outlet_count__gt`: No description
+    - `power_outlet_count__gte`: No description
+    - `power_outlet_count__lt`: No description
+    - `power_outlet_count__lte`: No description
+    - `power_outlet_count__n`: No description
+    - `power_outlets`: Has power outlets
+    - `power_port_count`: No description
+    - `power_port_count__empty`: No description
+    - `power_port_count__gt`: No description
+    - `power_port_count__gte`: No description
+    - `power_port_count__lt`: No description
+    - `power_port_count__lte`: No description
+    - `power_port_count__n`: No description
+    - `power_ports`: Has power ports
+    - `primary_ip4_id`: Primary IPv4 (ID)
+    - `primary_ip4_id__n`: Primary IPv4 (ID)
+    - `primary_ip6_id`: Primary IPv6 (ID)
+    - `primary_ip6_id__n`: Primary IPv6 (ID)
+    - `q`: Search
+    - `rack_id`: Rack (ID)
+    - `rack_id__n`: Rack (ID)
+    - `rear_port_count`: No description
+    - `rear_port_count__empty`: No description
+    - `rear_port_count__gt`: No description
+    - `rear_port_count__gte`: No description
+    - `rear_port_count__lt`: No description
+    - `rear_port_count__lte`: No description
+    - `rear_port_count__n`: No description
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `role`: Role (slug)
+    - `role__n`: Role (slug)
+    - `role_id`: Role (ID)
+    - `role_id__n`: Role (ID)
+    - `serial`: No description
+    - `serial__empty`: No description
+    - `serial__ic`: No description
+    - `serial__ie`: No description
+    - `serial__iew`: No description
+    - `serial__isw`: No description
+    - `serial__n`: No description
+    - `serial__nic`: No description
+    - `serial__nie`: No description
+    - `serial__niew`: No description
+    - `serial__nisw`: No description
+    - `site`: Site name (slug)
+    - `site__n`: Site name (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+    - `vc_position`: No description
+    - `vc_position__empty`: No description
+    - `vc_position__gt`: No description
+    - `vc_position__gte`: No description
+    - `vc_position__lt`: No description
+    - `vc_position__lte`: No description
+    - `vc_position__n`: No description
+    - `vc_priority`: No description
+    - `vc_priority__empty`: No description
+    - `vc_priority__gt`: No description
+    - `vc_priority__gte`: No description
+    - `vc_priority__lt`: No description
+    - `vc_priority__lte`: No description
+    - `vc_priority__n`: No description
+    - `virtual_chassis_id`: Virtual chassis (ID)
+    - `virtual_chassis_id__n`: Virtual chassis (ID)
+    - `virtual_chassis_member`: Is a virtual chassis member
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/devices/**
+  - Post a list of device objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/devices/**
+  - Put a list of device objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/devices/**
+  - Patch a list of device objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/devices/**
+  - Delete a list of device objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/devices/{id}/**
+  - Get a device object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/devices/{id}/**
+  - Put a device object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/devices/{id}/**
+  - Patch a device object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/devices/{id}/**
+  - Delete a device object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this device.
+  - **Responses:**
+    - `204`: No response body
+
+- **POST /api/dcim/devices/{id}/render-config/**
+  - Resolve and render the preferred ConfigTemplate for this Device.
+  - **Parameters:**
+    - `format`: No description
+    - `id`: A unique integer value identifying this device.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/dcim/front-port-templates/**
+  - Get a list of front port template objects.
+  - **Parameters:**
+    - `color`: No description
+    - `color__empty`: No description
+    - `color__ic`: No description
+    - `color__ie`: No description
+    - `color__iew`: No description
+    - `color__isw`: No description
+    - `color__n`: No description
+    - `color__nic`: No description
+    - `color__nie`: No description
+    - `color__niew`: No description
+    - `color__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `module_type_id`: Module type (ID)
+    - `module_type_id__n`: Module type (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `rear_port_id`: No description
+    - `rear_port_id__n`: No description
+    - `rear_port_position`: No description
+    - `rear_port_position__empty`: No description
+    - `rear_port_position__gt`: No description
+    - `rear_port_position__gte`: No description
+    - `rear_port_position__lt`: No description
+    - `rear_port_position__lte`: No description
+    - `rear_port_position__n`: No description
+    - `type`: No description
+    - `type__empty`: No description
+    - `type__ic`: No description
+    - `type__ie`: No description
+    - `type__iew`: No description
+    - `type__isw`: No description
+    - `type__n`: No description
+    - `type__nic`: No description
+    - `type__nie`: No description
+    - `type__niew`: No description
+    - `type__nisw`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/front-port-templates/**
+  - Post a list of front port template objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/front-port-templates/**
+  - Put a list of front port template objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/front-port-templates/**
+  - Patch a list of front port template objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/front-port-templates/**
+  - Delete a list of front port template objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/front-port-templates/{id}/**
+  - Get a front port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this front port template.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/front-port-templates/{id}/**
+  - Put a front port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this front port template.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/front-port-templates/{id}/**
+  - Patch a front port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this front port template.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/front-port-templates/{id}/**
+  - Delete a front port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this front port template.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/front-ports/**
+  - Get a list of front port objects.
+  - **Parameters:**
+    - `cable_end`: * `A` - A
+* `B` - B
+    - `cable_id`: Cable (ID)
+    - `cable_id__n`: Cable (ID)
+    - `cabled`: No description
+    - `color`: No description
+    - `color__empty`: No description
+    - `color__ic`: No description
+    - `color__ie`: No description
+    - `color__iew`: No description
+    - `color__isw`: No description
+    - `color__n`: No description
+    - `color__nic`: No description
+    - `color__nie`: No description
+    - `color__niew`: No description
+    - `color__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: Device (name)
+    - `device__n`: Device (name)
+    - `device_id`: Device (ID)
+    - `device_id__n`: Device (ID)
+    - `device_role`: Device role (slug)
+    - `device_role__n`: Device role (slug)
+    - `device_role_id`: Device role (ID)
+    - `device_role_id__n`: Device role (ID)
+    - `device_status`: No description
+    - `device_status__empty`: No description
+    - `device_status__ic`: No description
+    - `device_status__ie`: No description
+    - `device_status__iew`: No description
+    - `device_status__isw`: No description
+    - `device_status__n`: No description
+    - `device_status__nic`: No description
+    - `device_status__nie`: No description
+    - `device_status__niew`: No description
+    - `device_status__nisw`: No description
+    - `device_type`: Device type (model)
+    - `device_type__n`: Device type (model)
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: Location (slug)
+    - `location__n`: Location (slug)
+    - `location_id`: Location (ID)
+    - `location_id__n`: Location (ID)
+    - `mark_connected`: No description
+    - `modified_by_request`: No description
+    - `module_id`: Module (ID)
+    - `module_id__n`: Module (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `occupied`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `rack`: Rack (name)
+    - `rack__n`: Rack (name)
+    - `rack_id`: Rack (ID)
+    - `rack_id__n`: Rack (ID)
+    - `rear_port_id`: No description
+    - `rear_port_id__n`: No description
+    - `rear_port_position`: No description
+    - `rear_port_position__empty`: No description
+    - `rear_port_position__gt`: No description
+    - `rear_port_position__gte`: No description
+    - `rear_port_position__lt`: No description
+    - `rear_port_position__lte`: No description
+    - `rear_port_position__n`: No description
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site name (slug)
+    - `site__n`: Site name (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `tag`: No description
+    - `tag__n`: No description
+    - `type`: No description
+    - `type__empty`: No description
+    - `type__ic`: No description
+    - `type__ie`: No description
+    - `type__iew`: No description
+    - `type__isw`: No description
+    - `type__n`: No description
+    - `type__nic`: No description
+    - `type__nie`: No description
+    - `type__niew`: No description
+    - `type__nisw`: No description
+    - `updated_by_request`: No description
+    - `virtual_chassis`: Virtual Chassis
+    - `virtual_chassis__n`: Virtual Chassis
+    - `virtual_chassis_id`: Virtual Chassis (ID)
+    - `virtual_chassis_id__n`: Virtual Chassis (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/front-ports/**
+  - Post a list of front port objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/front-ports/**
+  - Put a list of front port objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/front-ports/**
+  - Patch a list of front port objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/front-ports/**
+  - Delete a list of front port objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/front-ports/{id}/**
+  - Get a front port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this front port.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/front-ports/{id}/**
+  - Put a front port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this front port.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/front-ports/{id}/**
+  - Patch a front port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this front port.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/front-ports/{id}/**
+  - Delete a front port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this front port.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/front-ports/{id}/paths/**
+  - Return all CablePaths which traverse a given pass-through port.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this front port.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/dcim/interface-templates/**
+  - Get a list of interface template objects.
+  - **Parameters:**
+    - `bridge_id`: No description
+    - `bridge_id__n`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `enabled`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `mgmt_only`: No description
+    - `modified_by_request`: No description
+    - `module_type_id`: Module type (ID)
+    - `module_type_id__n`: Module type (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `poe_mode`: No description
+    - `poe_mode__empty`: No description
+    - `poe_mode__ic`: No description
+    - `poe_mode__ie`: No description
+    - `poe_mode__iew`: No description
+    - `poe_mode__isw`: No description
+    - `poe_mode__n`: No description
+    - `poe_mode__nic`: No description
+    - `poe_mode__nie`: No description
+    - `poe_mode__niew`: No description
+    - `poe_mode__nisw`: No description
+    - `poe_type`: No description
+    - `poe_type__empty`: No description
+    - `poe_type__ic`: No description
+    - `poe_type__ie`: No description
+    - `poe_type__iew`: No description
+    - `poe_type__isw`: No description
+    - `poe_type__n`: No description
+    - `poe_type__nic`: No description
+    - `poe_type__nie`: No description
+    - `poe_type__niew`: No description
+    - `poe_type__nisw`: No description
+    - `q`: Search
+    - `rf_role`: No description
+    - `rf_role__empty`: No description
+    - `rf_role__ic`: No description
+    - `rf_role__ie`: No description
+    - `rf_role__iew`: No description
+    - `rf_role__isw`: No description
+    - `rf_role__n`: No description
+    - `rf_role__nic`: No description
+    - `rf_role__nie`: No description
+    - `rf_role__niew`: No description
+    - `rf_role__nisw`: No description
+    - `type`: No description
+    - `type__empty`: No description
+    - `type__ic`: No description
+    - `type__ie`: No description
+    - `type__iew`: No description
+    - `type__isw`: No description
+    - `type__n`: No description
+    - `type__nic`: No description
+    - `type__nie`: No description
+    - `type__niew`: No description
+    - `type__nisw`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/interface-templates/**
+  - Post a list of interface template objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/interface-templates/**
+  - Put a list of interface template objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/interface-templates/**
+  - Patch a list of interface template objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/interface-templates/**
+  - Delete a list of interface template objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/interface-templates/{id}/**
+  - Get a interface template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this interface template.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/interface-templates/{id}/**
+  - Put a interface template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this interface template.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/interface-templates/{id}/**
+  - Patch a interface template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this interface template.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/interface-templates/{id}/**
+  - Delete a interface template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this interface template.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/interfaces/**
+  - Get a list of interface objects.
+  - **Parameters:**
+    - `bridge_id`: Bridged interface (ID)
+    - `bridge_id__n`: Bridged interface (ID)
+    - `cable_end`: * `A` - A
+* `B` - B
+    - `cable_id`: Cable (ID)
+    - `cable_id__n`: Cable (ID)
+    - `cabled`: No description
+    - `connected`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: Device (name)
+    - `device__n`: Device (name)
+    - `device_id`: Device (ID)
+    - `device_id__n`: Device (ID)
+    - `device_role`: Device role (slug)
+    - `device_role__n`: Device role (slug)
+    - `device_role_id`: Device role (ID)
+    - `device_role_id__n`: Device role (ID)
+    - `device_status`: No description
+    - `device_status__empty`: No description
+    - `device_status__ic`: No description
+    - `device_status__ie`: No description
+    - `device_status__iew`: No description
+    - `device_status__isw`: No description
+    - `device_status__n`: No description
+    - `device_status__nic`: No description
+    - `device_status__nie`: No description
+    - `device_status__niew`: No description
+    - `device_status__nisw`: No description
+    - `device_type`: Device type (model)
+    - `device_type__n`: Device type (model)
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `duplex`: No description
+    - `duplex__empty`: No description
+    - `duplex__ic`: No description
+    - `duplex__ie`: No description
+    - `duplex__iew`: No description
+    - `duplex__isw`: No description
+    - `duplex__n`: No description
+    - `duplex__nic`: No description
+    - `duplex__nie`: No description
+    - `duplex__niew`: No description
+    - `duplex__nisw`: No description
+    - `enabled`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `kind`: Kind of interface
+    - `l2vpn`: L2VPN
+    - `l2vpn__n`: L2VPN
+    - `l2vpn_id`: L2VPN (ID)
+    - `l2vpn_id__n`: L2VPN (ID)
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `lag_id`: LAG interface (ID)
+    - `lag_id__n`: LAG interface (ID)
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: Location (slug)
+    - `location__n`: Location (slug)
+    - `location_id`: Location (ID)
+    - `location_id__n`: Location (ID)
+    - `mac_address`: No description
+    - `mac_address__ic`: No description
+    - `mac_address__ie`: No description
+    - `mac_address__iew`: No description
+    - `mac_address__isw`: No description
+    - `mac_address__n`: No description
+    - `mac_address__nic`: No description
+    - `mac_address__nie`: No description
+    - `mac_address__niew`: No description
+    - `mac_address__nisw`: No description
+    - `mark_connected`: No description
+    - `mgmt_only`: No description
+    - `mode`: IEEE 802.1Q tagging strategy
+
+* `access` - Access
+* `tagged` - Tagged
+* `tagged-all` - Tagged (All)
+* `q-in-q` - Q-in-Q (802.1ad)
+    - `modified_by_request`: No description
+    - `module_id`: Module (ID)
+    - `module_id__n`: Module (ID)
+    - `mtu`: No description
+    - `mtu__empty`: No description
+    - `mtu__gt`: No description
+    - `mtu__gte`: No description
+    - `mtu__lt`: No description
+    - `mtu__lte`: No description
+    - `mtu__n`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `occupied`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `parent_id`: Parent interface (ID)
+    - `parent_id__n`: Parent interface (ID)
+    - `poe_mode`: No description
+    - `poe_mode__empty`: No description
+    - `poe_mode__ic`: No description
+    - `poe_mode__ie`: No description
+    - `poe_mode__iew`: No description
+    - `poe_mode__isw`: No description
+    - `poe_mode__n`: No description
+    - `poe_mode__nic`: No description
+    - `poe_mode__nie`: No description
+    - `poe_mode__niew`: No description
+    - `poe_mode__nisw`: No description
+    - `poe_type`: No description
+    - `poe_type__empty`: No description
+    - `poe_type__ic`: No description
+    - `poe_type__ie`: No description
+    - `poe_type__iew`: No description
+    - `poe_type__isw`: No description
+    - `poe_type__n`: No description
+    - `poe_type__nic`: No description
+    - `poe_type__nie`: No description
+    - `poe_type__niew`: No description
+    - `poe_type__nisw`: No description
+    - `primary_mac_address`: Primary MAC address
+    - `primary_mac_address__n`: Primary MAC address
+    - `primary_mac_address_id`: Primary MAC address (ID)
+    - `primary_mac_address_id__n`: Primary MAC address (ID)
+    - `q`: Search
+    - `rack`: Rack (name)
+    - `rack__n`: Rack (name)
+    - `rack_id`: Rack (ID)
+    - `rack_id__n`: Rack (ID)
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `rf_channel`: No description
+    - `rf_channel__empty`: No description
+    - `rf_channel__ic`: No description
+    - `rf_channel__ie`: No description
+    - `rf_channel__iew`: No description
+    - `rf_channel__isw`: No description
+    - `rf_channel__n`: No description
+    - `rf_channel__nic`: No description
+    - `rf_channel__nie`: No description
+    - `rf_channel__niew`: No description
+    - `rf_channel__nisw`: No description
+    - `rf_channel_frequency`: No description
+    - `rf_channel_frequency__empty`: No description
+    - `rf_channel_frequency__gt`: No description
+    - `rf_channel_frequency__gte`: No description
+    - `rf_channel_frequency__lt`: No description
+    - `rf_channel_frequency__lte`: No description
+    - `rf_channel_frequency__n`: No description
+    - `rf_channel_width`: No description
+    - `rf_channel_width__empty`: No description
+    - `rf_channel_width__gt`: No description
+    - `rf_channel_width__gte`: No description
+    - `rf_channel_width__lt`: No description
+    - `rf_channel_width__lte`: No description
+    - `rf_channel_width__n`: No description
+    - `rf_role`: No description
+    - `rf_role__empty`: No description
+    - `rf_role__ic`: No description
+    - `rf_role__ie`: No description
+    - `rf_role__iew`: No description
+    - `rf_role__isw`: No description
+    - `rf_role__n`: No description
+    - `rf_role__nic`: No description
+    - `rf_role__nie`: No description
+    - `rf_role__niew`: No description
+    - `rf_role__nisw`: No description
+    - `site`: Site name (slug)
+    - `site__n`: Site name (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `speed`: No description
+    - `speed__empty`: No description
+    - `speed__gt`: No description
+    - `speed__gte`: No description
+    - `speed__lt`: No description
+    - `speed__lte`: No description
+    - `speed__n`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tx_power`: No description
+    - `tx_power__empty`: No description
+    - `tx_power__gt`: No description
+    - `tx_power__gte`: No description
+    - `tx_power__lt`: No description
+    - `tx_power__lte`: No description
+    - `tx_power__n`: No description
+    - `type`: No description
+    - `type__empty`: No description
+    - `type__ic`: No description
+    - `type__ie`: No description
+    - `type__iew`: No description
+    - `type__isw`: No description
+    - `type__n`: No description
+    - `type__nic`: No description
+    - `type__nie`: No description
+    - `type__niew`: No description
+    - `type__nisw`: No description
+    - `updated_by_request`: No description
+    - `vdc`: Virtual Device Context
+    - `vdc__n`: Virtual Device Context
+    - `vdc_id`: Virtual Device Context
+    - `vdc_id__n`: Virtual Device Context
+    - `vdc_identifier`: Virtual Device Context (Identifier)
+    - `vdc_identifier__n`: Virtual Device Context (Identifier)
+    - `virtual_chassis`: Virtual Chassis
+    - `virtual_chassis__n`: Virtual Chassis
+    - `virtual_chassis_id`: Virtual Chassis (ID)
+    - `virtual_chassis_id__n`: Virtual Chassis (ID)
+    - `virtual_chassis_member`: No description
+    - `virtual_chassis_member_id`: No description
+    - `virtual_circuit_id`: Virtual circuit (ID)
+    - `virtual_circuit_id__n`: Virtual circuit (ID)
+    - `virtual_circuit_termination_id`: Virtual circuit termination (ID)
+    - `virtual_circuit_termination_id__n`: Virtual circuit termination (ID)
+    - `vlan`: Assigned VID
+    - `vlan_id`: Assigned VLAN
+    - `vlan_translation_policy`: VLAN Translation Policy
+    - `vlan_translation_policy__n`: VLAN Translation Policy
+    - `vlan_translation_policy_id`: VLAN Translation Policy (ID)
+    - `vlan_translation_policy_id__n`: VLAN Translation Policy (ID)
+    - `vrf`: VRF (RD)
+    - `vrf__n`: VRF (RD)
+    - `vrf_id`: VRF
+    - `vrf_id__n`: VRF
+    - `wireless_lan_id`: Wireless LAN
+    - `wireless_lan_id__n`: Wireless LAN
+    - `wireless_link_id`: Wireless link
+    - `wireless_link_id__n`: Wireless link
+    - `wwn`: No description
+    - `wwn__ic`: No description
+    - `wwn__ie`: No description
+    - `wwn__iew`: No description
+    - `wwn__isw`: No description
+    - `wwn__n`: No description
+    - `wwn__nic`: No description
+    - `wwn__nie`: No description
+    - `wwn__niew`: No description
+    - `wwn__nisw`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/interfaces/**
+  - Post a list of interface objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/interfaces/**
+  - Put a list of interface objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/interfaces/**
+  - Patch a list of interface objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/interfaces/**
+  - Delete a list of interface objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/interfaces/{id}/**
+  - Get a interface object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this interface.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/interfaces/{id}/**
+  - Put a interface object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this interface.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/interfaces/{id}/**
+  - Patch a interface object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this interface.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/interfaces/{id}/**
+  - Delete a interface object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this interface.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/interfaces/{id}/trace/**
+  - Trace a complete cable path and return each segment as a three-tuple of (termination, cable, termination).
+  - **Parameters:**
+    - `id`: A unique integer value identifying this interface.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/dcim/inventory-item-roles/**
+  - Get a list of inventory item role objects.
+  - **Parameters:**
+    - `color`: No description
+    - `color__empty`: No description
+    - `color__ic`: No description
+    - `color__ie`: No description
+    - `color__iew`: No description
+    - `color__isw`: No description
+    - `color__n`: No description
+    - `color__nic`: No description
+    - `color__nie`: No description
+    - `color__niew`: No description
+    - `color__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/inventory-item-roles/**
+  - Post a list of inventory item role objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/inventory-item-roles/**
+  - Put a list of inventory item role objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/inventory-item-roles/**
+  - Patch a list of inventory item role objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/inventory-item-roles/**
+  - Delete a list of inventory item role objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/inventory-item-roles/{id}/**
+  - Get a inventory item role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this inventory item role.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/inventory-item-roles/{id}/**
+  - Put a inventory item role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this inventory item role.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/inventory-item-roles/{id}/**
+  - Patch a inventory item role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this inventory item role.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/inventory-item-roles/{id}/**
+  - Delete a inventory item role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this inventory item role.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/inventory-item-templates/**
+  - Get a list of inventory item template objects.
+  - **Parameters:**
+    - `component_id`: No description
+    - `component_id__empty`: No description
+    - `component_id__gt`: No description
+    - `component_id__gte`: No description
+    - `component_id__lt`: No description
+    - `component_id__lte`: No description
+    - `component_id__n`: No description
+    - `component_type`: No description
+    - `component_type__n`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `manufacturer`: Manufacturer (slug)
+    - `manufacturer__n`: Manufacturer (slug)
+    - `manufacturer_id`: Manufacturer (ID)
+    - `manufacturer_id__n`: Manufacturer (ID)
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `parent_id`: Parent inventory item (ID)
+    - `parent_id__n`: Parent inventory item (ID)
+    - `part_id`: No description
+    - `part_id__empty`: No description
+    - `part_id__ic`: No description
+    - `part_id__ie`: No description
+    - `part_id__iew`: No description
+    - `part_id__isw`: No description
+    - `part_id__n`: No description
+    - `part_id__nic`: No description
+    - `part_id__nie`: No description
+    - `part_id__niew`: No description
+    - `part_id__nisw`: No description
+    - `q`: Search
+    - `role`: Role (slug)
+    - `role__n`: Role (slug)
+    - `role_id`: Role (ID)
+    - `role_id__n`: Role (ID)
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/inventory-item-templates/**
+  - Post a list of inventory item template objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/inventory-item-templates/**
+  - Put a list of inventory item template objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/inventory-item-templates/**
+  - Patch a list of inventory item template objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/inventory-item-templates/**
+  - Delete a list of inventory item template objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/inventory-item-templates/{id}/**
+  - Get a inventory item template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this inventory item template.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/inventory-item-templates/{id}/**
+  - Put a inventory item template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this inventory item template.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/inventory-item-templates/{id}/**
+  - Patch a inventory item template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this inventory item template.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/inventory-item-templates/{id}/**
+  - Delete a inventory item template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this inventory item template.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/inventory-items/**
+  - Get a list of inventory item objects.
+  - **Parameters:**
+    - `asset_tag`: No description
+    - `asset_tag__empty`: No description
+    - `asset_tag__ic`: No description
+    - `asset_tag__ie`: No description
+    - `asset_tag__iew`: No description
+    - `asset_tag__isw`: No description
+    - `asset_tag__n`: No description
+    - `asset_tag__nic`: No description
+    - `asset_tag__nie`: No description
+    - `asset_tag__niew`: No description
+    - `asset_tag__nisw`: No description
+    - `component_id`: No description
+    - `component_id__empty`: No description
+    - `component_id__gt`: No description
+    - `component_id__gte`: No description
+    - `component_id__lt`: No description
+    - `component_id__lte`: No description
+    - `component_id__n`: No description
+    - `component_type`: No description
+    - `component_type__n`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: Device (name)
+    - `device__n`: Device (name)
+    - `device_id`: Device (ID)
+    - `device_id__n`: Device (ID)
+    - `device_role`: Device role (slug)
+    - `device_role__n`: Device role (slug)
+    - `device_role_id`: Device role (ID)
+    - `device_role_id__n`: Device role (ID)
+    - `device_status`: No description
+    - `device_status__empty`: No description
+    - `device_status__ic`: No description
+    - `device_status__ie`: No description
+    - `device_status__iew`: No description
+    - `device_status__isw`: No description
+    - `device_status__n`: No description
+    - `device_status__nic`: No description
+    - `device_status__nie`: No description
+    - `device_status__niew`: No description
+    - `device_status__nisw`: No description
+    - `device_type`: Device type (model)
+    - `device_type__n`: Device type (model)
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `discovered`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: Location (slug)
+    - `location__n`: Location (slug)
+    - `location_id`: Location (ID)
+    - `location_id__n`: Location (ID)
+    - `manufacturer`: Manufacturer (slug)
+    - `manufacturer__n`: Manufacturer (slug)
+    - `manufacturer_id`: Manufacturer (ID)
+    - `manufacturer_id__n`: Manufacturer (ID)
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `parent_id`: Parent inventory item (ID)
+    - `parent_id__n`: Parent inventory item (ID)
+    - `part_id`: No description
+    - `part_id__empty`: No description
+    - `part_id__ic`: No description
+    - `part_id__ie`: No description
+    - `part_id__iew`: No description
+    - `part_id__isw`: No description
+    - `part_id__n`: No description
+    - `part_id__nic`: No description
+    - `part_id__nie`: No description
+    - `part_id__niew`: No description
+    - `part_id__nisw`: No description
+    - `q`: Search
+    - `rack`: Rack (name)
+    - `rack__n`: Rack (name)
+    - `rack_id`: Rack (ID)
+    - `rack_id__n`: Rack (ID)
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `role`: Role (slug)
+    - `role__n`: Role (slug)
+    - `role_id`: Role (ID)
+    - `role_id__n`: Role (ID)
+    - `serial`: No description
+    - `serial__empty`: No description
+    - `serial__ic`: No description
+    - `serial__ie`: No description
+    - `serial__iew`: No description
+    - `serial__isw`: No description
+    - `serial__n`: No description
+    - `serial__nic`: No description
+    - `serial__nie`: No description
+    - `serial__niew`: No description
+    - `serial__nisw`: No description
+    - `site`: Site name (slug)
+    - `site__n`: Site name (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+    - `virtual_chassis`: Virtual Chassis
+    - `virtual_chassis__n`: Virtual Chassis
+    - `virtual_chassis_id`: Virtual Chassis (ID)
+    - `virtual_chassis_id__n`: Virtual Chassis (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/inventory-items/**
+  - Post a list of inventory item objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/inventory-items/**
+  - Put a list of inventory item objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/inventory-items/**
+  - Patch a list of inventory item objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/inventory-items/**
+  - Delete a list of inventory item objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/inventory-items/{id}/**
+  - Get a inventory item object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this inventory item.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/inventory-items/{id}/**
+  - Put a inventory item object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this inventory item.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/inventory-items/{id}/**
+  - Patch a inventory item object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this inventory item.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/inventory-items/{id}/**
+  - Delete a inventory item object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this inventory item.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/locations/**
+  - Get a list of location objects.
+  - **Parameters:**
+    - `ancestor`: No description
+    - `ancestor__n`: No description
+    - `ancestor_id`: No description
+    - `ancestor_id__n`: No description
+    - `contact`: Contact
+    - `contact__n`: Contact
+    - `contact_group`: No description
+    - `contact_group__n`: No description
+    - `contact_role`: Contact Role
+    - `contact_role__n`: Contact Role
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `facility`: No description
+    - `facility__empty`: No description
+    - `facility__ic`: No description
+    - `facility__ie`: No description
+    - `facility__iew`: No description
+    - `facility__isw`: No description
+    - `facility__n`: No description
+    - `facility__nic`: No description
+    - `facility__nie`: No description
+    - `facility__niew`: No description
+    - `facility__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `parent`: Parent location (slug)
+    - `parent__n`: Parent location (slug)
+    - `parent_id`: Parent location (ID)
+    - `parent_id__n`: Parent location (ID)
+    - `q`: Search
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site (slug)
+    - `site__n`: Site (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/locations/**
+  - Post a list of location objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/locations/**
+  - Put a list of location objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/locations/**
+  - Patch a list of location objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/locations/**
+  - Delete a list of location objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/locations/{id}/**
+  - Get a location object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this location.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/locations/{id}/**
+  - Put a location object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this location.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/locations/{id}/**
+  - Patch a location object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this location.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/locations/{id}/**
+  - Delete a location object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this location.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/mac-addresses/**
+  - Get a list of MAC address objects.
+  - **Parameters:**
+    - `assigned_object_id`: No description
+    - `assigned_object_id__empty`: No description
+    - `assigned_object_id__gt`: No description
+    - `assigned_object_id__gte`: No description
+    - `assigned_object_id__lt`: No description
+    - `assigned_object_id__lte`: No description
+    - `assigned_object_id__n`: No description
+    - `assigned_object_type`: No description
+    - `assigned_object_type__n`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: No description
+    - `device_id`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `interface`: Interface (name)
+    - `interface__n`: Interface (name)
+    - `interface_id`: Interface (ID)
+    - `interface_id__n`: Interface (ID)
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `mac_address`: No description
+    - `mac_address__ic`: No description
+    - `mac_address__ie`: No description
+    - `mac_address__iew`: No description
+    - `mac_address__isw`: No description
+    - `mac_address__n`: No description
+    - `mac_address__nic`: No description
+    - `mac_address__nie`: No description
+    - `mac_address__niew`: No description
+    - `mac_address__nisw`: No description
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+    - `virtual_machine`: No description
+    - `virtual_machine_id`: No description
+    - `vminterface`: VM interface (name)
+    - `vminterface__n`: VM interface (name)
+    - `vminterface_id`: VM interface (ID)
+    - `vminterface_id__n`: VM interface (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/mac-addresses/**
+  - Post a list of MAC address objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/mac-addresses/**
+  - Put a list of MAC address objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/mac-addresses/**
+  - Patch a list of MAC address objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/mac-addresses/**
+  - Delete a list of MAC address objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/mac-addresses/{id}/**
+  - Get a MAC address object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this MAC address.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/mac-addresses/{id}/**
+  - Put a MAC address object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this MAC address.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/mac-addresses/{id}/**
+  - Patch a MAC address object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this MAC address.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/mac-addresses/{id}/**
+  - Delete a MAC address object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this MAC address.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/manufacturers/**
+  - Get a list of manufacturer objects.
+  - **Parameters:**
+    - `contact`: Contact
+    - `contact__n`: Contact
+    - `contact_group`: No description
+    - `contact_group__n`: No description
+    - `contact_role`: Contact Role
+    - `contact_role__n`: Contact Role
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/manufacturers/**
+  - Post a list of manufacturer objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/manufacturers/**
+  - Put a list of manufacturer objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/manufacturers/**
+  - Patch a list of manufacturer objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/manufacturers/**
+  - Delete a list of manufacturer objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/manufacturers/{id}/**
+  - Get a manufacturer object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this manufacturer.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/manufacturers/{id}/**
+  - Put a manufacturer object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this manufacturer.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/manufacturers/{id}/**
+  - Patch a manufacturer object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this manufacturer.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/manufacturers/{id}/**
+  - Delete a manufacturer object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this manufacturer.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/module-bay-templates/**
+  - Get a list of module bay template objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `module_type_id`: Module type (ID)
+    - `module_type_id__n`: Module type (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `position`: No description
+    - `position__empty`: No description
+    - `position__ic`: No description
+    - `position__ie`: No description
+    - `position__iew`: No description
+    - `position__isw`: No description
+    - `position__n`: No description
+    - `position__nic`: No description
+    - `position__nie`: No description
+    - `position__niew`: No description
+    - `position__nisw`: No description
+    - `q`: Search
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/module-bay-templates/**
+  - Post a list of module bay template objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/module-bay-templates/**
+  - Put a list of module bay template objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/module-bay-templates/**
+  - Patch a list of module bay template objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/module-bay-templates/**
+  - Delete a list of module bay template objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/module-bay-templates/{id}/**
+  - Get a module bay template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this module bay template.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/module-bay-templates/{id}/**
+  - Put a module bay template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this module bay template.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/module-bay-templates/{id}/**
+  - Patch a module bay template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this module bay template.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/module-bay-templates/{id}/**
+  - Delete a module bay template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this module bay template.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/module-bays/**
+  - Get a list of module bay objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: Device (name)
+    - `device__n`: Device (name)
+    - `device_id`: Device (ID)
+    - `device_id__n`: Device (ID)
+    - `device_role`: Device role (slug)
+    - `device_role__n`: Device role (slug)
+    - `device_role_id`: Device role (ID)
+    - `device_role_id__n`: Device role (ID)
+    - `device_status`: No description
+    - `device_status__empty`: No description
+    - `device_status__ic`: No description
+    - `device_status__ie`: No description
+    - `device_status__iew`: No description
+    - `device_status__isw`: No description
+    - `device_status__n`: No description
+    - `device_status__nic`: No description
+    - `device_status__nie`: No description
+    - `device_status__niew`: No description
+    - `device_status__nisw`: No description
+    - `device_type`: Device type (model)
+    - `device_type__n`: Device type (model)
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `installed_module_id`: Installed module (ID)
+    - `installed_module_id__n`: Installed module (ID)
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: Location (slug)
+    - `location__n`: Location (slug)
+    - `location_id`: Location (ID)
+    - `location_id__n`: Location (ID)
+    - `modified_by_request`: No description
+    - `module_id`: Module (ID)
+    - `module_id__n`: Module (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `parent_id`: Parent module bay (ID)
+    - `parent_id__n`: Parent module bay (ID)
+    - `position`: No description
+    - `position__empty`: No description
+    - `position__ic`: No description
+    - `position__ie`: No description
+    - `position__iew`: No description
+    - `position__isw`: No description
+    - `position__n`: No description
+    - `position__nic`: No description
+    - `position__nie`: No description
+    - `position__niew`: No description
+    - `position__nisw`: No description
+    - `q`: Search
+    - `rack`: Rack (name)
+    - `rack__n`: Rack (name)
+    - `rack_id`: Rack (ID)
+    - `rack_id__n`: Rack (ID)
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site name (slug)
+    - `site__n`: Site name (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+    - `virtual_chassis`: Virtual Chassis
+    - `virtual_chassis__n`: Virtual Chassis
+    - `virtual_chassis_id`: Virtual Chassis (ID)
+    - `virtual_chassis_id__n`: Virtual Chassis (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/module-bays/**
+  - Post a list of module bay objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/module-bays/**
+  - Put a list of module bay objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/module-bays/**
+  - Patch a list of module bay objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/module-bays/**
+  - Delete a list of module bay objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/module-bays/{id}/**
+  - Get a module bay object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this module bay.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/module-bays/{id}/**
+  - Put a module bay object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this module bay.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/module-bays/{id}/**
+  - Patch a module bay object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this module bay.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/module-bays/{id}/**
+  - Delete a module bay object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this module bay.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/module-types/**
+  - Get a list of module type objects.
+  - **Parameters:**
+    - `airflow`: * `front-to-rear` - Front to rear
+* `rear-to-front` - Rear to front
+* `left-to-right` - Left to right
+* `right-to-left` - Right to left
+* `side-to-rear` - Side to rear
+* `passive` - Passive
+    - `console_ports`: Has console ports
+    - `console_server_ports`: Has console server ports
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `interfaces`: Has interfaces
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `manufacturer`: Manufacturer (slug)
+    - `manufacturer__n`: Manufacturer (slug)
+    - `manufacturer_id`: Manufacturer (ID)
+    - `manufacturer_id__n`: Manufacturer (ID)
+    - `model`: No description
+    - `model__empty`: No description
+    - `model__ic`: No description
+    - `model__ie`: No description
+    - `model__iew`: No description
+    - `model__isw`: No description
+    - `model__n`: No description
+    - `model__nic`: No description
+    - `model__nie`: No description
+    - `model__niew`: No description
+    - `model__nisw`: No description
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `part_number`: No description
+    - `part_number__empty`: No description
+    - `part_number__ic`: No description
+    - `part_number__ie`: No description
+    - `part_number__iew`: No description
+    - `part_number__isw`: No description
+    - `part_number__n`: No description
+    - `part_number__nic`: No description
+    - `part_number__nie`: No description
+    - `part_number__niew`: No description
+    - `part_number__nisw`: No description
+    - `pass_through_ports`: Has pass-through ports
+    - `power_outlets`: Has power outlets
+    - `power_ports`: Has power ports
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+    - `weight`: No description
+    - `weight__empty`: No description
+    - `weight__gt`: No description
+    - `weight__gte`: No description
+    - `weight__lt`: No description
+    - `weight__lte`: No description
+    - `weight__n`: No description
+    - `weight_unit`: * `kg` - Kilograms
+* `g` - Grams
+* `lb` - Pounds
+* `oz` - Ounces
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/module-types/**
+  - Post a list of module type objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/module-types/**
+  - Put a list of module type objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/module-types/**
+  - Patch a list of module type objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/module-types/**
+  - Delete a list of module type objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/module-types/{id}/**
+  - Get a module type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this module type.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/module-types/{id}/**
+  - Put a module type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this module type.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/module-types/{id}/**
+  - Patch a module type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this module type.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/module-types/{id}/**
+  - Delete a module type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this module type.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/modules/**
+  - Get a list of module objects.
+  - **Parameters:**
+    - `asset_tag`: No description
+    - `asset_tag__empty`: No description
+    - `asset_tag__ic`: No description
+    - `asset_tag__ie`: No description
+    - `asset_tag__iew`: No description
+    - `asset_tag__isw`: No description
+    - `asset_tag__n`: No description
+    - `asset_tag__nic`: No description
+    - `asset_tag__nie`: No description
+    - `asset_tag__niew`: No description
+    - `asset_tag__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device_id`: Device (ID)
+    - `device_id__n`: Device (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `manufacturer`: Manufacturer (slug)
+    - `manufacturer__n`: Manufacturer (slug)
+    - `manufacturer_id`: Manufacturer (ID)
+    - `manufacturer_id__n`: Manufacturer (ID)
+    - `modified_by_request`: No description
+    - `module_bay_id`: No description
+    - `module_bay_id__n`: No description
+    - `module_type`: Module type (model)
+    - `module_type__n`: Module type (model)
+    - `module_type_id`: Module type (ID)
+    - `module_type_id__n`: Module type (ID)
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `serial`: No description
+    - `serial__empty`: No description
+    - `serial__ic`: No description
+    - `serial__ie`: No description
+    - `serial__iew`: No description
+    - `serial__isw`: No description
+    - `serial__n`: No description
+    - `serial__nic`: No description
+    - `serial__nie`: No description
+    - `serial__niew`: No description
+    - `serial__nisw`: No description
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/modules/**
+  - Post a list of module objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/modules/**
+  - Put a list of module objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/modules/**
+  - Patch a list of module objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/modules/**
+  - Delete a list of module objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/modules/{id}/**
+  - Get a module object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this module.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/modules/{id}/**
+  - Put a module object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this module.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/modules/{id}/**
+  - Patch a module object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this module.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/modules/{id}/**
+  - Delete a module object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this module.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/platforms/**
+  - Get a list of platform objects.
+  - **Parameters:**
+    - `available_for_device_type`: No description
+    - `config_template_id`: Config template (ID)
+    - `config_template_id__n`: Config template (ID)
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `manufacturer`: Manufacturer (slug)
+    - `manufacturer__n`: Manufacturer (slug)
+    - `manufacturer_id`: Manufacturer (ID)
+    - `manufacturer_id__n`: Manufacturer (ID)
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/platforms/**
+  - Post a list of platform objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/platforms/**
+  - Put a list of platform objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/platforms/**
+  - Patch a list of platform objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/platforms/**
+  - Delete a list of platform objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/platforms/{id}/**
+  - Get a platform object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this platform.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/platforms/{id}/**
+  - Put a platform object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this platform.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/platforms/{id}/**
+  - Patch a platform object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this platform.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/platforms/{id}/**
+  - Delete a platform object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this platform.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/power-feeds/**
+  - Get a list of power feed objects.
+  - **Parameters:**
+    - `amperage`: No description
+    - `amperage__empty`: No description
+    - `amperage__gt`: No description
+    - `amperage__gte`: No description
+    - `amperage__lt`: No description
+    - `amperage__lte`: No description
+    - `amperage__n`: No description
+    - `available_power`: No description
+    - `available_power__empty`: No description
+    - `available_power__gt`: No description
+    - `available_power__gte`: No description
+    - `available_power__lt`: No description
+    - `available_power__lte`: No description
+    - `available_power__n`: No description
+    - `cable_end`: * `A` - A
+* `B` - B
+    - `cable_id`: Cable (ID)
+    - `cable_id__n`: Cable (ID)
+    - `cabled`: No description
+    - `connected`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `mark_connected`: No description
+    - `max_utilization`: No description
+    - `max_utilization__empty`: No description
+    - `max_utilization__gt`: No description
+    - `max_utilization__gte`: No description
+    - `max_utilization__lt`: No description
+    - `max_utilization__lte`: No description
+    - `max_utilization__n`: No description
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `occupied`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `phase`: * `single-phase` - Single phase
+* `three-phase` - Three-phase
+    - `power_panel_id`: Power panel (ID)
+    - `power_panel_id__n`: Power panel (ID)
+    - `q`: Search
+    - `rack_id`: Rack (ID)
+    - `rack_id__n`: Rack (ID)
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site name (slug)
+    - `site__n`: Site name (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `supply`: * `ac` - AC
+* `dc` - DC
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `type`: * `primary` - Primary
+* `redundant` - Redundant
+    - `updated_by_request`: No description
+    - `voltage`: No description
+    - `voltage__empty`: No description
+    - `voltage__gt`: No description
+    - `voltage__gte`: No description
+    - `voltage__lt`: No description
+    - `voltage__lte`: No description
+    - `voltage__n`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/power-feeds/**
+  - Post a list of power feed objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/power-feeds/**
+  - Put a list of power feed objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/power-feeds/**
+  - Patch a list of power feed objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/power-feeds/**
+  - Delete a list of power feed objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/power-feeds/{id}/**
+  - Get a power feed object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power feed.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/power-feeds/{id}/**
+  - Put a power feed object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power feed.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/power-feeds/{id}/**
+  - Patch a power feed object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power feed.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/power-feeds/{id}/**
+  - Delete a power feed object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power feed.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/power-feeds/{id}/trace/**
+  - Trace a complete cable path and return each segment as a three-tuple of (termination, cable, termination).
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power feed.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/dcim/power-outlet-templates/**
+  - Get a list of power outlet template objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `feed_leg`: Phase (for three-phase feeds)
+    - `feed_leg__empty`: No description
+    - `feed_leg__ic`: Phase (for three-phase feeds)
+    - `feed_leg__ie`: Phase (for three-phase feeds)
+    - `feed_leg__iew`: Phase (for three-phase feeds)
+    - `feed_leg__isw`: Phase (for three-phase feeds)
+    - `feed_leg__n`: Phase (for three-phase feeds)
+    - `feed_leg__nic`: Phase (for three-phase feeds)
+    - `feed_leg__nie`: Phase (for three-phase feeds)
+    - `feed_leg__niew`: Phase (for three-phase feeds)
+    - `feed_leg__nisw`: Phase (for three-phase feeds)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `module_type_id`: Module type (ID)
+    - `module_type_id__n`: Module type (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `power_port_id`: Power port (ID)
+    - `power_port_id__n`: Power port (ID)
+    - `q`: Search
+    - `type`: * `IEC 60320` - [('iec-60320-c5', 'C5'), ('iec-60320-c7', 'C7'), ('iec-60320-c13', 'C13'), ('iec-60320-c15', 'C15'), ('iec-60320-c19', 'C19'), ('iec-60320-c21', 'C21')]
+* `IEC 60309` - [('iec-60309-p-n-e-4h', 'P+N+E 4H'), ('iec-60309-p-n-e-6h', 'P+N+E 6H'), ('iec-60309-p-n-e-9h', 'P+N+E 9H'), ('iec-60309-2p-e-4h', '2P+E 4H'), ('iec-60309-2p-e-6h', '2P+E 6H'), ('iec-60309-2p-e-9h', '2P+E 9H'), ('iec-60309-3p-e-4h', '3P+E 4H'), ('iec-60309-3p-e-6h', '3P+E 6H'), ('iec-60309-3p-e-9h', '3P+E 9H'), ('iec-60309-3p-n-e-4h', '3P+N+E 4H'), ('iec-60309-3p-n-e-6h', '3P+N+E 6H'), ('iec-60309-3p-n-e-9h', '3P+N+E 9H')]
+* `IEC 60906-1` - [('iec-60906-1', 'IEC 60906-1'), ('nbr-14136-10a', '2P+T 10A (NBR 14136)'), ('nbr-14136-20a', '2P+T 20A (NBR 14136)')]
+* `NEMA (Non-locking)` - [('nema-1-15r', 'NEMA 1-15R'), ('nema-5-15r', 'NEMA 5-15R'), ('nema-5-20r', 'NEMA 5-20R'), ('nema-5-30r', 'NEMA 5-30R'), ('nema-5-50r', 'NEMA 5-50R'), ('nema-6-15r', 'NEMA 6-15R'), ('nema-6-20r', 'NEMA 6-20R'), ('nema-6-30r', 'NEMA 6-30R'), ('nema-6-50r', 'NEMA 6-50R'), ('nema-10-30r', 'NEMA 10-30R'), ('nema-10-50r', 'NEMA 10-50R'), ('nema-14-20r', 'NEMA 14-20R'), ('nema-14-30r', 'NEMA 14-30R'), ('nema-14-50r', 'NEMA 14-50R'), ('nema-14-60r', 'NEMA 14-60R'), ('nema-15-15r', 'NEMA 15-15R'), ('nema-15-20r', 'NEMA 15-20R'), ('nema-15-30r', 'NEMA 15-30R'), ('nema-15-50r', 'NEMA 15-50R'), ('nema-15-60r', 'NEMA 15-60R')]
+* `NEMA (Locking)` - [('nema-l1-15r', 'NEMA L1-15R'), ('nema-l5-15r', 'NEMA L5-15R'), ('nema-l5-20r', 'NEMA L5-20R'), ('nema-l5-30r', 'NEMA L5-30R'), ('nema-l5-50r', 'NEMA L5-50R'), ('nema-l6-15r', 'NEMA L6-15R'), ('nema-l6-20r', 'NEMA L6-20R'), ('nema-l6-30r', 'NEMA L6-30R'), ('nema-l6-50r', 'NEMA L6-50R'), ('nema-l10-30r', 'NEMA L10-30R'), ('nema-l14-20r', 'NEMA L14-20R'), ('nema-l14-30r', 'NEMA L14-30R'), ('nema-l14-50r', 'NEMA L14-50R'), ('nema-l14-60r', 'NEMA L14-60R'), ('nema-l15-20r', 'NEMA L15-20R'), ('nema-l15-30r', 'NEMA L15-30R'), ('nema-l15-50r', 'NEMA L15-50R'), ('nema-l15-60r', 'NEMA L15-60R'), ('nema-l21-20r', 'NEMA L21-20R'), ('nema-l21-30r', 'NEMA L21-30R'), ('nema-l22-20r', 'NEMA L22-20R'), ('nema-l22-30r', 'NEMA L22-30R')]
+* `California Style` - [('CS6360C', 'CS6360C'), ('CS6364C', 'CS6364C'), ('CS8164C', 'CS8164C'), ('CS8264C', 'CS8264C'), ('CS8364C', 'CS8364C'), ('CS8464C', 'CS8464C')]
+* `ITA/International` - [('ita-e', 'ITA Type E (CEE 7/5)'), ('ita-f', 'ITA Type F (CEE 7/3)'), ('ita-g', 'ITA Type G (BS 1363)'), ('ita-h', 'ITA Type H'), ('ita-i', 'ITA Type I'), ('ita-j', 'ITA Type J'), ('ita-k', 'ITA Type K'), ('ita-l', 'ITA Type L (CEI 23-50)'), ('ita-m', 'ITA Type M (BS 546)'), ('ita-n', 'ITA Type N'), ('ita-o', 'ITA Type O'), ('ita-multistandard', 'ITA Multistandard')]
+* `USB` - [('usb-a', 'USB Type A'), ('usb-micro-b', 'USB Micro B'), ('usb-c', 'USB Type C')]
+* `Molex` - [('molex-micro-fit-1x2', 'Molex Micro-Fit 1x2'), ('molex-micro-fit-2x2', 'Molex Micro-Fit 2x2'), ('molex-micro-fit-2x4', 'Molex Micro-Fit 2x4')]
+* `DC` - [('dc-terminal', 'DC Terminal')]
+* `Proprietary` - [('eaton-c39', 'Eaton C39'), ('hdot-cx', 'HDOT Cx'), ('saf-d-grid', 'Saf-D-Grid'), ('neutrik-powercon-20a', 'Neutrik powerCON (20A)'), ('neutrik-powercon-32a', 'Neutrik powerCON (32A)'), ('neutrik-powercon-true1', 'Neutrik powerCON TRUE1'), ('neutrik-powercon-true1-top', 'Neutrik powerCON TRUE1 TOP'), ('ubiquiti-smartpower', 'Ubiquiti SmartPower')]
+* `Other` - [('hardwired', 'Hardwired'), ('other', 'Other')]
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/power-outlet-templates/**
+  - Post a list of power outlet template objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/power-outlet-templates/**
+  - Put a list of power outlet template objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/power-outlet-templates/**
+  - Patch a list of power outlet template objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/power-outlet-templates/**
+  - Delete a list of power outlet template objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/power-outlet-templates/{id}/**
+  - Get a power outlet template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power outlet template.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/power-outlet-templates/{id}/**
+  - Put a power outlet template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power outlet template.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/power-outlet-templates/{id}/**
+  - Patch a power outlet template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power outlet template.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/power-outlet-templates/{id}/**
+  - Delete a power outlet template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power outlet template.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/power-outlets/**
+  - Get a list of power outlet objects.
+  - **Parameters:**
+    - `cable_end`: * `A` - A
+* `B` - B
+    - `cable_id`: Cable (ID)
+    - `cable_id__n`: Cable (ID)
+    - `cabled`: No description
+    - `color`: No description
+    - `color__empty`: No description
+    - `color__ic`: No description
+    - `color__ie`: No description
+    - `color__iew`: No description
+    - `color__isw`: No description
+    - `color__n`: No description
+    - `color__nic`: No description
+    - `color__nie`: No description
+    - `color__niew`: No description
+    - `color__nisw`: No description
+    - `connected`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: Device (name)
+    - `device__n`: Device (name)
+    - `device_id`: Device (ID)
+    - `device_id__n`: Device (ID)
+    - `device_role`: Device role (slug)
+    - `device_role__n`: Device role (slug)
+    - `device_role_id`: Device role (ID)
+    - `device_role_id__n`: Device role (ID)
+    - `device_status`: No description
+    - `device_status__empty`: No description
+    - `device_status__ic`: No description
+    - `device_status__ie`: No description
+    - `device_status__iew`: No description
+    - `device_status__isw`: No description
+    - `device_status__n`: No description
+    - `device_status__nic`: No description
+    - `device_status__nie`: No description
+    - `device_status__niew`: No description
+    - `device_status__nisw`: No description
+    - `device_type`: Device type (model)
+    - `device_type__n`: Device type (model)
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `feed_leg`: Phase (for three-phase feeds)
+    - `feed_leg__empty`: No description
+    - `feed_leg__ic`: Phase (for three-phase feeds)
+    - `feed_leg__ie`: Phase (for three-phase feeds)
+    - `feed_leg__iew`: Phase (for three-phase feeds)
+    - `feed_leg__isw`: Phase (for three-phase feeds)
+    - `feed_leg__n`: Phase (for three-phase feeds)
+    - `feed_leg__nic`: Phase (for three-phase feeds)
+    - `feed_leg__nie`: Phase (for three-phase feeds)
+    - `feed_leg__niew`: Phase (for three-phase feeds)
+    - `feed_leg__nisw`: Phase (for three-phase feeds)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: Location (slug)
+    - `location__n`: Location (slug)
+    - `location_id`: Location (ID)
+    - `location_id__n`: Location (ID)
+    - `mark_connected`: No description
+    - `modified_by_request`: No description
+    - `module_id`: Module (ID)
+    - `module_id__n`: Module (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `occupied`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `power_port_id`: Power port (ID)
+    - `power_port_id__n`: Power port (ID)
+    - `q`: Search
+    - `rack`: Rack (name)
+    - `rack__n`: Rack (name)
+    - `rack_id`: Rack (ID)
+    - `rack_id__n`: Rack (ID)
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site name (slug)
+    - `site__n`: Site name (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `tag`: No description
+    - `tag__n`: No description
+    - `type`: Physical port type
+    - `type__empty`: No description
+    - `type__ic`: Physical port type
+    - `type__ie`: Physical port type
+    - `type__iew`: Physical port type
+    - `type__isw`: Physical port type
+    - `type__n`: Physical port type
+    - `type__nic`: Physical port type
+    - `type__nie`: Physical port type
+    - `type__niew`: Physical port type
+    - `type__nisw`: Physical port type
+    - `updated_by_request`: No description
+    - `virtual_chassis`: Virtual Chassis
+    - `virtual_chassis__n`: Virtual Chassis
+    - `virtual_chassis_id`: Virtual Chassis (ID)
+    - `virtual_chassis_id__n`: Virtual Chassis (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/power-outlets/**
+  - Post a list of power outlet objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/power-outlets/**
+  - Put a list of power outlet objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/power-outlets/**
+  - Patch a list of power outlet objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/power-outlets/**
+  - Delete a list of power outlet objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/power-outlets/{id}/**
+  - Get a power outlet object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power outlet.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/power-outlets/{id}/**
+  - Put a power outlet object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power outlet.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/power-outlets/{id}/**
+  - Patch a power outlet object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power outlet.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/power-outlets/{id}/**
+  - Delete a power outlet object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power outlet.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/power-outlets/{id}/trace/**
+  - Trace a complete cable path and return each segment as a three-tuple of (termination, cable, termination).
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power outlet.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/dcim/power-panels/**
+  - Get a list of power panel objects.
+  - **Parameters:**
+    - `contact`: Contact
+    - `contact__n`: Contact
+    - `contact_group`: No description
+    - `contact_group__n`: No description
+    - `contact_role`: Contact Role
+    - `contact_role__n`: Contact Role
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location_id`: No description
+    - `location_id__n`: No description
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site name (slug)
+    - `site__n`: Site name (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/power-panels/**
+  - Post a list of power panel objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/power-panels/**
+  - Put a list of power panel objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/power-panels/**
+  - Patch a list of power panel objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/power-panels/**
+  - Delete a list of power panel objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/power-panels/{id}/**
+  - Get a power panel object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power panel.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/power-panels/{id}/**
+  - Put a power panel object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power panel.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/power-panels/{id}/**
+  - Patch a power panel object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power panel.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/power-panels/{id}/**
+  - Delete a power panel object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power panel.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/power-port-templates/**
+  - Get a list of power port template objects.
+  - **Parameters:**
+    - `allocated_draw`: No description
+    - `allocated_draw__empty`: No description
+    - `allocated_draw__gt`: No description
+    - `allocated_draw__gte`: No description
+    - `allocated_draw__lt`: No description
+    - `allocated_draw__lte`: No description
+    - `allocated_draw__n`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `maximum_draw`: No description
+    - `maximum_draw__empty`: No description
+    - `maximum_draw__gt`: No description
+    - `maximum_draw__gte`: No description
+    - `maximum_draw__lt`: No description
+    - `maximum_draw__lte`: No description
+    - `maximum_draw__n`: No description
+    - `modified_by_request`: No description
+    - `module_type_id`: Module type (ID)
+    - `module_type_id__n`: Module type (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `type`: * `IEC 60320` - [('iec-60320-c6', 'C6'), ('iec-60320-c8', 'C8'), ('iec-60320-c14', 'C14'), ('iec-60320-c16', 'C16'), ('iec-60320-c20', 'C20'), ('iec-60320-c22', 'C22')]
+* `IEC 60309` - [('iec-60309-p-n-e-4h', 'P+N+E 4H'), ('iec-60309-p-n-e-6h', 'P+N+E 6H'), ('iec-60309-p-n-e-9h', 'P+N+E 9H'), ('iec-60309-2p-e-4h', '2P+E 4H'), ('iec-60309-2p-e-6h', '2P+E 6H'), ('iec-60309-2p-e-9h', '2P+E 9H'), ('iec-60309-3p-e-4h', '3P+E 4H'), ('iec-60309-3p-e-6h', '3P+E 6H'), ('iec-60309-3p-e-9h', '3P+E 9H'), ('iec-60309-3p-n-e-4h', '3P+N+E 4H'), ('iec-60309-3p-n-e-6h', '3P+N+E 6H'), ('iec-60309-3p-n-e-9h', '3P+N+E 9H')]
+* `IEC 60906-1` - [('iec-60906-1', 'IEC 60906-1'), ('nbr-14136-10a', '2P+T 10A (NBR 14136)'), ('nbr-14136-20a', '2P+T 20A (NBR 14136)')]
+* `NEMA (Non-locking)` - [('nema-1-15p', 'NEMA 1-15P'), ('nema-5-15p', 'NEMA 5-15P'), ('nema-5-20p', 'NEMA 5-20P'), ('nema-5-30p', 'NEMA 5-30P'), ('nema-5-50p', 'NEMA 5-50P'), ('nema-6-15p', 'NEMA 6-15P'), ('nema-6-20p', 'NEMA 6-20P'), ('nema-6-30p', 'NEMA 6-30P'), ('nema-6-50p', 'NEMA 6-50P'), ('nema-10-30p', 'NEMA 10-30P'), ('nema-10-50p', 'NEMA 10-50P'), ('nema-14-20p', 'NEMA 14-20P'), ('nema-14-30p', 'NEMA 14-30P'), ('nema-14-50p', 'NEMA 14-50P'), ('nema-14-60p', 'NEMA 14-60P'), ('nema-15-15p', 'NEMA 15-15P'), ('nema-15-20p', 'NEMA 15-20P'), ('nema-15-30p', 'NEMA 15-30P'), ('nema-15-50p', 'NEMA 15-50P'), ('nema-15-60p', 'NEMA 15-60P')]
+* `NEMA (Locking)` - [('nema-l1-15p', 'NEMA L1-15P'), ('nema-l5-15p', 'NEMA L5-15P'), ('nema-l5-20p', 'NEMA L5-20P'), ('nema-l5-30p', 'NEMA L5-30P'), ('nema-l5-50p', 'NEMA L5-50P'), ('nema-l6-15p', 'NEMA L6-15P'), ('nema-l6-20p', 'NEMA L6-20P'), ('nema-l6-30p', 'NEMA L6-30P'), ('nema-l6-50p', 'NEMA L6-50P'), ('nema-l10-30p', 'NEMA L10-30P'), ('nema-l14-20p', 'NEMA L14-20P'), ('nema-l14-30p', 'NEMA L14-30P'), ('nema-l14-50p', 'NEMA L14-50P'), ('nema-l14-60p', 'NEMA L14-60P'), ('nema-l15-20p', 'NEMA L15-20P'), ('nema-l15-30p', 'NEMA L15-30P'), ('nema-l15-50p', 'NEMA L15-50P'), ('nema-l15-60p', 'NEMA L15-60P'), ('nema-l21-20p', 'NEMA L21-20P'), ('nema-l21-30p', 'NEMA L21-30P'), ('nema-l22-20p', 'NEMA L22-20P'), ('nema-l22-30p', 'NEMA L22-30P')]
+* `California Style` - [('cs6361c', 'CS6361C'), ('cs6365c', 'CS6365C'), ('cs8165c', 'CS8165C'), ('cs8265c', 'CS8265C'), ('cs8365c', 'CS8365C'), ('cs8465c', 'CS8465C')]
+* `International/ITA` - [('ita-c', 'ITA Type C (CEE 7/16)'), ('ita-e', 'ITA Type E (CEE 7/6)'), ('ita-f', 'ITA Type F (CEE 7/4)'), ('ita-ef', 'ITA Type E/F (CEE 7/7)'), ('ita-g', 'ITA Type G (BS 1363)'), ('ita-h', 'ITA Type H'), ('ita-i', 'ITA Type I'), ('ita-j', 'ITA Type J'), ('ita-k', 'ITA Type K'), ('ita-l', 'ITA Type L (CEI 23-50)'), ('ita-m', 'ITA Type M (BS 546)'), ('ita-n', 'ITA Type N'), ('ita-o', 'ITA Type O')]
+* `USB` - [('usb-a', 'USB Type A'), ('usb-b', 'USB Type B'), ('usb-c', 'USB Type C'), ('usb-mini-a', 'USB Mini A'), ('usb-mini-b', 'USB Mini B'), ('usb-micro-a', 'USB Micro A'), ('usb-micro-b', 'USB Micro B'), ('usb-micro-ab', 'USB Micro AB'), ('usb-3-b', 'USB 3.0 Type B'), ('usb-3-micro-b', 'USB 3.0 Micro B')]
+* `Molex` - [('molex-micro-fit-1x2', 'Molex Micro-Fit 1x2'), ('molex-micro-fit-2x2', 'Molex Micro-Fit 2x2'), ('molex-micro-fit-2x4', 'Molex Micro-Fit 2x4')]
+* `DC` - [('dc-terminal', 'DC Terminal')]
+* `Proprietary` - [('saf-d-grid', 'Saf-D-Grid'), ('neutrik-powercon-20', 'Neutrik powerCON (20A)'), ('neutrik-powercon-32', 'Neutrik powerCON (32A)'), ('neutrik-powercon-true1', 'Neutrik powerCON TRUE1'), ('neutrik-powercon-true1-top', 'Neutrik powerCON TRUE1 TOP'), ('ubiquiti-smartpower', 'Ubiquiti SmartPower')]
+* `Other` - [('hardwired', 'Hardwired'), ('other', 'Other')]
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/power-port-templates/**
+  - Post a list of power port template objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/power-port-templates/**
+  - Put a list of power port template objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/power-port-templates/**
+  - Patch a list of power port template objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/power-port-templates/**
+  - Delete a list of power port template objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/power-port-templates/{id}/**
+  - Get a power port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power port template.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/power-port-templates/{id}/**
+  - Put a power port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power port template.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/power-port-templates/{id}/**
+  - Patch a power port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power port template.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/power-port-templates/{id}/**
+  - Delete a power port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power port template.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/power-ports/**
+  - Get a list of power port objects.
+  - **Parameters:**
+    - `allocated_draw`: No description
+    - `allocated_draw__empty`: No description
+    - `allocated_draw__gt`: No description
+    - `allocated_draw__gte`: No description
+    - `allocated_draw__lt`: No description
+    - `allocated_draw__lte`: No description
+    - `allocated_draw__n`: No description
+    - `cable_end`: * `A` - A
+* `B` - B
+    - `cable_id`: Cable (ID)
+    - `cable_id__n`: Cable (ID)
+    - `cabled`: No description
+    - `connected`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: Device (name)
+    - `device__n`: Device (name)
+    - `device_id`: Device (ID)
+    - `device_id__n`: Device (ID)
+    - `device_role`: Device role (slug)
+    - `device_role__n`: Device role (slug)
+    - `device_role_id`: Device role (ID)
+    - `device_role_id__n`: Device role (ID)
+    - `device_status`: No description
+    - `device_status__empty`: No description
+    - `device_status__ic`: No description
+    - `device_status__ie`: No description
+    - `device_status__iew`: No description
+    - `device_status__isw`: No description
+    - `device_status__n`: No description
+    - `device_status__nic`: No description
+    - `device_status__nie`: No description
+    - `device_status__niew`: No description
+    - `device_status__nisw`: No description
+    - `device_type`: Device type (model)
+    - `device_type__n`: Device type (model)
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: Location (slug)
+    - `location__n`: Location (slug)
+    - `location_id`: Location (ID)
+    - `location_id__n`: Location (ID)
+    - `mark_connected`: No description
+    - `maximum_draw`: No description
+    - `maximum_draw__empty`: No description
+    - `maximum_draw__gt`: No description
+    - `maximum_draw__gte`: No description
+    - `maximum_draw__lt`: No description
+    - `maximum_draw__lte`: No description
+    - `maximum_draw__n`: No description
+    - `modified_by_request`: No description
+    - `module_id`: Module (ID)
+    - `module_id__n`: Module (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `occupied`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `rack`: Rack (name)
+    - `rack__n`: Rack (name)
+    - `rack_id`: Rack (ID)
+    - `rack_id__n`: Rack (ID)
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site name (slug)
+    - `site__n`: Site name (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `tag`: No description
+    - `tag__n`: No description
+    - `type`: Physical port type
+    - `type__empty`: No description
+    - `type__ic`: Physical port type
+    - `type__ie`: Physical port type
+    - `type__iew`: Physical port type
+    - `type__isw`: Physical port type
+    - `type__n`: Physical port type
+    - `type__nic`: Physical port type
+    - `type__nie`: Physical port type
+    - `type__niew`: Physical port type
+    - `type__nisw`: Physical port type
+    - `updated_by_request`: No description
+    - `virtual_chassis`: Virtual Chassis
+    - `virtual_chassis__n`: Virtual Chassis
+    - `virtual_chassis_id`: Virtual Chassis (ID)
+    - `virtual_chassis_id__n`: Virtual Chassis (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/power-ports/**
+  - Post a list of power port objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/power-ports/**
+  - Put a list of power port objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/power-ports/**
+  - Patch a list of power port objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/power-ports/**
+  - Delete a list of power port objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/power-ports/{id}/**
+  - Get a power port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power port.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/power-ports/{id}/**
+  - Put a power port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power port.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/power-ports/{id}/**
+  - Patch a power port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power port.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/power-ports/{id}/**
+  - Delete a power port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power port.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/power-ports/{id}/trace/**
+  - Trace a complete cable path and return each segment as a three-tuple of (termination, cable, termination).
+  - **Parameters:**
+    - `id`: A unique integer value identifying this power port.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/dcim/rack-reservations/**
+  - Get a list of rack reservation objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: No description
+    - `location__n`: No description
+    - `location_id`: No description
+    - `location_id__n`: No description
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `rack_id`: Rack (ID)
+    - `rack_id__n`: Rack (ID)
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site (slug)
+    - `site__n`: Site (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `unit`: No description
+    - `updated_by_request`: No description
+    - `user`: User (name)
+    - `user__n`: User (name)
+    - `user_id`: User (ID)
+    - `user_id__n`: User (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/rack-reservations/**
+  - Post a list of rack reservation objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/rack-reservations/**
+  - Put a list of rack reservation objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/rack-reservations/**
+  - Patch a list of rack reservation objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/rack-reservations/**
+  - Delete a list of rack reservation objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/rack-reservations/{id}/**
+  - Get a rack reservation object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rack reservation.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/rack-reservations/{id}/**
+  - Put a rack reservation object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rack reservation.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/rack-reservations/{id}/**
+  - Patch a rack reservation object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rack reservation.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/rack-reservations/{id}/**
+  - Delete a rack reservation object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rack reservation.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/rack-roles/**
+  - Get a list of rack role objects.
+  - **Parameters:**
+    - `color`: No description
+    - `color__empty`: No description
+    - `color__ic`: No description
+    - `color__ie`: No description
+    - `color__iew`: No description
+    - `color__isw`: No description
+    - `color__n`: No description
+    - `color__nic`: No description
+    - `color__nie`: No description
+    - `color__niew`: No description
+    - `color__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/rack-roles/**
+  - Post a list of rack role objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/rack-roles/**
+  - Put a list of rack role objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/rack-roles/**
+  - Patch a list of rack role objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/rack-roles/**
+  - Delete a list of rack role objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/rack-roles/{id}/**
+  - Get a rack role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rack role.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/rack-roles/{id}/**
+  - Put a rack role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rack role.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/rack-roles/{id}/**
+  - Patch a rack role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rack role.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/rack-roles/{id}/**
+  - Delete a rack role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rack role.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/rack-types/**
+  - Get a list of rack type objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `desc_units`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `form_factor`: No description
+    - `form_factor__empty`: No description
+    - `form_factor__ic`: No description
+    - `form_factor__ie`: No description
+    - `form_factor__iew`: No description
+    - `form_factor__isw`: No description
+    - `form_factor__n`: No description
+    - `form_factor__nic`: No description
+    - `form_factor__nie`: No description
+    - `form_factor__niew`: No description
+    - `form_factor__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `manufacturer`: Manufacturer (slug)
+    - `manufacturer__n`: Manufacturer (slug)
+    - `manufacturer_id`: Manufacturer (ID)
+    - `manufacturer_id__n`: Manufacturer (ID)
+    - `max_weight`: No description
+    - `max_weight__empty`: No description
+    - `max_weight__gt`: No description
+    - `max_weight__gte`: No description
+    - `max_weight__lt`: No description
+    - `max_weight__lte`: No description
+    - `max_weight__n`: No description
+    - `model`: No description
+    - `model__empty`: No description
+    - `model__ic`: No description
+    - `model__ie`: No description
+    - `model__iew`: No description
+    - `model__isw`: No description
+    - `model__n`: No description
+    - `model__nic`: No description
+    - `model__nie`: No description
+    - `model__niew`: No description
+    - `model__nisw`: No description
+    - `modified_by_request`: No description
+    - `mounting_depth`: No description
+    - `mounting_depth__empty`: No description
+    - `mounting_depth__gt`: No description
+    - `mounting_depth__gte`: No description
+    - `mounting_depth__lt`: No description
+    - `mounting_depth__lte`: No description
+    - `mounting_depth__n`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `outer_depth`: No description
+    - `outer_depth__empty`: No description
+    - `outer_depth__gt`: No description
+    - `outer_depth__gte`: No description
+    - `outer_depth__lt`: No description
+    - `outer_depth__lte`: No description
+    - `outer_depth__n`: No description
+    - `outer_unit`: * `mm` - Millimeters
+* `in` - Inches
+    - `outer_width`: No description
+    - `outer_width__empty`: No description
+    - `outer_width__gt`: No description
+    - `outer_width__gte`: No description
+    - `outer_width__lt`: No description
+    - `outer_width__lte`: No description
+    - `outer_width__n`: No description
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `starting_unit`: No description
+    - `starting_unit__empty`: No description
+    - `starting_unit__gt`: No description
+    - `starting_unit__gte`: No description
+    - `starting_unit__lt`: No description
+    - `starting_unit__lte`: No description
+    - `starting_unit__n`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `u_height`: No description
+    - `u_height__empty`: No description
+    - `u_height__gt`: No description
+    - `u_height__gte`: No description
+    - `u_height__lt`: No description
+    - `u_height__lte`: No description
+    - `u_height__n`: No description
+    - `updated_by_request`: No description
+    - `weight`: No description
+    - `weight__empty`: No description
+    - `weight__gt`: No description
+    - `weight__gte`: No description
+    - `weight__lt`: No description
+    - `weight__lte`: No description
+    - `weight__n`: No description
+    - `weight_unit`: * `kg` - Kilograms
+* `g` - Grams
+* `lb` - Pounds
+* `oz` - Ounces
+    - `width`: Rail-to-rail width
+    - `width__ic`: Rail-to-rail width
+    - `width__ie`: Rail-to-rail width
+    - `width__iew`: Rail-to-rail width
+    - `width__isw`: Rail-to-rail width
+    - `width__n`: Rail-to-rail width
+    - `width__nic`: Rail-to-rail width
+    - `width__nie`: Rail-to-rail width
+    - `width__niew`: Rail-to-rail width
+    - `width__nisw`: Rail-to-rail width
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/rack-types/**
+  - Post a list of rack type objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/rack-types/**
+  - Put a list of rack type objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/rack-types/**
+  - Patch a list of rack type objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/rack-types/**
+  - Delete a list of rack type objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/rack-types/{id}/**
+  - Get a rack type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rack type.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/rack-types/{id}/**
+  - Put a rack type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rack type.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/rack-types/{id}/**
+  - Patch a rack type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rack type.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/rack-types/{id}/**
+  - Delete a rack type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rack type.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/racks/**
+  - Get a list of rack objects.
+  - **Parameters:**
+    - `airflow`: * `front-to-rear` - Front to rear
+* `rear-to-front` - Rear to front
+    - `asset_tag`: No description
+    - `asset_tag__empty`: No description
+    - `asset_tag__ic`: No description
+    - `asset_tag__ie`: No description
+    - `asset_tag__iew`: No description
+    - `asset_tag__isw`: No description
+    - `asset_tag__n`: No description
+    - `asset_tag__nic`: No description
+    - `asset_tag__nie`: No description
+    - `asset_tag__niew`: No description
+    - `asset_tag__nisw`: No description
+    - `contact`: Contact
+    - `contact__n`: Contact
+    - `contact_group`: No description
+    - `contact_group__n`: No description
+    - `contact_role`: Contact Role
+    - `contact_role__n`: Contact Role
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `desc_units`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `facility_id`: No description
+    - `facility_id__empty`: No description
+    - `facility_id__ic`: No description
+    - `facility_id__ie`: No description
+    - `facility_id__iew`: No description
+    - `facility_id__isw`: No description
+    - `facility_id__n`: No description
+    - `facility_id__nic`: No description
+    - `facility_id__nie`: No description
+    - `facility_id__niew`: No description
+    - `facility_id__nisw`: No description
+    - `form_factor`: No description
+    - `form_factor__empty`: No description
+    - `form_factor__ic`: No description
+    - `form_factor__ie`: No description
+    - `form_factor__iew`: No description
+    - `form_factor__isw`: No description
+    - `form_factor__n`: No description
+    - `form_factor__nic`: No description
+    - `form_factor__nie`: No description
+    - `form_factor__niew`: No description
+    - `form_factor__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: No description
+    - `location__n`: No description
+    - `location_id`: No description
+    - `location_id__n`: No description
+    - `manufacturer`: Manufacturer (slug)
+    - `manufacturer__n`: Manufacturer (slug)
+    - `manufacturer_id`: Manufacturer (ID)
+    - `manufacturer_id__n`: Manufacturer (ID)
+    - `max_weight`: No description
+    - `max_weight__empty`: No description
+    - `max_weight__gt`: No description
+    - `max_weight__gte`: No description
+    - `max_weight__lt`: No description
+    - `max_weight__lte`: No description
+    - `max_weight__n`: No description
+    - `modified_by_request`: No description
+    - `mounting_depth`: No description
+    - `mounting_depth__empty`: No description
+    - `mounting_depth__gt`: No description
+    - `mounting_depth__gte`: No description
+    - `mounting_depth__lt`: No description
+    - `mounting_depth__lte`: No description
+    - `mounting_depth__n`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `outer_depth`: No description
+    - `outer_depth__empty`: No description
+    - `outer_depth__gt`: No description
+    - `outer_depth__gte`: No description
+    - `outer_depth__lt`: No description
+    - `outer_depth__lte`: No description
+    - `outer_depth__n`: No description
+    - `outer_unit`: * `mm` - Millimeters
+* `in` - Inches
+    - `outer_width`: No description
+    - `outer_width__empty`: No description
+    - `outer_width__gt`: No description
+    - `outer_width__gte`: No description
+    - `outer_width__lt`: No description
+    - `outer_width__lte`: No description
+    - `outer_width__n`: No description
+    - `q`: Search
+    - `rack_type`: Rack type (slug)
+    - `rack_type__n`: Rack type (slug)
+    - `rack_type_id`: Rack type (ID)
+    - `rack_type_id__n`: Rack type (ID)
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `role`: Role (slug)
+    - `role__n`: Role (slug)
+    - `role_id`: Role (ID)
+    - `role_id__n`: Role (ID)
+    - `serial`: No description
+    - `serial__empty`: No description
+    - `serial__ic`: No description
+    - `serial__ie`: No description
+    - `serial__iew`: No description
+    - `serial__isw`: No description
+    - `serial__n`: No description
+    - `serial__nic`: No description
+    - `serial__nie`: No description
+    - `serial__niew`: No description
+    - `serial__nisw`: No description
+    - `site`: Site (slug)
+    - `site__n`: Site (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `starting_unit`: No description
+    - `starting_unit__empty`: No description
+    - `starting_unit__gt`: No description
+    - `starting_unit__gte`: No description
+    - `starting_unit__lt`: No description
+    - `starting_unit__lte`: No description
+    - `starting_unit__n`: No description
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `u_height`: No description
+    - `u_height__empty`: No description
+    - `u_height__gt`: No description
+    - `u_height__gte`: No description
+    - `u_height__lt`: No description
+    - `u_height__lte`: No description
+    - `u_height__n`: No description
+    - `updated_by_request`: No description
+    - `weight`: No description
+    - `weight__empty`: No description
+    - `weight__gt`: No description
+    - `weight__gte`: No description
+    - `weight__lt`: No description
+    - `weight__lte`: No description
+    - `weight__n`: No description
+    - `weight_unit`: * `kg` - Kilograms
+* `g` - Grams
+* `lb` - Pounds
+* `oz` - Ounces
+    - `width`: Rail-to-rail width
+    - `width__ic`: Rail-to-rail width
+    - `width__ie`: Rail-to-rail width
+    - `width__iew`: Rail-to-rail width
+    - `width__isw`: Rail-to-rail width
+    - `width__n`: Rail-to-rail width
+    - `width__nic`: Rail-to-rail width
+    - `width__nie`: Rail-to-rail width
+    - `width__niew`: Rail-to-rail width
+    - `width__nisw`: Rail-to-rail width
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/racks/**
+  - Post a list of rack objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/racks/**
+  - Put a list of rack objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/racks/**
+  - Patch a list of rack objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/racks/**
+  - Delete a list of rack objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/racks/{id}/**
+  - Get a rack object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rack.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/racks/{id}/**
+  - Put a rack object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rack.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/racks/{id}/**
+  - Patch a rack object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rack.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/racks/{id}/**
+  - Delete a rack object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rack.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/racks/{id}/elevation/**
+  - Rack elevation representing the list of rack units. Also supports rendering the elevation as an SVG.
+  - **Parameters:**
+    - `exclude`: No description
+    - `expand_devices`: No description
+    - `face`: * `front` - Front
+* `rear` - Rear
+    - `id`: A unique integer value identifying this rack.
+    - `include_images`: No description
+    - `legend_width`: No description
+    - `limit`: Number of results to return per page.
+    - `margin_width`: No description
+    - `offset`: The initial index from which to return the results.
+    - `q`: No description
+    - `render`: * `json` - json
+* `svg` - svg
+    - `unit_height`: No description
+    - `unit_width`: No description
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/dcim/rear-port-templates/**
+  - Get a list of rear port template objects.
+  - **Parameters:**
+    - `color`: No description
+    - `color__empty`: No description
+    - `color__ic`: No description
+    - `color__ie`: No description
+    - `color__iew`: No description
+    - `color__isw`: No description
+    - `color__n`: No description
+    - `color__nic`: No description
+    - `color__nie`: No description
+    - `color__niew`: No description
+    - `color__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `module_type_id`: Module type (ID)
+    - `module_type_id__n`: Module type (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `positions`: No description
+    - `positions__empty`: No description
+    - `positions__gt`: No description
+    - `positions__gte`: No description
+    - `positions__lt`: No description
+    - `positions__lte`: No description
+    - `positions__n`: No description
+    - `q`: Search
+    - `type`: No description
+    - `type__empty`: No description
+    - `type__ic`: No description
+    - `type__ie`: No description
+    - `type__iew`: No description
+    - `type__isw`: No description
+    - `type__n`: No description
+    - `type__nic`: No description
+    - `type__nie`: No description
+    - `type__niew`: No description
+    - `type__nisw`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/rear-port-templates/**
+  - Post a list of rear port template objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/rear-port-templates/**
+  - Put a list of rear port template objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/rear-port-templates/**
+  - Patch a list of rear port template objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/rear-port-templates/**
+  - Delete a list of rear port template objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/rear-port-templates/{id}/**
+  - Get a rear port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rear port template.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/rear-port-templates/{id}/**
+  - Put a rear port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rear port template.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/rear-port-templates/{id}/**
+  - Patch a rear port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rear port template.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/rear-port-templates/{id}/**
+  - Delete a rear port template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rear port template.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/rear-ports/**
+  - Get a list of rear port objects.
+  - **Parameters:**
+    - `cable_end`: * `A` - A
+* `B` - B
+    - `cable_id`: Cable (ID)
+    - `cable_id__n`: Cable (ID)
+    - `cabled`: No description
+    - `color`: No description
+    - `color__empty`: No description
+    - `color__ic`: No description
+    - `color__ie`: No description
+    - `color__iew`: No description
+    - `color__isw`: No description
+    - `color__n`: No description
+    - `color__nic`: No description
+    - `color__nie`: No description
+    - `color__niew`: No description
+    - `color__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: Device (name)
+    - `device__n`: Device (name)
+    - `device_id`: Device (ID)
+    - `device_id__n`: Device (ID)
+    - `device_role`: Device role (slug)
+    - `device_role__n`: Device role (slug)
+    - `device_role_id`: Device role (ID)
+    - `device_role_id__n`: Device role (ID)
+    - `device_status`: No description
+    - `device_status__empty`: No description
+    - `device_status__ic`: No description
+    - `device_status__ie`: No description
+    - `device_status__iew`: No description
+    - `device_status__isw`: No description
+    - `device_status__n`: No description
+    - `device_status__nic`: No description
+    - `device_status__nie`: No description
+    - `device_status__niew`: No description
+    - `device_status__nisw`: No description
+    - `device_type`: Device type (model)
+    - `device_type__n`: Device type (model)
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: Location (slug)
+    - `location__n`: Location (slug)
+    - `location_id`: Location (ID)
+    - `location_id__n`: Location (ID)
+    - `mark_connected`: No description
+    - `modified_by_request`: No description
+    - `module_id`: Module (ID)
+    - `module_id__n`: Module (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `occupied`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `positions`: No description
+    - `positions__empty`: No description
+    - `positions__gt`: No description
+    - `positions__gte`: No description
+    - `positions__lt`: No description
+    - `positions__lte`: No description
+    - `positions__n`: No description
+    - `q`: Search
+    - `rack`: Rack (name)
+    - `rack__n`: Rack (name)
+    - `rack_id`: Rack (ID)
+    - `rack_id__n`: Rack (ID)
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site name (slug)
+    - `site__n`: Site name (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `tag`: No description
+    - `tag__n`: No description
+    - `type`: No description
+    - `type__empty`: No description
+    - `type__ic`: No description
+    - `type__ie`: No description
+    - `type__iew`: No description
+    - `type__isw`: No description
+    - `type__n`: No description
+    - `type__nic`: No description
+    - `type__nie`: No description
+    - `type__niew`: No description
+    - `type__nisw`: No description
+    - `updated_by_request`: No description
+    - `virtual_chassis`: Virtual Chassis
+    - `virtual_chassis__n`: Virtual Chassis
+    - `virtual_chassis_id`: Virtual Chassis (ID)
+    - `virtual_chassis_id__n`: Virtual Chassis (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/rear-ports/**
+  - Post a list of rear port objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/rear-ports/**
+  - Put a list of rear port objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/rear-ports/**
+  - Patch a list of rear port objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/rear-ports/**
+  - Delete a list of rear port objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/rear-ports/{id}/**
+  - Get a rear port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rear port.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/rear-ports/{id}/**
+  - Put a rear port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rear port.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/rear-ports/{id}/**
+  - Patch a rear port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rear port.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/rear-ports/{id}/**
+  - Delete a rear port object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rear port.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/rear-ports/{id}/paths/**
+  - Return all CablePaths which traverse a given pass-through port.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this rear port.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/dcim/regions/**
+  - Get a list of region objects.
+  - **Parameters:**
+    - `ancestor`: No description
+    - `ancestor__n`: No description
+    - `ancestor_id`: No description
+    - `ancestor_id__n`: No description
+    - `contact`: Contact
+    - `contact__n`: Contact
+    - `contact_group`: No description
+    - `contact_group__n`: No description
+    - `contact_role`: Contact Role
+    - `contact_role__n`: Contact Role
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `parent`: Parent region (slug)
+    - `parent__n`: Parent region (slug)
+    - `parent_id`: Parent region (ID)
+    - `parent_id__n`: Parent region (ID)
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/regions/**
+  - Post a list of region objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/regions/**
+  - Put a list of region objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/regions/**
+  - Patch a list of region objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/regions/**
+  - Delete a list of region objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/regions/{id}/**
+  - Get a region object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this region.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/regions/{id}/**
+  - Put a region object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this region.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/regions/{id}/**
+  - Patch a region object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this region.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/regions/{id}/**
+  - Delete a region object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this region.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/site-groups/**
+  - Get a list of site group objects.
+  - **Parameters:**
+    - `ancestor`: No description
+    - `ancestor__n`: No description
+    - `ancestor_id`: No description
+    - `ancestor_id__n`: No description
+    - `contact`: Contact
+    - `contact__n`: Contact
+    - `contact_group`: No description
+    - `contact_group__n`: No description
+    - `contact_role`: Contact Role
+    - `contact_role__n`: Contact Role
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `parent`: Parent site group (slug)
+    - `parent__n`: Parent site group (slug)
+    - `parent_id`: Parent site group (ID)
+    - `parent_id__n`: Parent site group (ID)
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/site-groups/**
+  - Post a list of site group objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/site-groups/**
+  - Put a list of site group objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/site-groups/**
+  - Patch a list of site group objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/site-groups/**
+  - Delete a list of site group objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/site-groups/{id}/**
+  - Get a site group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this site group.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/site-groups/{id}/**
+  - Put a site group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this site group.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/site-groups/{id}/**
+  - Patch a site group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this site group.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/site-groups/{id}/**
+  - Delete a site group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this site group.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/sites/**
+  - Get a list of site objects.
+  - **Parameters:**
+    - `asn`: AS (ID)
+    - `asn__n`: AS (ID)
+    - `asn_id`: AS (ID)
+    - `asn_id__n`: AS (ID)
+    - `contact`: Contact
+    - `contact__n`: Contact
+    - `contact_group`: No description
+    - `contact_group__n`: No description
+    - `contact_role`: Contact Role
+    - `contact_role__n`: Contact Role
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `facility`: No description
+    - `facility__empty`: No description
+    - `facility__ic`: No description
+    - `facility__ie`: No description
+    - `facility__iew`: No description
+    - `facility__isw`: No description
+    - `facility__n`: No description
+    - `facility__nic`: No description
+    - `facility__nie`: No description
+    - `facility__niew`: No description
+    - `facility__nisw`: No description
+    - `group`: No description
+    - `group__n`: No description
+    - `group_id`: No description
+    - `group_id__n`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `latitude`: No description
+    - `latitude__empty`: No description
+    - `latitude__gt`: No description
+    - `latitude__gte`: No description
+    - `latitude__lt`: No description
+    - `latitude__lte`: No description
+    - `latitude__n`: No description
+    - `limit`: Number of results to return per page.
+    - `longitude`: No description
+    - `longitude__empty`: No description
+    - `longitude__gt`: No description
+    - `longitude__gte`: No description
+    - `longitude__lt`: No description
+    - `longitude__lte`: No description
+    - `longitude__n`: No description
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `time_zone`: No description
+    - `time_zone__ic`: No description
+    - `time_zone__ie`: No description
+    - `time_zone__iew`: No description
+    - `time_zone__isw`: No description
+    - `time_zone__n`: No description
+    - `time_zone__nic`: No description
+    - `time_zone__nie`: No description
+    - `time_zone__niew`: No description
+    - `time_zone__nisw`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/sites/**
+  - Post a list of site objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/sites/**
+  - Put a list of site objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/sites/**
+  - Patch a list of site objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/sites/**
+  - Delete a list of site objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/sites/{id}/**
+  - Get a site object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this site.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/sites/{id}/**
+  - Put a site object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this site.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/sites/{id}/**
+  - Patch a site object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this site.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/sites/{id}/**
+  - Delete a site object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this site.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/virtual-chassis/**
+  - Get a list of virtual chassis objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `domain`: No description
+    - `domain__empty`: No description
+    - `domain__ic`: No description
+    - `domain__ie`: No description
+    - `domain__iew`: No description
+    - `domain__isw`: No description
+    - `domain__n`: No description
+    - `domain__nic`: No description
+    - `domain__nie`: No description
+    - `domain__niew`: No description
+    - `domain__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `master`: Master (name)
+    - `master__n`: Master (name)
+    - `master_id`: Master (ID)
+    - `master_id__n`: Master (ID)
+    - `member_count`: No description
+    - `member_count__empty`: No description
+    - `member_count__gt`: No description
+    - `member_count__gte`: No description
+    - `member_count__lt`: No description
+    - `member_count__lte`: No description
+    - `member_count__n`: No description
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site name (slug)
+    - `site__n`: Site name (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/virtual-chassis/**
+  - Post a list of virtual chassis objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/virtual-chassis/**
+  - Put a list of virtual chassis objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/virtual-chassis/**
+  - Patch a list of virtual chassis objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/virtual-chassis/**
+  - Delete a list of virtual chassis objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/virtual-chassis/{id}/**
+  - Get a virtual chassis object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual chassis.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/virtual-chassis/{id}/**
+  - Put a virtual chassis object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual chassis.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/virtual-chassis/{id}/**
+  - Patch a virtual chassis object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual chassis.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/virtual-chassis/{id}/**
+  - Delete a virtual chassis object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual chassis.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/virtual-device-contexts/**
+  - Get a list of virtual device context objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: Device model
+    - `device__n`: Device model
+    - `device_id`: VDC (ID)
+    - `device_id__n`: VDC (ID)
+    - `has_primary_ip`: Has a primary IP
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `identifier`: No description
+    - `identifier__empty`: No description
+    - `identifier__gt`: No description
+    - `identifier__gte`: No description
+    - `identifier__lt`: No description
+    - `identifier__lte`: No description
+    - `identifier__n`: No description
+    - `interface_id`: Interface (ID)
+    - `interface_id__n`: Interface (ID)
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `primary_ip4_id`: Primary IPv4 (ID)
+    - `primary_ip4_id__n`: Primary IPv4 (ID)
+    - `primary_ip6_id`: Primary IPv6 (ID)
+    - `primary_ip6_id__n`: Primary IPv6 (ID)
+    - `q`: Search
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/dcim/virtual-device-contexts/**
+  - Post a list of virtual device context objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/dcim/virtual-device-contexts/**
+  - Put a list of virtual device context objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/virtual-device-contexts/**
+  - Patch a list of virtual device context objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/virtual-device-contexts/**
+  - Delete a list of virtual device context objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/dcim/virtual-device-contexts/{id}/**
+  - Get a virtual device context object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual device context.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/dcim/virtual-device-contexts/{id}/**
+  - Put a virtual device context object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual device context.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/dcim/virtual-device-contexts/{id}/**
+  - Patch a virtual device context object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual device context.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/dcim/virtual-device-contexts/{id}/**
+  - Delete a virtual device context object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual device context.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/bookmarks/**
+  - Get a list of bookmark objects.
+  - **Parameters:**
+    - `created`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `limit`: Number of results to return per page.
+    - `object_id`: No description
+    - `object_id__empty`: No description
+    - `object_id__gt`: No description
+    - `object_id__gte`: No description
+    - `object_id__lt`: No description
+    - `object_id__lte`: No description
+    - `object_id__n`: No description
+    - `object_type`: No description
+    - `object_type__n`: No description
+    - `object_type_id`: No description
+    - `object_type_id__empty`: No description
+    - `object_type_id__gt`: No description
+    - `object_type_id__gte`: No description
+    - `object_type_id__lt`: No description
+    - `object_type_id__lte`: No description
+    - `object_type_id__n`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `user`: User (name)
+    - `user__n`: User (name)
+    - `user_id`: User (ID)
+    - `user_id__n`: User (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/bookmarks/**
+  - Post a list of bookmark objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/extras/bookmarks/**
+  - Put a list of bookmark objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/bookmarks/**
+  - Patch a list of bookmark objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/bookmarks/**
+  - Delete a list of bookmark objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/bookmarks/{id}/**
+  - Get a bookmark object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this bookmark.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/bookmarks/{id}/**
+  - Put a bookmark object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this bookmark.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/bookmarks/{id}/**
+  - Patch a bookmark object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this bookmark.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/bookmarks/{id}/**
+  - Delete a bookmark object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this bookmark.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/config-contexts/**
+  - Get a list of config context objects.
+  - **Parameters:**
+    - `auto_sync_enabled`: No description
+    - `cluster_group`: Cluster group (slug)
+    - `cluster_group__n`: Cluster group (slug)
+    - `cluster_group_id`: Cluster group
+    - `cluster_group_id__n`: Cluster group
+    - `cluster_id`: Cluster
+    - `cluster_id__n`: Cluster
+    - `cluster_type`: Cluster type (slug)
+    - `cluster_type__n`: Cluster type (slug)
+    - `cluster_type_id`: Cluster type
+    - `cluster_type_id__n`: Cluster type
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `data_file_id`: Data file (ID)
+    - `data_file_id__n`: Data file (ID)
+    - `data_source_id`: Data source (ID)
+    - `data_source_id__n`: Data source (ID)
+    - `data_synced`: No description
+    - `data_synced__empty`: No description
+    - `data_synced__gt`: No description
+    - `data_synced__gte`: No description
+    - `data_synced__lt`: No description
+    - `data_synced__lte`: No description
+    - `data_synced__n`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device_role`: Role (slug)
+    - `device_role__n`: Role (slug)
+    - `device_role_id`: Role
+    - `device_role_id__n`: Role
+    - `device_type_id`: Device type
+    - `device_type_id__n`: Device type
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `is_active`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: Location (slug)
+    - `location__n`: Location (slug)
+    - `location_id`: Location
+    - `location_id__n`: Location
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `platform`: Platform (slug)
+    - `platform__n`: Platform (slug)
+    - `platform_id`: Platform
+    - `platform_id__n`: Platform
+    - `q`: Search
+    - `region`: Region (slug)
+    - `region__n`: Region (slug)
+    - `region_id`: Region
+    - `region_id__n`: Region
+    - `site`: Site (slug)
+    - `site__n`: Site (slug)
+    - `site_group`: Site group (slug)
+    - `site_group__n`: Site group (slug)
+    - `site_group_id`: Site group
+    - `site_group_id__n`: Site group
+    - `site_id`: Site
+    - `site_id__n`: Site
+    - `tag`: Tag (slug)
+    - `tag__n`: Tag (slug)
+    - `tag_id`: Tag
+    - `tag_id__n`: Tag
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: Tenant group (slug)
+    - `tenant_group__n`: Tenant group (slug)
+    - `tenant_group_id`: Tenant group
+    - `tenant_group_id__n`: Tenant group
+    - `tenant_id`: Tenant
+    - `tenant_id__n`: Tenant
+    - `updated_by_request`: No description
+    - `weight`: No description
+    - `weight__empty`: No description
+    - `weight__gt`: No description
+    - `weight__gte`: No description
+    - `weight__lt`: No description
+    - `weight__lte`: No description
+    - `weight__n`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/config-contexts/**
+  - Post a list of config context objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/extras/config-contexts/**
+  - Put a list of config context objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/config-contexts/**
+  - Patch a list of config context objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/config-contexts/**
+  - Delete a list of config context objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/config-contexts/{id}/**
+  - Get a config context object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this config context.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/config-contexts/{id}/**
+  - Put a config context object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this config context.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/config-contexts/{id}/**
+  - Patch a config context object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this config context.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/config-contexts/{id}/**
+  - Delete a config context object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this config context.
+  - **Responses:**
+    - `204`: No response body
+
+- **POST /api/extras/config-contexts/{id}/sync/**
+  - Provide a /sync API endpoint to synchronize an object's data from its associated DataFile (if any).
+  - **Parameters:**
+    - `id`: A unique integer value identifying this config context.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/extras/config-templates/**
+  - Get a list of config template objects.
+  - **Parameters:**
+    - `auto_sync_enabled`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `data_file_id`: Data file (ID)
+    - `data_file_id__n`: Data file (ID)
+    - `data_source_id`: Data source (ID)
+    - `data_source_id__n`: Data source (ID)
+    - `data_synced`: No description
+    - `data_synced__empty`: No description
+    - `data_synced__gt`: No description
+    - `data_synced__gte`: No description
+    - `data_synced__lt`: No description
+    - `data_synced__lte`: No description
+    - `data_synced__n`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/config-templates/**
+  - Post a list of config template objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/extras/config-templates/**
+  - Put a list of config template objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/config-templates/**
+  - Patch a list of config template objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/config-templates/**
+  - Delete a list of config template objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/config-templates/{id}/**
+  - Get a config template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this config template.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/config-templates/{id}/**
+  - Put a config template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this config template.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/config-templates/{id}/**
+  - Patch a config template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this config template.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/config-templates/{id}/**
+  - Delete a config template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this config template.
+  - **Responses:**
+    - `204`: No response body
+
+- **POST /api/extras/config-templates/{id}/render/**
+  - Render a ConfigTemplate using the context data provided (if any). If the client requests "text/plain" data,
+  - return the raw rendered content, rather than serialized JSON.
+  - **Parameters:**
+    - `format`: No description
+    - `id`: A unique integer value identifying this config template.
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/config-templates/{id}/sync/**
+  - Provide a /sync API endpoint to synchronize an object's data from its associated DataFile (if any).
+  - **Parameters:**
+    - `id`: A unique integer value identifying this config template.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/extras/custom-field-choice-sets/**
+  - Get a list of custom field choice set objects.
+  - **Parameters:**
+    - `base_choices`: Base set of predefined choices (optional)
+
+* `IATA` - IATA (Airport codes)
+* `ISO_3166` - ISO 3166 (Country codes)
+* `UN_LOCODE` - UN/LOCODE (Location codes)
+    - `choice`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `order_alphabetically`: No description
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/custom-field-choice-sets/**
+  - Post a list of custom field choice set objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/extras/custom-field-choice-sets/**
+  - Put a list of custom field choice set objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/custom-field-choice-sets/**
+  - Patch a list of custom field choice set objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/custom-field-choice-sets/**
+  - Delete a list of custom field choice set objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/custom-field-choice-sets/{id}/**
+  - Get a custom field choice set object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this custom field choice set.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/custom-field-choice-sets/{id}/**
+  - Put a custom field choice set object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this custom field choice set.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/custom-field-choice-sets/{id}/**
+  - Patch a custom field choice set object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this custom field choice set.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/custom-field-choice-sets/{id}/**
+  - Delete a custom field choice set object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this custom field choice set.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/custom-field-choice-sets/{id}/choices/**
+  - Provides an endpoint to iterate through each choice in a set.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this custom field choice set.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/extras/custom-fields/**
+  - Get a list of custom field objects.
+  - **Parameters:**
+    - `choice_set`: No description
+    - `choice_set__n`: No description
+    - `choice_set_id`: No description
+    - `choice_set_id__n`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `filter_logic`: Loose matches any instance of a given string; exact matches the entire field.
+
+* `disabled` - Disabled
+* `loose` - Loose
+* `exact` - Exact
+    - `group_name`: No description
+    - `group_name__empty`: No description
+    - `group_name__ic`: No description
+    - `group_name__ie`: No description
+    - `group_name__iew`: No description
+    - `group_name__isw`: No description
+    - `group_name__n`: No description
+    - `group_name__nic`: No description
+    - `group_name__nie`: No description
+    - `group_name__niew`: No description
+    - `group_name__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `is_cloneable`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `object_type`: No description
+    - `object_type__ic`: No description
+    - `object_type__ie`: No description
+    - `object_type__iew`: No description
+    - `object_type__isw`: No description
+    - `object_type__n`: No description
+    - `object_type__nic`: No description
+    - `object_type__nie`: No description
+    - `object_type__niew`: No description
+    - `object_type__nisw`: No description
+    - `object_type_id`: No description
+    - `object_type_id__n`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `related_object_type`: No description
+    - `related_object_type__n`: No description
+    - `related_object_type_id`: No description
+    - `related_object_type_id__n`: No description
+    - `required`: No description
+    - `search_weight`: No description
+    - `search_weight__empty`: No description
+    - `search_weight__gt`: No description
+    - `search_weight__gte`: No description
+    - `search_weight__lt`: No description
+    - `search_weight__lte`: No description
+    - `search_weight__n`: No description
+    - `type`: The type of data this custom field holds
+    - `type__empty`: No description
+    - `type__ic`: The type of data this custom field holds
+    - `type__ie`: The type of data this custom field holds
+    - `type__iew`: The type of data this custom field holds
+    - `type__isw`: The type of data this custom field holds
+    - `type__n`: The type of data this custom field holds
+    - `type__nic`: The type of data this custom field holds
+    - `type__nie`: The type of data this custom field holds
+    - `type__niew`: The type of data this custom field holds
+    - `type__nisw`: The type of data this custom field holds
+    - `ui_editable`: Specifies whether the custom field value can be edited in the UI
+
+* `yes` - Yes
+* `no` - No
+* `hidden` - Hidden
+    - `ui_visible`: Specifies whether the custom field is displayed in the UI
+
+* `always` - Always
+* `if-set` - If set
+* `hidden` - Hidden
+    - `unique`: No description
+    - `updated_by_request`: No description
+    - `validation_maximum`: No description
+    - `validation_maximum__empty`: No description
+    - `validation_maximum__gt`: No description
+    - `validation_maximum__gte`: No description
+    - `validation_maximum__lt`: No description
+    - `validation_maximum__lte`: No description
+    - `validation_maximum__n`: No description
+    - `validation_minimum`: No description
+    - `validation_minimum__empty`: No description
+    - `validation_minimum__gt`: No description
+    - `validation_minimum__gte`: No description
+    - `validation_minimum__lt`: No description
+    - `validation_minimum__lte`: No description
+    - `validation_minimum__n`: No description
+    - `validation_regex`: No description
+    - `validation_regex__empty`: No description
+    - `validation_regex__ic`: No description
+    - `validation_regex__ie`: No description
+    - `validation_regex__iew`: No description
+    - `validation_regex__isw`: No description
+    - `validation_regex__n`: No description
+    - `validation_regex__nic`: No description
+    - `validation_regex__nie`: No description
+    - `validation_regex__niew`: No description
+    - `validation_regex__nisw`: No description
+    - `weight`: No description
+    - `weight__empty`: No description
+    - `weight__gt`: No description
+    - `weight__gte`: No description
+    - `weight__lt`: No description
+    - `weight__lte`: No description
+    - `weight__n`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/custom-fields/**
+  - Post a list of custom field objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/extras/custom-fields/**
+  - Put a list of custom field objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/custom-fields/**
+  - Patch a list of custom field objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/custom-fields/**
+  - Delete a list of custom field objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/custom-fields/{id}/**
+  - Get a custom field object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this custom field.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/custom-fields/{id}/**
+  - Put a custom field object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this custom field.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/custom-fields/{id}/**
+  - Patch a custom field object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this custom field.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/custom-fields/{id}/**
+  - Delete a custom field object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this custom field.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/custom-links/**
+  - Get a list of custom link objects.
+  - **Parameters:**
+    - `button_class`: The class of the first link in a group will be used for the dropdown button
+
+* `default` - Default
+* `blue` - Blue
+* `indigo` - Indigo
+* `purple` - Purple
+* `pink` - Pink
+* `red` - Red
+* `orange` - Orange
+* `yellow` - Yellow
+* `green` - Green
+* `teal` - Teal
+* `cyan` - Cyan
+* `gray` - Gray
+* `black` - Black
+* `white` - White
+* `ghost-dark` - Link
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `enabled`: No description
+    - `group_name`: No description
+    - `group_name__empty`: No description
+    - `group_name__ic`: No description
+    - `group_name__ie`: No description
+    - `group_name__iew`: No description
+    - `group_name__isw`: No description
+    - `group_name__n`: No description
+    - `group_name__nic`: No description
+    - `group_name__nie`: No description
+    - `group_name__niew`: No description
+    - `group_name__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `link_text`: No description
+    - `link_text__ic`: No description
+    - `link_text__ie`: No description
+    - `link_text__iew`: No description
+    - `link_text__isw`: No description
+    - `link_text__n`: No description
+    - `link_text__nic`: No description
+    - `link_text__nie`: No description
+    - `link_text__niew`: No description
+    - `link_text__nisw`: No description
+    - `link_url`: No description
+    - `link_url__ic`: No description
+    - `link_url__ie`: No description
+    - `link_url__iew`: No description
+    - `link_url__isw`: No description
+    - `link_url__n`: No description
+    - `link_url__nic`: No description
+    - `link_url__nie`: No description
+    - `link_url__niew`: No description
+    - `link_url__nisw`: No description
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `new_window`: No description
+    - `object_type`: No description
+    - `object_type__ic`: No description
+    - `object_type__ie`: No description
+    - `object_type__iew`: No description
+    - `object_type__isw`: No description
+    - `object_type__n`: No description
+    - `object_type__nic`: No description
+    - `object_type__nie`: No description
+    - `object_type__niew`: No description
+    - `object_type__nisw`: No description
+    - `object_type_id`: No description
+    - `object_type_id__n`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `updated_by_request`: No description
+    - `weight`: No description
+    - `weight__empty`: No description
+    - `weight__gt`: No description
+    - `weight__gte`: No description
+    - `weight__lt`: No description
+    - `weight__lte`: No description
+    - `weight__n`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/custom-links/**
+  - Post a list of custom link objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/extras/custom-links/**
+  - Put a list of custom link objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/custom-links/**
+  - Patch a list of custom link objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/custom-links/**
+  - Delete a list of custom link objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/custom-links/{id}/**
+  - Get a custom link object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this custom link.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/custom-links/{id}/**
+  - Put a custom link object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this custom link.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/custom-links/{id}/**
+  - Patch a custom link object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this custom link.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/custom-links/{id}/**
+  - Delete a custom link object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this custom link.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/dashboard/**
+  - Get a list of dashboard objects.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/dashboard/**
+  - Put a list of dashboard objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/dashboard/**
+  - Patch a list of dashboard objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/dashboard/**
+  - Delete a list of dashboard objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/event-rules/**
+  - Get a list of event rule objects.
+  - **Parameters:**
+    - `action_object_id`: No description
+    - `action_object_id__empty`: No description
+    - `action_object_id__gt`: No description
+    - `action_object_id__gte`: No description
+    - `action_object_id__lt`: No description
+    - `action_object_id__lte`: No description
+    - `action_object_id__n`: No description
+    - `action_object_type`: No description
+    - `action_object_type__n`: No description
+    - `action_type`: No description
+    - `action_type__empty`: No description
+    - `action_type__ic`: No description
+    - `action_type__ie`: No description
+    - `action_type__iew`: No description
+    - `action_type__isw`: No description
+    - `action_type__n`: No description
+    - `action_type__nic`: No description
+    - `action_type__nie`: No description
+    - `action_type__niew`: No description
+    - `action_type__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `enabled`: No description
+    - `event_type`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `object_type`: No description
+    - `object_type__ic`: No description
+    - `object_type__ie`: No description
+    - `object_type__iew`: No description
+    - `object_type__isw`: No description
+    - `object_type__n`: No description
+    - `object_type__nic`: No description
+    - `object_type__nie`: No description
+    - `object_type__niew`: No description
+    - `object_type__nisw`: No description
+    - `object_type_id`: No description
+    - `object_type_id__n`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/event-rules/**
+  - Post a list of event rule objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/extras/event-rules/**
+  - Put a list of event rule objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/event-rules/**
+  - Patch a list of event rule objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/event-rules/**
+  - Delete a list of event rule objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/event-rules/{id}/**
+  - Get a event rule object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this event rule.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/event-rules/{id}/**
+  - Put a event rule object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this event rule.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/event-rules/{id}/**
+  - Patch a event rule object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this event rule.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/event-rules/{id}/**
+  - Delete a event rule object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this event rule.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/export-templates/**
+  - Get a list of export template objects.
+  - **Parameters:**
+    - `as_attachment`: No description
+    - `auto_sync_enabled`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `data_file_id`: Data file (ID)
+    - `data_file_id__n`: Data file (ID)
+    - `data_source_id`: Data source (ID)
+    - `data_source_id__n`: Data source (ID)
+    - `data_synced`: No description
+    - `data_synced__empty`: No description
+    - `data_synced__gt`: No description
+    - `data_synced__gte`: No description
+    - `data_synced__lt`: No description
+    - `data_synced__lte`: No description
+    - `data_synced__n`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `file_extension`: No description
+    - `file_extension__empty`: No description
+    - `file_extension__ic`: No description
+    - `file_extension__ie`: No description
+    - `file_extension__iew`: No description
+    - `file_extension__isw`: No description
+    - `file_extension__n`: No description
+    - `file_extension__nic`: No description
+    - `file_extension__nie`: No description
+    - `file_extension__niew`: No description
+    - `file_extension__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `mime_type`: No description
+    - `mime_type__empty`: No description
+    - `mime_type__ic`: No description
+    - `mime_type__ie`: No description
+    - `mime_type__iew`: No description
+    - `mime_type__isw`: No description
+    - `mime_type__n`: No description
+    - `mime_type__nic`: No description
+    - `mime_type__nie`: No description
+    - `mime_type__niew`: No description
+    - `mime_type__nisw`: No description
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `object_type`: No description
+    - `object_type__ic`: No description
+    - `object_type__ie`: No description
+    - `object_type__iew`: No description
+    - `object_type__isw`: No description
+    - `object_type__n`: No description
+    - `object_type__nic`: No description
+    - `object_type__nie`: No description
+    - `object_type__niew`: No description
+    - `object_type__nisw`: No description
+    - `object_type_id`: No description
+    - `object_type_id__n`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/export-templates/**
+  - Post a list of export template objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/extras/export-templates/**
+  - Put a list of export template objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/export-templates/**
+  - Patch a list of export template objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/export-templates/**
+  - Delete a list of export template objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/export-templates/{id}/**
+  - Get a export template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this export template.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/export-templates/{id}/**
+  - Put a export template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this export template.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/export-templates/{id}/**
+  - Patch a export template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this export template.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/export-templates/{id}/**
+  - Delete a export template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this export template.
+  - **Responses:**
+    - `204`: No response body
+
+- **POST /api/extras/export-templates/{id}/sync/**
+  - Provide a /sync API endpoint to synchronize an object's data from its associated DataFile (if any).
+  - **Parameters:**
+    - `id`: A unique integer value identifying this export template.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/extras/image-attachments/**
+  - Get a list of image attachment objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `image_height`: No description
+    - `image_height__empty`: No description
+    - `image_height__gt`: No description
+    - `image_height__gte`: No description
+    - `image_height__lt`: No description
+    - `image_height__lte`: No description
+    - `image_height__n`: No description
+    - `image_width`: No description
+    - `image_width__empty`: No description
+    - `image_width__gt`: No description
+    - `image_width__gte`: No description
+    - `image_width__lt`: No description
+    - `image_width__lte`: No description
+    - `image_width__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `object_id`: No description
+    - `object_id__empty`: No description
+    - `object_id__gt`: No description
+    - `object_id__gte`: No description
+    - `object_id__lt`: No description
+    - `object_id__lte`: No description
+    - `object_id__n`: No description
+    - `object_type`: No description
+    - `object_type__n`: No description
+    - `object_type_id`: No description
+    - `object_type_id__n`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/image-attachments/**
+  - Post a list of image attachment objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/extras/image-attachments/**
+  - Put a list of image attachment objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/image-attachments/**
+  - Patch a list of image attachment objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/image-attachments/**
+  - Delete a list of image attachment objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/image-attachments/{id}/**
+  - Get a image attachment object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this image attachment.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/image-attachments/{id}/**
+  - Put a image attachment object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this image attachment.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/image-attachments/{id}/**
+  - Patch a image attachment object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this image attachment.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/image-attachments/{id}/**
+  - Delete a image attachment object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this image attachment.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/journal-entries/**
+  - Get a list of journal entry objects.
+  - **Parameters:**
+    - `assigned_object_id`: No description
+    - `assigned_object_id__empty`: No description
+    - `assigned_object_id__gt`: No description
+    - `assigned_object_id__gte`: No description
+    - `assigned_object_id__lt`: No description
+    - `assigned_object_id__lte`: No description
+    - `assigned_object_id__n`: No description
+    - `assigned_object_type`: No description
+    - `assigned_object_type__n`: No description
+    - `assigned_object_type_id`: No description
+    - `assigned_object_type_id__n`: No description
+    - `created_after`: No description
+    - `created_before`: No description
+    - `created_by`: User (name)
+    - `created_by__n`: User (name)
+    - `created_by_id`: User (ID)
+    - `created_by_id__n`: User (ID)
+    - `created_by_request`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `kind`: No description
+    - `kind__empty`: No description
+    - `kind__ic`: No description
+    - `kind__ie`: No description
+    - `kind__iew`: No description
+    - `kind__isw`: No description
+    - `kind__n`: No description
+    - `kind__nic`: No description
+    - `kind__nie`: No description
+    - `kind__niew`: No description
+    - `kind__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/journal-entries/**
+  - Post a list of journal entry objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/extras/journal-entries/**
+  - Put a list of journal entry objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/journal-entries/**
+  - Patch a list of journal entry objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/journal-entries/**
+  - Delete a list of journal entry objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/journal-entries/{id}/**
+  - Get a journal entry object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this journal entry.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/journal-entries/{id}/**
+  - Put a journal entry object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this journal entry.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/journal-entries/{id}/**
+  - Patch a journal entry object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this journal entry.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/journal-entries/{id}/**
+  - Delete a journal entry object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this journal entry.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/notification-groups/**
+  - Get a list of notification group objects.
+  - **Parameters:**
+    - `limit`: Number of results to return per page.
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/notification-groups/**
+  - Post a list of notification group objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/extras/notification-groups/**
+  - Put a list of notification group objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/notification-groups/**
+  - Patch a list of notification group objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/notification-groups/**
+  - Delete a list of notification group objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/notification-groups/{id}/**
+  - Get a notification group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this notification group.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/notification-groups/{id}/**
+  - Put a notification group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this notification group.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/notification-groups/{id}/**
+  - Patch a notification group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this notification group.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/notification-groups/{id}/**
+  - Delete a notification group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this notification group.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/notifications/**
+  - Get a list of notification objects.
+  - **Parameters:**
+    - `limit`: Number of results to return per page.
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/notifications/**
+  - Post a list of notification objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/extras/notifications/**
+  - Put a list of notification objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/notifications/**
+  - Patch a list of notification objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/notifications/**
+  - Delete a list of notification objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/notifications/{id}/**
+  - Get a notification object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this notification.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/notifications/{id}/**
+  - Put a notification object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this notification.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/notifications/{id}/**
+  - Patch a notification object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this notification.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/notifications/{id}/**
+  - Delete a notification object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this notification.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/object-types/**
+  - Read-only list of ObjectTypes.
+  - **Parameters:**
+    - `app_label`: No description
+    - `id`: No description
+    - `limit`: Number of results to return per page.
+    - `model`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/extras/object-types/{id}/**
+  - Read-only list of ObjectTypes.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this object type.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/extras/saved-filters/**
+  - Get a list of saved filter objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `enabled`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `object_type`: No description
+    - `object_type__ic`: No description
+    - `object_type__ie`: No description
+    - `object_type__iew`: No description
+    - `object_type__isw`: No description
+    - `object_type__n`: No description
+    - `object_type__nic`: No description
+    - `object_type__nie`: No description
+    - `object_type__niew`: No description
+    - `object_type__nisw`: No description
+    - `object_type_id`: No description
+    - `object_type_id__n`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `shared`: No description
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `updated_by_request`: No description
+    - `usable`: No description
+    - `user`: User (name)
+    - `user__n`: User (name)
+    - `user_id`: User (ID)
+    - `user_id__n`: User (ID)
+    - `weight`: No description
+    - `weight__empty`: No description
+    - `weight__gt`: No description
+    - `weight__gte`: No description
+    - `weight__lt`: No description
+    - `weight__lte`: No description
+    - `weight__n`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/saved-filters/**
+  - Post a list of saved filter objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/extras/saved-filters/**
+  - Put a list of saved filter objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/saved-filters/**
+  - Patch a list of saved filter objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/saved-filters/**
+  - Delete a list of saved filter objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/saved-filters/{id}/**
+  - Get a saved filter object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this saved filter.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/saved-filters/{id}/**
+  - Put a saved filter object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this saved filter.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/saved-filters/{id}/**
+  - Patch a saved filter object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this saved filter.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/saved-filters/{id}/**
+  - Delete a saved filter object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this saved filter.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/scripts/**
+  - Get a list of script objects.
+  - **Parameters:**
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `is_executable`: No description
+    - `limit`: Number of results to return per page.
+    - `module_id`: Script module (ID)
+    - `module_id__n`: Script module (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/scripts/**
+  - Post a list of script objects.
+  - **Responses:**
+    - `201`: 
+
+- **GET /api/extras/scripts/{id}/**
+  - Get a script object.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/scripts/{id}/**
+  - Put a script object.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/scripts/{id}/**
+  - Patch a script object.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/scripts/{id}/**
+  - Delete a script object.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/subscriptions/**
+  - Get a list of subscription objects.
+  - **Parameters:**
+    - `limit`: Number of results to return per page.
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/subscriptions/**
+  - Post a list of subscription objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/extras/subscriptions/**
+  - Put a list of subscription objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/subscriptions/**
+  - Patch a list of subscription objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/subscriptions/**
+  - Delete a list of subscription objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/subscriptions/{id}/**
+  - Get a subscription object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this subscription.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/subscriptions/{id}/**
+  - Put a subscription object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this subscription.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/subscriptions/{id}/**
+  - Patch a subscription object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this subscription.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/subscriptions/{id}/**
+  - Delete a subscription object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this subscription.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/tags/**
+  - Get a list of tag objects.
+  - **Parameters:**
+    - `color`: No description
+    - `color__empty`: No description
+    - `color__ic`: No description
+    - `color__ie`: No description
+    - `color__iew`: No description
+    - `color__isw`: No description
+    - `color__n`: No description
+    - `color__nic`: No description
+    - `color__nie`: No description
+    - `color__niew`: No description
+    - `color__nisw`: No description
+    - `content_type`: No description
+    - `content_type_id`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `for_object_type_id`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `object_types`: No description
+    - `object_types__n`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/tags/**
+  - Post a list of tag objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/extras/tags/**
+  - Put a list of tag objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/tags/**
+  - Patch a list of tag objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/tags/**
+  - Delete a list of tag objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/tags/{id}/**
+  - Get a tag object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tag.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/tags/{id}/**
+  - Put a tag object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tag.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/tags/{id}/**
+  - Patch a tag object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tag.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/tags/{id}/**
+  - Delete a tag object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tag.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/webhooks/**
+  - Get a list of webhook objects.
+  - **Parameters:**
+    - `ca_file_path`: No description
+    - `ca_file_path__empty`: No description
+    - `ca_file_path__ic`: No description
+    - `ca_file_path__ie`: No description
+    - `ca_file_path__iew`: No description
+    - `ca_file_path__isw`: No description
+    - `ca_file_path__n`: No description
+    - `ca_file_path__nic`: No description
+    - `ca_file_path__nie`: No description
+    - `ca_file_path__niew`: No description
+    - `ca_file_path__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `http_content_type`: No description
+    - `http_content_type__empty`: No description
+    - `http_content_type__ic`: No description
+    - `http_content_type__ie`: No description
+    - `http_content_type__iew`: No description
+    - `http_content_type__isw`: No description
+    - `http_content_type__n`: No description
+    - `http_content_type__nic`: No description
+    - `http_content_type__nie`: No description
+    - `http_content_type__niew`: No description
+    - `http_content_type__nisw`: No description
+    - `http_method`: No description
+    - `http_method__empty`: No description
+    - `http_method__ic`: No description
+    - `http_method__ie`: No description
+    - `http_method__iew`: No description
+    - `http_method__isw`: No description
+    - `http_method__n`: No description
+    - `http_method__nic`: No description
+    - `http_method__nie`: No description
+    - `http_method__niew`: No description
+    - `http_method__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `payload_url`: No description
+    - `q`: Search
+    - `secret`: No description
+    - `secret__empty`: No description
+    - `secret__ic`: No description
+    - `secret__ie`: No description
+    - `secret__iew`: No description
+    - `secret__isw`: No description
+    - `secret__n`: No description
+    - `secret__nic`: No description
+    - `secret__nie`: No description
+    - `secret__niew`: No description
+    - `secret__nisw`: No description
+    - `ssl_verification`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/extras/webhooks/**
+  - Post a list of webhook objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/extras/webhooks/**
+  - Put a list of webhook objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/webhooks/**
+  - Patch a list of webhook objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/webhooks/**
+  - Delete a list of webhook objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/extras/webhooks/{id}/**
+  - Get a webhook object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this webhook.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/extras/webhooks/{id}/**
+  - Put a webhook object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this webhook.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/extras/webhooks/{id}/**
+  - Patch a webhook object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this webhook.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/extras/webhooks/{id}/**
+  - Delete a webhook object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this webhook.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/aggregates/**
+  - Get a list of aggregate objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `date_added`: No description
+    - `date_added__empty`: No description
+    - `date_added__gt`: No description
+    - `date_added__gte`: No description
+    - `date_added__lt`: No description
+    - `date_added__lte`: No description
+    - `date_added__n`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `family`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `prefix`: Prefix
+    - `q`: Search
+    - `rir`: RIR (slug)
+    - `rir__n`: RIR (slug)
+    - `rir_id`: RIR (ID)
+    - `rir_id__n`: RIR (ID)
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/aggregates/**
+  - Post a list of aggregate objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/aggregates/**
+  - Put a list of aggregate objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/aggregates/**
+  - Patch a list of aggregate objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/aggregates/**
+  - Delete a list of aggregate objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/aggregates/{id}/**
+  - Get a aggregate object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this aggregate.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/aggregates/{id}/**
+  - Put a aggregate object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this aggregate.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/aggregates/{id}/**
+  - Patch a aggregate object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this aggregate.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/aggregates/{id}/**
+  - Delete a aggregate object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this aggregate.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/asn-ranges/**
+  - Get a list of ASN range objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `end`: No description
+    - `end__empty`: No description
+    - `end__gt`: No description
+    - `end__gte`: No description
+    - `end__lt`: No description
+    - `end__lte`: No description
+    - `end__n`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `rir`: RIR (slug)
+    - `rir__n`: RIR (slug)
+    - `rir_id`: RIR (ID)
+    - `rir_id__n`: RIR (ID)
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `start`: No description
+    - `start__empty`: No description
+    - `start__gt`: No description
+    - `start__gte`: No description
+    - `start__lt`: No description
+    - `start__lte`: No description
+    - `start__n`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/asn-ranges/**
+  - Post a list of ASN range objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/asn-ranges/**
+  - Put a list of ASN range objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/asn-ranges/**
+  - Patch a list of ASN range objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/asn-ranges/**
+  - Delete a list of ASN range objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/asn-ranges/{id}/**
+  - Get a ASN range object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this ASN range.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/asn-ranges/{id}/**
+  - Put a ASN range object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this ASN range.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/asn-ranges/{id}/**
+  - Patch a ASN range object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this ASN range.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/asn-ranges/{id}/**
+  - Delete a ASN range object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this ASN range.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/asn-ranges/{id}/available-asns/**
+  - Get a ASN object.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/asn-ranges/{id}/available-asns/**
+  - Post a ASN object.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `201`: 
+
+- **GET /api/ipam/asns/**
+  - Get a list of ASN objects.
+  - **Parameters:**
+    - `asn`: No description
+    - `asn__empty`: No description
+    - `asn__gt`: No description
+    - `asn__gte`: No description
+    - `asn__lt`: No description
+    - `asn__lte`: No description
+    - `asn__n`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `provider`: Provider (slug)
+    - `provider__n`: Provider (slug)
+    - `provider_id`: Provider (ID)
+    - `provider_id__n`: Provider (ID)
+    - `q`: Search
+    - `rir`: RIR (slug)
+    - `rir__n`: RIR (slug)
+    - `rir_id`: RIR (ID)
+    - `rir_id__n`: RIR (ID)
+    - `site`: Site (slug)
+    - `site__n`: Site (slug)
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/asns/**
+  - Post a list of ASN objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/asns/**
+  - Put a list of ASN objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/asns/**
+  - Patch a list of ASN objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/asns/**
+  - Delete a list of ASN objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/asns/{id}/**
+  - Get a ASN object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this ASN.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/asns/{id}/**
+  - Put a ASN object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this ASN.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/asns/{id}/**
+  - Patch a ASN object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this ASN.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/asns/{id}/**
+  - Delete a ASN object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this ASN.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/fhrp-group-assignments/**
+  - Get a list of FHRP group assignment objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `device`: No description
+    - `device_id`: No description
+    - `group_id`: Group (ID)
+    - `group_id__n`: Group (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `interface_id`: No description
+    - `interface_id__empty`: No description
+    - `interface_id__gt`: No description
+    - `interface_id__gte`: No description
+    - `interface_id__lt`: No description
+    - `interface_id__lte`: No description
+    - `interface_id__n`: No description
+    - `interface_type`: No description
+    - `interface_type__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `priority`: No description
+    - `priority__empty`: No description
+    - `priority__gt`: No description
+    - `priority__gte`: No description
+    - `priority__lt`: No description
+    - `priority__lte`: No description
+    - `priority__n`: No description
+    - `updated_by_request`: No description
+    - `virtual_machine`: No description
+    - `virtual_machine_id`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/fhrp-group-assignments/**
+  - Post a list of FHRP group assignment objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/fhrp-group-assignments/**
+  - Put a list of FHRP group assignment objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/fhrp-group-assignments/**
+  - Patch a list of FHRP group assignment objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/fhrp-group-assignments/**
+  - Delete a list of FHRP group assignment objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/fhrp-group-assignments/{id}/**
+  - Get a FHRP group assignment object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this FHRP group assignment.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/fhrp-group-assignments/{id}/**
+  - Put a FHRP group assignment object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this FHRP group assignment.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/fhrp-group-assignments/{id}/**
+  - Patch a FHRP group assignment object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this FHRP group assignment.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/fhrp-group-assignments/{id}/**
+  - Delete a FHRP group assignment object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this FHRP group assignment.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/fhrp-groups/**
+  - Get a list of FHRP group objects.
+  - **Parameters:**
+    - `auth_key`: No description
+    - `auth_key__empty`: No description
+    - `auth_key__ic`: No description
+    - `auth_key__ie`: No description
+    - `auth_key__iew`: No description
+    - `auth_key__isw`: No description
+    - `auth_key__n`: No description
+    - `auth_key__nic`: No description
+    - `auth_key__nie`: No description
+    - `auth_key__niew`: No description
+    - `auth_key__nisw`: No description
+    - `auth_type`: No description
+    - `auth_type__empty`: No description
+    - `auth_type__ic`: No description
+    - `auth_type__ie`: No description
+    - `auth_type__iew`: No description
+    - `auth_type__isw`: No description
+    - `auth_type__n`: No description
+    - `auth_type__nic`: No description
+    - `auth_type__nie`: No description
+    - `auth_type__niew`: No description
+    - `auth_type__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `group_id`: No description
+    - `group_id__empty`: No description
+    - `group_id__gt`: No description
+    - `group_id__gte`: No description
+    - `group_id__lt`: No description
+    - `group_id__lte`: No description
+    - `group_id__n`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `protocol`: No description
+    - `protocol__empty`: No description
+    - `protocol__ic`: No description
+    - `protocol__ie`: No description
+    - `protocol__iew`: No description
+    - `protocol__isw`: No description
+    - `protocol__n`: No description
+    - `protocol__nic`: No description
+    - `protocol__nie`: No description
+    - `protocol__niew`: No description
+    - `protocol__nisw`: No description
+    - `q`: Search
+    - `related_ip`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/fhrp-groups/**
+  - Post a list of FHRP group objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/fhrp-groups/**
+  - Put a list of FHRP group objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/fhrp-groups/**
+  - Patch a list of FHRP group objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/fhrp-groups/**
+  - Delete a list of FHRP group objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/fhrp-groups/{id}/**
+  - Get a FHRP group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this FHRP group.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/fhrp-groups/{id}/**
+  - Put a FHRP group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this FHRP group.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/fhrp-groups/{id}/**
+  - Patch a FHRP group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this FHRP group.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/fhrp-groups/{id}/**
+  - Delete a FHRP group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this FHRP group.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/ip-addresses/**
+  - Get a list of IP address objects.
+  - **Parameters:**
+    - `address`: No description
+    - `assigned`: Is assigned
+    - `assigned_object_id`: No description
+    - `assigned_object_id__empty`: No description
+    - `assigned_object_id__gt`: No description
+    - `assigned_object_id__gte`: No description
+    - `assigned_object_id__lt`: No description
+    - `assigned_object_id__lte`: No description
+    - `assigned_object_id__n`: No description
+    - `assigned_object_type`: No description
+    - `assigned_object_type__n`: No description
+    - `assigned_to_interface`: Is assigned to an interface
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: No description
+    - `device_id`: No description
+    - `dns_name`: No description
+    - `dns_name__empty`: No description
+    - `dns_name__ic`: No description
+    - `dns_name__ie`: No description
+    - `dns_name__iew`: No description
+    - `dns_name__isw`: No description
+    - `dns_name__n`: No description
+    - `dns_name__nic`: No description
+    - `dns_name__nie`: No description
+    - `dns_name__niew`: No description
+    - `dns_name__nisw`: No description
+    - `family`: No description
+    - `fhrpgroup_id`: FHRP group (ID)
+    - `fhrpgroup_id__n`: FHRP group (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `interface`: Interface (name)
+    - `interface__n`: Interface (name)
+    - `interface_id`: Interface (ID)
+    - `interface_id__n`: Interface (ID)
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `mask_length`: No description
+    - `mask_length__gte`: No description
+    - `mask_length__lte`: No description
+    - `modified_by_request`: No description
+    - `nat_inside_id`: NAT inside IP address (ID)
+    - `nat_inside_id__n`: NAT inside IP address (ID)
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `parent`: No description
+    - `present_in_vrf`: No description
+    - `present_in_vrf_id`: No description
+    - `q`: Search
+    - `role`: The functional role of this IP
+    - `role__empty`: No description
+    - `role__ic`: The functional role of this IP
+    - `role__ie`: The functional role of this IP
+    - `role__iew`: The functional role of this IP
+    - `role__isw`: The functional role of this IP
+    - `role__n`: The functional role of this IP
+    - `role__nic`: The functional role of this IP
+    - `role__nie`: The functional role of this IP
+    - `role__niew`: The functional role of this IP
+    - `role__nisw`: The functional role of this IP
+    - `service_id`: Service (ID)
+    - `service_id__n`: Service (ID)
+    - `status`: The operational status of this IP
+    - `status__empty`: No description
+    - `status__ic`: The operational status of this IP
+    - `status__ie`: The operational status of this IP
+    - `status__iew`: The operational status of this IP
+    - `status__isw`: The operational status of this IP
+    - `status__n`: The operational status of this IP
+    - `status__nic`: The operational status of this IP
+    - `status__nie`: The operational status of this IP
+    - `status__niew`: The operational status of this IP
+    - `status__nisw`: The operational status of this IP
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+    - `virtual_machine`: No description
+    - `virtual_machine_id`: No description
+    - `vminterface`: VM interface (name)
+    - `vminterface__n`: VM interface (name)
+    - `vminterface_id`: VM interface (ID)
+    - `vminterface_id__n`: VM interface (ID)
+    - `vrf`: VRF (RD)
+    - `vrf__n`: VRF (RD)
+    - `vrf_id`: VRF
+    - `vrf_id__n`: VRF
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/ip-addresses/**
+  - Post a list of IP address objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/ip-addresses/**
+  - Put a list of IP address objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/ip-addresses/**
+  - Patch a list of IP address objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/ip-addresses/**
+  - Delete a list of IP address objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/ip-addresses/{id}/**
+  - Get a IP address object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IP address.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/ip-addresses/{id}/**
+  - Put a IP address object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IP address.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/ip-addresses/{id}/**
+  - Patch a IP address object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IP address.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/ip-addresses/{id}/**
+  - Delete a IP address object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IP address.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/ip-ranges/**
+  - Get a list of IP range objects.
+  - **Parameters:**
+    - `contains`: Ranges which contain this prefix or IP
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `end_address`: No description
+    - `family`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `mark_utilized`: No description
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `parent`: No description
+    - `q`: Search
+    - `role`: Role (slug)
+    - `role__n`: Role (slug)
+    - `role_id`: Role (ID)
+    - `role_id__n`: Role (ID)
+    - `size`: No description
+    - `size__empty`: No description
+    - `size__gt`: No description
+    - `size__gte`: No description
+    - `size__lt`: No description
+    - `size__lte`: No description
+    - `size__n`: No description
+    - `start_address`: No description
+    - `status`: Operational status of this range
+    - `status__empty`: No description
+    - `status__ic`: Operational status of this range
+    - `status__ie`: Operational status of this range
+    - `status__iew`: Operational status of this range
+    - `status__isw`: Operational status of this range
+    - `status__n`: Operational status of this range
+    - `status__nic`: Operational status of this range
+    - `status__nie`: Operational status of this range
+    - `status__niew`: Operational status of this range
+    - `status__nisw`: Operational status of this range
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+    - `vrf`: VRF (RD)
+    - `vrf__n`: VRF (RD)
+    - `vrf_id`: VRF
+    - `vrf_id__n`: VRF
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/ip-ranges/**
+  - Post a list of IP range objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/ip-ranges/**
+  - Put a list of IP range objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/ip-ranges/**
+  - Patch a list of IP range objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/ip-ranges/**
+  - Delete a list of IP range objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/ip-ranges/{id}/**
+  - Get a IP range object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IP range.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/ip-ranges/{id}/**
+  - Put a IP range object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IP range.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/ip-ranges/{id}/**
+  - Patch a IP range object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IP range.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/ip-ranges/{id}/**
+  - Delete a IP range object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IP range.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/ip-ranges/{id}/available-ips/**
+  - Get a IP address object.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/ip-ranges/{id}/available-ips/**
+  - Post a IP address object.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `201`: 
+
+- **GET /api/ipam/prefixes/**
+  - Get a list of prefix objects.
+  - **Parameters:**
+    - `children`: No description
+    - `children__empty`: No description
+    - `children__gt`: No description
+    - `children__gte`: No description
+    - `children__lt`: No description
+    - `children__lte`: No description
+    - `children__n`: No description
+    - `contains`: Prefixes which contain this prefix or IP
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `depth`: No description
+    - `depth__empty`: No description
+    - `depth__gt`: No description
+    - `depth__gte`: No description
+    - `depth__lt`: No description
+    - `depth__lte`: No description
+    - `depth__n`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `family`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `is_pool`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: No description
+    - `location__n`: No description
+    - `location_id`: No description
+    - `location_id__n`: No description
+    - `mark_utilized`: No description
+    - `mask_length`: No description
+    - `mask_length__gte`: No description
+    - `mask_length__lte`: No description
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `prefix`: No description
+    - `present_in_vrf`: No description
+    - `present_in_vrf_id`: No description
+    - `q`: Search
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `role`: Role (slug)
+    - `role__n`: Role (slug)
+    - `role_id`: Role (ID)
+    - `role_id__n`: Role (ID)
+    - `scope_id`: No description
+    - `scope_id__empty`: No description
+    - `scope_id__gt`: No description
+    - `scope_id__gte`: No description
+    - `scope_id__lt`: No description
+    - `scope_id__lte`: No description
+    - `scope_id__n`: No description
+    - `scope_type`: No description
+    - `scope_type__n`: No description
+    - `site`: Site (slug)
+    - `site__n`: Site (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `status`: Operational status of this prefix
+    - `status__empty`: No description
+    - `status__ic`: Operational status of this prefix
+    - `status__ie`: Operational status of this prefix
+    - `status__iew`: Operational status of this prefix
+    - `status__isw`: Operational status of this prefix
+    - `status__n`: Operational status of this prefix
+    - `status__nic`: Operational status of this prefix
+    - `status__nie`: Operational status of this prefix
+    - `status__niew`: Operational status of this prefix
+    - `status__nisw`: Operational status of this prefix
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+    - `vlan_id`: VLAN (ID)
+    - `vlan_id__n`: VLAN (ID)
+    - `vlan_vid`: VLAN number (1-4094)
+    - `vlan_vid__empty`: VLAN number (1-4094)
+    - `vlan_vid__gt`: VLAN number (1-4094)
+    - `vlan_vid__gte`: VLAN number (1-4094)
+    - `vlan_vid__lt`: VLAN number (1-4094)
+    - `vlan_vid__lte`: VLAN number (1-4094)
+    - `vlan_vid__n`: VLAN number (1-4094)
+    - `vrf`: VRF (RD)
+    - `vrf__n`: VRF (RD)
+    - `vrf_id`: VRF
+    - `vrf_id__n`: VRF
+    - `within`: Within prefix
+    - `within_include`: Within and including prefix
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/prefixes/**
+  - Post a list of prefix objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/prefixes/**
+  - Put a list of prefix objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/prefixes/**
+  - Patch a list of prefix objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/prefixes/**
+  - Delete a list of prefix objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/prefixes/{id}/**
+  - Get a prefix object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this prefix.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/prefixes/{id}/**
+  - Put a prefix object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this prefix.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/prefixes/{id}/**
+  - Patch a prefix object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this prefix.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/prefixes/{id}/**
+  - Delete a prefix object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this prefix.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/prefixes/{id}/available-ips/**
+  - Get a IP address object.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/prefixes/{id}/available-ips/**
+  - Post a IP address object.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `201`: 
+
+- **GET /api/ipam/prefixes/{id}/available-prefixes/**
+  - Get a prefix object.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/prefixes/{id}/available-prefixes/**
+  - Post a prefix object.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `201`: 
+
+- **GET /api/ipam/rirs/**
+  - Get a list of RIR objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `is_private`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/rirs/**
+  - Post a list of RIR objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/rirs/**
+  - Put a list of RIR objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/rirs/**
+  - Patch a list of RIR objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/rirs/**
+  - Delete a list of RIR objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/rirs/{id}/**
+  - Get a RIR object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this RIR.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/rirs/{id}/**
+  - Put a RIR object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this RIR.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/rirs/{id}/**
+  - Patch a RIR object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this RIR.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/rirs/{id}/**
+  - Delete a RIR object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this RIR.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/roles/**
+  - Get a list of role objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+    - `weight`: No description
+    - `weight__empty`: No description
+    - `weight__gt`: No description
+    - `weight__gte`: No description
+    - `weight__lt`: No description
+    - `weight__lte`: No description
+    - `weight__n`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/roles/**
+  - Post a list of role objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/roles/**
+  - Put a list of role objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/roles/**
+  - Patch a list of role objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/roles/**
+  - Delete a list of role objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/roles/{id}/**
+  - Get a role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this role.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/roles/{id}/**
+  - Put a role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this role.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/roles/{id}/**
+  - Patch a role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this role.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/roles/{id}/**
+  - Delete a role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this role.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/route-targets/**
+  - Get a list of route target objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `exporting_l2vpn`: Exporting L2VPN (identifier)
+    - `exporting_l2vpn__n`: Exporting L2VPN (identifier)
+    - `exporting_l2vpn_id`: Exporting L2VPN
+    - `exporting_l2vpn_id__n`: Exporting L2VPN
+    - `exporting_vrf`: Export VRF (RD)
+    - `exporting_vrf__n`: Export VRF (RD)
+    - `exporting_vrf_id`: Exporting VRF
+    - `exporting_vrf_id__n`: Exporting VRF
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `importing_l2vpn`: Importing L2VPN (identifier)
+    - `importing_l2vpn__n`: Importing L2VPN (identifier)
+    - `importing_l2vpn_id`: Importing L2VPN
+    - `importing_l2vpn_id__n`: Importing L2VPN
+    - `importing_vrf`: Import VRF (RD)
+    - `importing_vrf__n`: Import VRF (RD)
+    - `importing_vrf_id`: Importing VRF
+    - `importing_vrf_id__n`: Importing VRF
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/route-targets/**
+  - Post a list of route target objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/route-targets/**
+  - Put a list of route target objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/route-targets/**
+  - Patch a list of route target objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/route-targets/**
+  - Delete a list of route target objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/route-targets/{id}/**
+  - Get a route target object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this route target.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/route-targets/{id}/**
+  - Put a route target object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this route target.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/route-targets/{id}/**
+  - Patch a route target object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this route target.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/route-targets/{id}/**
+  - Delete a route target object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this route target.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/service-templates/**
+  - Get a list of service template objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `port`: No description
+    - `protocol`: * `tcp` - TCP
+* `udp` - UDP
+* `sctp` - SCTP
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/service-templates/**
+  - Post a list of service template objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/service-templates/**
+  - Put a list of service template objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/service-templates/**
+  - Patch a list of service template objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/service-templates/**
+  - Delete a list of service template objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/service-templates/{id}/**
+  - Get a service template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this service template.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/service-templates/{id}/**
+  - Put a service template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this service template.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/service-templates/{id}/**
+  - Patch a service template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this service template.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/service-templates/{id}/**
+  - Delete a service template object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this service template.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/services/**
+  - Get a list of service objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: Device (name)
+    - `device__n`: Device (name)
+    - `device_id`: Device (ID)
+    - `device_id__n`: Device (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `ip_address`: IP address
+    - `ip_address__n`: IP address
+    - `ip_address_id`: IP address (ID)
+    - `ip_address_id__n`: IP address (ID)
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `port`: No description
+    - `protocol`: * `tcp` - TCP
+* `udp` - UDP
+* `sctp` - SCTP
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+    - `virtual_machine`: Virtual machine (name)
+    - `virtual_machine__n`: Virtual machine (name)
+    - `virtual_machine_id`: Virtual machine (ID)
+    - `virtual_machine_id__n`: Virtual machine (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/services/**
+  - Post a list of service objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/services/**
+  - Put a list of service objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/services/**
+  - Patch a list of service objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/services/**
+  - Delete a list of service objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/services/{id}/**
+  - Get a service object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this service.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/services/{id}/**
+  - Put a service object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this service.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/services/{id}/**
+  - Patch a service object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this service.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/services/{id}/**
+  - Delete a service object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this service.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/vlan-groups/**
+  - Get a list of VLAN group objects.
+  - **Parameters:**
+    - `cluster`: No description
+    - `cluster_group`: No description
+    - `contains_vid`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: No description
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `rack`: No description
+    - `region`: No description
+    - `scope_id`: No description
+    - `scope_id__empty`: No description
+    - `scope_id__gt`: No description
+    - `scope_id__gte`: No description
+    - `scope_id__lt`: No description
+    - `scope_id__lte`: No description
+    - `scope_id__n`: No description
+    - `scope_type`: No description
+    - `scope_type__n`: No description
+    - `site`: No description
+    - `site_group`: No description
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/vlan-groups/**
+  - Post a list of VLAN group objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/vlan-groups/**
+  - Put a list of VLAN group objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/vlan-groups/**
+  - Patch a list of VLAN group objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/vlan-groups/**
+  - Delete a list of VLAN group objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/vlan-groups/{id}/**
+  - Get a VLAN group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VLAN group.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/vlan-groups/{id}/**
+  - Put a VLAN group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VLAN group.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/vlan-groups/{id}/**
+  - Patch a VLAN group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VLAN group.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/vlan-groups/{id}/**
+  - Delete a VLAN group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VLAN group.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/vlan-groups/{id}/available-vlans/**
+  - Get a VLAN object.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/vlan-groups/{id}/available-vlans/**
+  - Post a VLAN object.
+  - **Parameters:**
+    - `id`: No description
+  - **Responses:**
+    - `201`: 
+
+- **GET /api/ipam/vlan-translation-policies/**
+  - Get a list of VLAN translation policy objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/vlan-translation-policies/**
+  - Post a list of VLAN translation policy objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/vlan-translation-policies/**
+  - Put a list of VLAN translation policy objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/vlan-translation-policies/**
+  - Patch a list of VLAN translation policy objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/vlan-translation-policies/**
+  - Delete a list of VLAN translation policy objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/vlan-translation-policies/{id}/**
+  - Get a VLAN translation policy object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VLAN translation policy.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/vlan-translation-policies/{id}/**
+  - Put a VLAN translation policy object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VLAN translation policy.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/vlan-translation-policies/{id}/**
+  - Patch a VLAN translation policy object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VLAN translation policy.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/vlan-translation-policies/{id}/**
+  - Delete a VLAN translation policy object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VLAN translation policy.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/vlan-translation-rules/**
+  - Get a list of VLAN translation rule objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `local_vid`: No description
+    - `local_vid__empty`: No description
+    - `local_vid__gt`: No description
+    - `local_vid__gte`: No description
+    - `local_vid__lt`: No description
+    - `local_vid__lte`: No description
+    - `local_vid__n`: No description
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `policy`: VLAN Translation Policy (name)
+    - `policy__n`: VLAN Translation Policy (name)
+    - `policy_id`: VLAN Translation Policy (ID)
+    - `policy_id__n`: VLAN Translation Policy (ID)
+    - `q`: Search
+    - `remote_vid`: No description
+    - `remote_vid__empty`: No description
+    - `remote_vid__gt`: No description
+    - `remote_vid__gte`: No description
+    - `remote_vid__lt`: No description
+    - `remote_vid__lte`: No description
+    - `remote_vid__n`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/vlan-translation-rules/**
+  - Post a list of VLAN translation rule objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/vlan-translation-rules/**
+  - Put a list of VLAN translation rule objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/vlan-translation-rules/**
+  - Patch a list of VLAN translation rule objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/vlan-translation-rules/**
+  - Delete a list of VLAN translation rule objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/vlan-translation-rules/{id}/**
+  - Get a VLAN translation rule object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VLAN translation rule.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/vlan-translation-rules/{id}/**
+  - Put a VLAN translation rule object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VLAN translation rule.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/vlan-translation-rules/{id}/**
+  - Patch a VLAN translation rule object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VLAN translation rule.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/vlan-translation-rules/{id}/**
+  - Delete a VLAN translation rule object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VLAN translation rule.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/vlans/**
+  - Get a list of VLAN objects.
+  - **Parameters:**
+    - `available_at_site`: No description
+    - `available_on_device`: No description
+    - `available_on_virtualmachine`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `group`: Group
+    - `group__n`: Group
+    - `group_id`: Group (ID)
+    - `group_id__n`: Group (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `interface_id`: Assigned interface
+    - `l2vpn`: L2VPN
+    - `l2vpn__n`: L2VPN
+    - `l2vpn_id`: L2VPN (ID)
+    - `l2vpn_id__n`: L2VPN (ID)
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `qinq_role`: Customer/service VLAN designation (for Q-in-Q/IEEE 802.1ad)
+    - `qinq_role__empty`: No description
+    - `qinq_role__ic`: Customer/service VLAN designation (for Q-in-Q/IEEE 802.1ad)
+    - `qinq_role__ie`: Customer/service VLAN designation (for Q-in-Q/IEEE 802.1ad)
+    - `qinq_role__iew`: Customer/service VLAN designation (for Q-in-Q/IEEE 802.1ad)
+    - `qinq_role__isw`: Customer/service VLAN designation (for Q-in-Q/IEEE 802.1ad)
+    - `qinq_role__n`: Customer/service VLAN designation (for Q-in-Q/IEEE 802.1ad)
+    - `qinq_role__nic`: Customer/service VLAN designation (for Q-in-Q/IEEE 802.1ad)
+    - `qinq_role__nie`: Customer/service VLAN designation (for Q-in-Q/IEEE 802.1ad)
+    - `qinq_role__niew`: Customer/service VLAN designation (for Q-in-Q/IEEE 802.1ad)
+    - `qinq_role__nisw`: Customer/service VLAN designation (for Q-in-Q/IEEE 802.1ad)
+    - `qinq_svlan_id`: Q-in-Q SVLAN (ID)
+    - `qinq_svlan_id__n`: Q-in-Q SVLAN (ID)
+    - `qinq_svlan_vid`: No description
+    - `qinq_svlan_vid__empty`: No description
+    - `qinq_svlan_vid__gt`: No description
+    - `qinq_svlan_vid__gte`: No description
+    - `qinq_svlan_vid__lt`: No description
+    - `qinq_svlan_vid__lte`: No description
+    - `qinq_svlan_vid__n`: No description
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `role`: Role (slug)
+    - `role__n`: Role (slug)
+    - `role_id`: Role (ID)
+    - `role_id__n`: Role (ID)
+    - `site`: Site (slug)
+    - `site__n`: Site (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `status`: Operational status of this VLAN
+    - `status__empty`: No description
+    - `status__ic`: Operational status of this VLAN
+    - `status__ie`: Operational status of this VLAN
+    - `status__iew`: Operational status of this VLAN
+    - `status__isw`: Operational status of this VLAN
+    - `status__n`: Operational status of this VLAN
+    - `status__nic`: Operational status of this VLAN
+    - `status__nie`: Operational status of this VLAN
+    - `status__niew`: Operational status of this VLAN
+    - `status__nisw`: Operational status of this VLAN
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+    - `vid`: No description
+    - `vid__empty`: No description
+    - `vid__gt`: No description
+    - `vid__gte`: No description
+    - `vid__lt`: No description
+    - `vid__lte`: No description
+    - `vid__n`: No description
+    - `vminterface_id`: Assigned VM interface
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/vlans/**
+  - Post a list of VLAN objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/vlans/**
+  - Put a list of VLAN objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/vlans/**
+  - Patch a list of VLAN objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/vlans/**
+  - Delete a list of VLAN objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/vlans/{id}/**
+  - Get a VLAN object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VLAN.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/vlans/{id}/**
+  - Put a VLAN object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VLAN.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/vlans/{id}/**
+  - Patch a VLAN object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VLAN.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/vlans/{id}/**
+  - Delete a VLAN object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VLAN.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/vrfs/**
+  - Get a list of VRF objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `enforce_unique`: No description
+    - `export_target`: Export target (name)
+    - `export_target__n`: Export target (name)
+    - `export_target_id`: Export target
+    - `export_target_id__n`: Export target
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `import_target`: Import target (name)
+    - `import_target__n`: Import target (name)
+    - `import_target_id`: Import target
+    - `import_target_id__n`: Import target
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `rd`: No description
+    - `rd__empty`: No description
+    - `rd__ic`: No description
+    - `rd__ie`: No description
+    - `rd__iew`: No description
+    - `rd__isw`: No description
+    - `rd__n`: No description
+    - `rd__nic`: No description
+    - `rd__nie`: No description
+    - `rd__niew`: No description
+    - `rd__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/ipam/vrfs/**
+  - Post a list of VRF objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/ipam/vrfs/**
+  - Put a list of VRF objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/vrfs/**
+  - Patch a list of VRF objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/vrfs/**
+  - Delete a list of VRF objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/ipam/vrfs/{id}/**
+  - Get a VRF object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VRF.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/ipam/vrfs/{id}/**
+  - Put a VRF object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VRF.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/ipam/vrfs/{id}/**
+  - Patch a VRF object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VRF.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/ipam/vrfs/{id}/**
+  - Delete a VRF object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this VRF.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/schema/**
+  - OpenApi3 schema for this API. Format can be selected via content negotiation.
+  - 
+  - - YAML: application/vnd.oai.openapi
+  - - JSON: application/vnd.oai.openapi+json
+  - **Parameters:**
+    - `format`: No description
+    - `lang`: No description
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/status/**
+  - A lightweight read-only endpoint for conveying NetBox's current operational status.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/tenancy/contact-assignments/**
+  - Get a list of contact assignment objects.
+  - **Parameters:**
+    - `contact_id`: Contact (ID)
+    - `contact_id__n`: Contact (ID)
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `group`: No description
+    - `group__n`: No description
+    - `group_id`: No description
+    - `group_id__n`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `object_id`: No description
+    - `object_id__empty`: No description
+    - `object_id__gt`: No description
+    - `object_id__gte`: No description
+    - `object_id__lt`: No description
+    - `object_id__lte`: No description
+    - `object_id__n`: No description
+    - `object_type`: No description
+    - `object_type__n`: No description
+    - `object_type_id`: No description
+    - `object_type_id__n`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `priority`: * `primary` - Primary
+* `secondary` - Secondary
+* `tertiary` - Tertiary
+* `inactive` - Inactive
+    - `q`: Search
+    - `role`: Contact role (slug)
+    - `role__n`: Contact role (slug)
+    - `role_id`: Contact role (ID)
+    - `role_id__n`: Contact role (ID)
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/tenancy/contact-assignments/**
+  - Post a list of contact assignment objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/tenancy/contact-assignments/**
+  - Put a list of contact assignment objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/tenancy/contact-assignments/**
+  - Patch a list of contact assignment objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/tenancy/contact-assignments/**
+  - Delete a list of contact assignment objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/tenancy/contact-assignments/{id}/**
+  - Get a contact assignment object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this contact assignment.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/tenancy/contact-assignments/{id}/**
+  - Put a contact assignment object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this contact assignment.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/tenancy/contact-assignments/{id}/**
+  - Patch a contact assignment object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this contact assignment.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/tenancy/contact-assignments/{id}/**
+  - Delete a contact assignment object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this contact assignment.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/tenancy/contact-groups/**
+  - Get a list of contact group objects.
+  - **Parameters:**
+    - `ancestor`: No description
+    - `ancestor__n`: No description
+    - `ancestor_id`: No description
+    - `ancestor_id__n`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `parent`: Parent contact group (slug)
+    - `parent__n`: Parent contact group (slug)
+    - `parent_id`: Parent contact group (ID)
+    - `parent_id__n`: Parent contact group (ID)
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/tenancy/contact-groups/**
+  - Post a list of contact group objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/tenancy/contact-groups/**
+  - Put a list of contact group objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/tenancy/contact-groups/**
+  - Patch a list of contact group objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/tenancy/contact-groups/**
+  - Delete a list of contact group objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/tenancy/contact-groups/{id}/**
+  - Get a contact group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this contact group.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/tenancy/contact-groups/{id}/**
+  - Put a contact group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this contact group.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/tenancy/contact-groups/{id}/**
+  - Patch a contact group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this contact group.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/tenancy/contact-groups/{id}/**
+  - Delete a contact group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this contact group.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/tenancy/contact-roles/**
+  - Get a list of contact role objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/tenancy/contact-roles/**
+  - Post a list of contact role objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/tenancy/contact-roles/**
+  - Put a list of contact role objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/tenancy/contact-roles/**
+  - Patch a list of contact role objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/tenancy/contact-roles/**
+  - Delete a list of contact role objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/tenancy/contact-roles/{id}/**
+  - Get a contact role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this contact role.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/tenancy/contact-roles/{id}/**
+  - Put a contact role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this contact role.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/tenancy/contact-roles/{id}/**
+  - Patch a contact role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this contact role.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/tenancy/contact-roles/{id}/**
+  - Delete a contact role object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this contact role.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/tenancy/contacts/**
+  - Get a list of contact objects.
+  - **Parameters:**
+    - `address`: No description
+    - `address__empty`: No description
+    - `address__ic`: No description
+    - `address__ie`: No description
+    - `address__iew`: No description
+    - `address__isw`: No description
+    - `address__n`: No description
+    - `address__nic`: No description
+    - `address__nie`: No description
+    - `address__niew`: No description
+    - `address__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `email`: No description
+    - `email__empty`: No description
+    - `email__ic`: No description
+    - `email__ie`: No description
+    - `email__iew`: No description
+    - `email__isw`: No description
+    - `email__n`: No description
+    - `email__nic`: No description
+    - `email__nie`: No description
+    - `email__niew`: No description
+    - `email__nisw`: No description
+    - `group`: No description
+    - `group__n`: No description
+    - `group_id`: No description
+    - `group_id__n`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `link`: No description
+    - `link__empty`: No description
+    - `link__ic`: No description
+    - `link__ie`: No description
+    - `link__iew`: No description
+    - `link__isw`: No description
+    - `link__n`: No description
+    - `link__nic`: No description
+    - `link__nie`: No description
+    - `link__niew`: No description
+    - `link__nisw`: No description
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `phone`: No description
+    - `phone__empty`: No description
+    - `phone__ic`: No description
+    - `phone__ie`: No description
+    - `phone__iew`: No description
+    - `phone__isw`: No description
+    - `phone__n`: No description
+    - `phone__nic`: No description
+    - `phone__nie`: No description
+    - `phone__niew`: No description
+    - `phone__nisw`: No description
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `title`: No description
+    - `title__empty`: No description
+    - `title__ic`: No description
+    - `title__ie`: No description
+    - `title__iew`: No description
+    - `title__isw`: No description
+    - `title__n`: No description
+    - `title__nic`: No description
+    - `title__nie`: No description
+    - `title__niew`: No description
+    - `title__nisw`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/tenancy/contacts/**
+  - Post a list of contact objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/tenancy/contacts/**
+  - Put a list of contact objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/tenancy/contacts/**
+  - Patch a list of contact objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/tenancy/contacts/**
+  - Delete a list of contact objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/tenancy/contacts/{id}/**
+  - Get a contact object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this contact.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/tenancy/contacts/{id}/**
+  - Put a contact object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this contact.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/tenancy/contacts/{id}/**
+  - Patch a contact object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this contact.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/tenancy/contacts/{id}/**
+  - Delete a contact object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this contact.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/tenancy/tenant-groups/**
+  - Get a list of tenant group objects.
+  - **Parameters:**
+    - `ancestor`: No description
+    - `ancestor__n`: No description
+    - `ancestor_id`: No description
+    - `ancestor_id__n`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `parent`: Parent tenant group (slug)
+    - `parent__n`: Parent tenant group (slug)
+    - `parent_id`: Parent tenant group (ID)
+    - `parent_id__n`: Parent tenant group (ID)
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/tenancy/tenant-groups/**
+  - Post a list of tenant group objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/tenancy/tenant-groups/**
+  - Put a list of tenant group objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/tenancy/tenant-groups/**
+  - Patch a list of tenant group objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/tenancy/tenant-groups/**
+  - Delete a list of tenant group objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/tenancy/tenant-groups/{id}/**
+  - Get a tenant group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tenant group.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/tenancy/tenant-groups/{id}/**
+  - Put a tenant group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tenant group.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/tenancy/tenant-groups/{id}/**
+  - Patch a tenant group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tenant group.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/tenancy/tenant-groups/{id}/**
+  - Delete a tenant group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tenant group.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/tenancy/tenants/**
+  - Get a list of tenant objects.
+  - **Parameters:**
+    - `contact`: Contact
+    - `contact__n`: Contact
+    - `contact_group`: No description
+    - `contact_group__n`: No description
+    - `contact_role`: Contact Role
+    - `contact_role__n`: Contact Role
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `group`: No description
+    - `group__n`: No description
+    - `group_id`: No description
+    - `group_id__n`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/tenancy/tenants/**
+  - Post a list of tenant objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/tenancy/tenants/**
+  - Put a list of tenant objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/tenancy/tenants/**
+  - Patch a list of tenant objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/tenancy/tenants/**
+  - Delete a list of tenant objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/tenancy/tenants/{id}/**
+  - Get a tenant object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tenant.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/tenancy/tenants/{id}/**
+  - Put a tenant object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tenant.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/tenancy/tenants/{id}/**
+  - Patch a tenant object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tenant.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/tenancy/tenants/{id}/**
+  - Delete a tenant object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tenant.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/users/config/**
+  - An API endpoint via which a user can update his or her own UserConfig data (but no one else's).
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/users/groups/**
+  - Get a list of group objects.
+  - **Parameters:**
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `limit`: Number of results to return per page.
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `notification_group_id`: Notification group (ID)
+    - `notification_group_id__n`: Notification group (ID)
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `permission_id`: Permission (ID)
+    - `permission_id__n`: Permission (ID)
+    - `q`: Search
+    - `user_id`: User (ID)
+    - `user_id__n`: User (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/users/groups/**
+  - Post a list of group objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/users/groups/**
+  - Put a list of group objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/users/groups/**
+  - Patch a list of group objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/users/groups/**
+  - Delete a list of group objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/users/groups/{id}/**
+  - Get a group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this group.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/users/groups/{id}/**
+  - Put a group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this group.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/users/groups/{id}/**
+  - Patch a group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this group.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/users/groups/{id}/**
+  - Delete a group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this group.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/users/permissions/**
+  - Get a list of permission objects.
+  - **Parameters:**
+    - `can_add`: No description
+    - `can_change`: No description
+    - `can_delete`: No description
+    - `can_view`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `enabled`: No description
+    - `group`: Group (name)
+    - `group__n`: Group (name)
+    - `group_id`: Group
+    - `group_id__n`: Group
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `limit`: Number of results to return per page.
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `object_type`: No description
+    - `object_type__ic`: No description
+    - `object_type__ie`: No description
+    - `object_type__iew`: No description
+    - `object_type__isw`: No description
+    - `object_type__n`: No description
+    - `object_type__nic`: No description
+    - `object_type__nie`: No description
+    - `object_type__niew`: No description
+    - `object_type__nisw`: No description
+    - `object_type_id`: No description
+    - `object_type_id__n`: No description
+    - `object_types`: No description
+    - `object_types__n`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `user`: User (name)
+    - `user__n`: User (name)
+    - `user_id`: User
+    - `user_id__n`: User
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/users/permissions/**
+  - Post a list of permission objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/users/permissions/**
+  - Put a list of permission objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/users/permissions/**
+  - Patch a list of permission objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/users/permissions/**
+  - Delete a list of permission objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/users/permissions/{id}/**
+  - Get a permission object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this permission.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/users/permissions/{id}/**
+  - Put a permission object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this permission.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/users/permissions/{id}/**
+  - Patch a permission object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this permission.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/users/permissions/{id}/**
+  - Delete a permission object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this permission.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/users/tokens/**
+  - Get a list of token objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__gte`: No description
+    - `created__lte`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `expires`: No description
+    - `expires__gte`: No description
+    - `expires__lte`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `key`: No description
+    - `key__empty`: No description
+    - `key__ic`: No description
+    - `key__ie`: No description
+    - `key__iew`: No description
+    - `key__isw`: No description
+    - `key__n`: No description
+    - `key__nic`: No description
+    - `key__nie`: No description
+    - `key__niew`: No description
+    - `key__nisw`: No description
+    - `last_used`: No description
+    - `last_used__empty`: No description
+    - `last_used__gt`: No description
+    - `last_used__gte`: No description
+    - `last_used__lt`: No description
+    - `last_used__lte`: No description
+    - `last_used__n`: No description
+    - `limit`: Number of results to return per page.
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `user`: User (name)
+    - `user__n`: User (name)
+    - `user_id`: User
+    - `user_id__n`: User
+    - `write_enabled`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/users/tokens/**
+  - Post a list of token objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/users/tokens/**
+  - Put a list of token objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/users/tokens/**
+  - Patch a list of token objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/users/tokens/**
+  - Delete a list of token objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/users/tokens/{id}/**
+  - Get a token object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this token.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/users/tokens/{id}/**
+  - Put a token object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this token.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/users/tokens/{id}/**
+  - Patch a token object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this token.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/users/tokens/{id}/**
+  - Delete a token object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this token.
+  - **Responses:**
+    - `204`: No response body
+
+- **POST /api/users/tokens/provision/**
+  - Non-authenticated REST API endpoint via which a user may create a Token.
+  - **Responses:**
+    - `201`: 
+    - `401`: 
+
+- **GET /api/users/users/**
+  - Get a list of user objects.
+  - **Parameters:**
+    - `date_joined`: No description
+    - `date_joined__empty`: No description
+    - `date_joined__gt`: No description
+    - `date_joined__gte`: No description
+    - `date_joined__lt`: No description
+    - `date_joined__lte`: No description
+    - `date_joined__n`: No description
+    - `email`: No description
+    - `email__empty`: No description
+    - `email__ic`: No description
+    - `email__ie`: No description
+    - `email__iew`: No description
+    - `email__isw`: No description
+    - `email__n`: No description
+    - `email__nic`: No description
+    - `email__nie`: No description
+    - `email__niew`: No description
+    - `email__nisw`: No description
+    - `first_name`: No description
+    - `first_name__empty`: No description
+    - `first_name__ic`: No description
+    - `first_name__ie`: No description
+    - `first_name__iew`: No description
+    - `first_name__isw`: No description
+    - `first_name__n`: No description
+    - `first_name__nic`: No description
+    - `first_name__nie`: No description
+    - `first_name__niew`: No description
+    - `first_name__nisw`: No description
+    - `group`: Group (name)
+    - `group__n`: Group (name)
+    - `group_id`: Group
+    - `group_id__n`: Group
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `is_active`: No description
+    - `is_staff`: No description
+    - `is_superuser`: No description
+    - `last_login`: No description
+    - `last_login__empty`: No description
+    - `last_login__gt`: No description
+    - `last_login__gte`: No description
+    - `last_login__lt`: No description
+    - `last_login__lte`: No description
+    - `last_login__n`: No description
+    - `last_name`: No description
+    - `last_name__empty`: No description
+    - `last_name__ic`: No description
+    - `last_name__ie`: No description
+    - `last_name__iew`: No description
+    - `last_name__isw`: No description
+    - `last_name__n`: No description
+    - `last_name__nic`: No description
+    - `last_name__nie`: No description
+    - `last_name__niew`: No description
+    - `last_name__nisw`: No description
+    - `limit`: Number of results to return per page.
+    - `notification_group_id`: Notification group (ID)
+    - `notification_group_id__n`: Notification group (ID)
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `permission_id`: Permission (ID)
+    - `permission_id__n`: Permission (ID)
+    - `q`: Search
+    - `username`: No description
+    - `username__empty`: No description
+    - `username__ic`: No description
+    - `username__ie`: No description
+    - `username__iew`: No description
+    - `username__isw`: No description
+    - `username__n`: No description
+    - `username__nic`: No description
+    - `username__nie`: No description
+    - `username__niew`: No description
+    - `username__nisw`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/users/users/**
+  - Post a list of user objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/users/users/**
+  - Put a list of user objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/users/users/**
+  - Patch a list of user objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/users/users/**
+  - Delete a list of user objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/users/users/{id}/**
+  - Get a user object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this user.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/users/users/{id}/**
+  - Put a user object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this user.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/users/users/{id}/**
+  - Patch a user object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this user.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/users/users/{id}/**
+  - Delete a user object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this user.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/virtualization/cluster-groups/**
+  - Get a list of cluster group objects.
+  - **Parameters:**
+    - `contact`: Contact
+    - `contact__n`: Contact
+    - `contact_group`: No description
+    - `contact_group__n`: No description
+    - `contact_role`: Contact Role
+    - `contact_role__n`: Contact Role
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/virtualization/cluster-groups/**
+  - Post a list of cluster group objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/virtualization/cluster-groups/**
+  - Put a list of cluster group objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/virtualization/cluster-groups/**
+  - Patch a list of cluster group objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/virtualization/cluster-groups/**
+  - Delete a list of cluster group objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/virtualization/cluster-groups/{id}/**
+  - Get a cluster group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cluster group.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/virtualization/cluster-groups/{id}/**
+  - Put a cluster group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cluster group.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/virtualization/cluster-groups/{id}/**
+  - Patch a cluster group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cluster group.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/virtualization/cluster-groups/{id}/**
+  - Delete a cluster group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cluster group.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/virtualization/cluster-types/**
+  - Get a list of cluster type objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/virtualization/cluster-types/**
+  - Post a list of cluster type objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/virtualization/cluster-types/**
+  - Put a list of cluster type objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/virtualization/cluster-types/**
+  - Patch a list of cluster type objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/virtualization/cluster-types/**
+  - Delete a list of cluster type objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/virtualization/cluster-types/{id}/**
+  - Get a cluster type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cluster type.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/virtualization/cluster-types/{id}/**
+  - Put a cluster type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cluster type.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/virtualization/cluster-types/{id}/**
+  - Patch a cluster type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cluster type.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/virtualization/cluster-types/{id}/**
+  - Delete a cluster type object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cluster type.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/virtualization/clusters/**
+  - Get a list of cluster objects.
+  - **Parameters:**
+    - `contact`: Contact
+    - `contact__n`: Contact
+    - `contact_group`: No description
+    - `contact_group__n`: No description
+    - `contact_role`: Contact Role
+    - `contact_role__n`: Contact Role
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `group`: Parent group (slug)
+    - `group__n`: Parent group (slug)
+    - `group_id`: Parent group (ID)
+    - `group_id__n`: Parent group (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: No description
+    - `location__n`: No description
+    - `location_id`: No description
+    - `location_id__n`: No description
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `scope_id`: No description
+    - `scope_id__empty`: No description
+    - `scope_id__gt`: No description
+    - `scope_id__gte`: No description
+    - `scope_id__lt`: No description
+    - `scope_id__lte`: No description
+    - `scope_id__n`: No description
+    - `scope_type`: No description
+    - `scope_type__n`: No description
+    - `site`: Site (slug)
+    - `site__n`: Site (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `type`: Cluster type (slug)
+    - `type__n`: Cluster type (slug)
+    - `type_id`: Cluster type (ID)
+    - `type_id__n`: Cluster type (ID)
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/virtualization/clusters/**
+  - Post a list of cluster objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/virtualization/clusters/**
+  - Put a list of cluster objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/virtualization/clusters/**
+  - Patch a list of cluster objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/virtualization/clusters/**
+  - Delete a list of cluster objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/virtualization/clusters/{id}/**
+  - Get a cluster object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cluster.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/virtualization/clusters/{id}/**
+  - Put a cluster object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cluster.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/virtualization/clusters/{id}/**
+  - Patch a cluster object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cluster.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/virtualization/clusters/{id}/**
+  - Delete a cluster object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this cluster.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/virtualization/interfaces/**
+  - Get a list of interface objects.
+  - **Parameters:**
+    - `bridge_id`: Bridged interface (ID)
+    - `bridge_id__n`: Bridged interface (ID)
+    - `cluster`: Cluster
+    - `cluster__n`: Cluster
+    - `cluster_id`: Cluster (ID)
+    - `cluster_id__n`: Cluster (ID)
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `enabled`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `l2vpn`: L2VPN
+    - `l2vpn__n`: L2VPN
+    - `l2vpn_id`: L2VPN (ID)
+    - `l2vpn_id__n`: L2VPN (ID)
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `mac_address`: No description
+    - `mac_address__ic`: No description
+    - `mac_address__ie`: No description
+    - `mac_address__iew`: No description
+    - `mac_address__isw`: No description
+    - `mac_address__n`: No description
+    - `mac_address__nic`: No description
+    - `mac_address__nie`: No description
+    - `mac_address__niew`: No description
+    - `mac_address__nisw`: No description
+    - `mode`: IEEE 802.1Q tagging strategy
+
+* `access` - Access
+* `tagged` - Tagged
+* `tagged-all` - Tagged (All)
+* `q-in-q` - Q-in-Q (802.1ad)
+    - `modified_by_request`: No description
+    - `mtu`: No description
+    - `mtu__empty`: No description
+    - `mtu__gt`: No description
+    - `mtu__gte`: No description
+    - `mtu__lt`: No description
+    - `mtu__lte`: No description
+    - `mtu__n`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `parent_id`: Parent interface (ID)
+    - `parent_id__n`: Parent interface (ID)
+    - `primary_mac_address`: Primary MAC address
+    - `primary_mac_address__n`: Primary MAC address
+    - `primary_mac_address_id`: Primary MAC address (ID)
+    - `primary_mac_address_id__n`: Primary MAC address (ID)
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+    - `virtual_machine`: Virtual machine
+    - `virtual_machine__n`: Virtual machine
+    - `virtual_machine_id`: Virtual machine (ID)
+    - `virtual_machine_id__n`: Virtual machine (ID)
+    - `vlan`: Assigned VID
+    - `vlan_id`: Assigned VLAN
+    - `vlan_translation_policy`: VLAN Translation Policy
+    - `vlan_translation_policy__n`: VLAN Translation Policy
+    - `vlan_translation_policy_id`: VLAN Translation Policy (ID)
+    - `vlan_translation_policy_id__n`: VLAN Translation Policy (ID)
+    - `vrf`: VRF (RD)
+    - `vrf__n`: VRF (RD)
+    - `vrf_id`: VRF
+    - `vrf_id__n`: VRF
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/virtualization/interfaces/**
+  - Post a list of interface objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/virtualization/interfaces/**
+  - Put a list of interface objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/virtualization/interfaces/**
+  - Patch a list of interface objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/virtualization/interfaces/**
+  - Delete a list of interface objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/virtualization/interfaces/{id}/**
+  - Get a interface object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this interface.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/virtualization/interfaces/{id}/**
+  - Put a interface object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this interface.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/virtualization/interfaces/{id}/**
+  - Patch a interface object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this interface.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/virtualization/interfaces/{id}/**
+  - Delete a interface object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this interface.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/virtualization/virtual-disks/**
+  - Get a list of virtual disk objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `size`: No description
+    - `size__empty`: No description
+    - `size__gt`: No description
+    - `size__gte`: No description
+    - `size__lt`: No description
+    - `size__lte`: No description
+    - `size__n`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+    - `virtual_machine`: Virtual machine
+    - `virtual_machine__n`: Virtual machine
+    - `virtual_machine_id`: Virtual machine (ID)
+    - `virtual_machine_id__n`: Virtual machine (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/virtualization/virtual-disks/**
+  - Post a list of virtual disk objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/virtualization/virtual-disks/**
+  - Put a list of virtual disk objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/virtualization/virtual-disks/**
+  - Patch a list of virtual disk objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/virtualization/virtual-disks/**
+  - Delete a list of virtual disk objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/virtualization/virtual-disks/{id}/**
+  - Get a virtual disk object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual disk.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/virtualization/virtual-disks/{id}/**
+  - Put a virtual disk object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual disk.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/virtualization/virtual-disks/{id}/**
+  - Patch a virtual disk object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual disk.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/virtualization/virtual-disks/{id}/**
+  - Delete a virtual disk object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual disk.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/virtualization/virtual-machines/**
+  - Get a list of virtual machine objects.
+  - **Parameters:**
+    - `cluster`: Cluster
+    - `cluster__n`: Cluster
+    - `cluster_group`: Cluster group (slug)
+    - `cluster_group__n`: Cluster group (slug)
+    - `cluster_group_id`: Cluster group (ID)
+    - `cluster_group_id__n`: Cluster group (ID)
+    - `cluster_id`: Cluster (ID)
+    - `cluster_id__n`: Cluster (ID)
+    - `cluster_type`: Cluster type (slug)
+    - `cluster_type__n`: Cluster type (slug)
+    - `cluster_type_id`: Cluster type (ID)
+    - `cluster_type_id__n`: Cluster type (ID)
+    - `config_template_id`: Config template (ID)
+    - `config_template_id__n`: Config template (ID)
+    - `contact`: Contact
+    - `contact__n`: Contact
+    - `contact_group`: No description
+    - `contact_group__n`: No description
+    - `contact_role`: Contact Role
+    - `contact_role__n`: Contact Role
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: Device
+    - `device__n`: Device
+    - `device_id`: Device (ID)
+    - `device_id__n`: Device (ID)
+    - `disk`: No description
+    - `disk__empty`: No description
+    - `disk__gt`: No description
+    - `disk__gte`: No description
+    - `disk__lt`: No description
+    - `disk__lte`: No description
+    - `disk__n`: No description
+    - `has_primary_ip`: Has a primary IP
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `interface_count`: No description
+    - `interface_count__empty`: No description
+    - `interface_count__gt`: No description
+    - `interface_count__gte`: No description
+    - `interface_count__lt`: No description
+    - `interface_count__lte`: No description
+    - `interface_count__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `local_context_data`: Has local config context data
+    - `mac_address`: No description
+    - `mac_address__ic`: No description
+    - `mac_address__ie`: No description
+    - `mac_address__iew`: No description
+    - `mac_address__isw`: No description
+    - `mac_address__n`: No description
+    - `mac_address__nic`: No description
+    - `mac_address__nie`: No description
+    - `mac_address__niew`: No description
+    - `mac_address__nisw`: No description
+    - `memory`: No description
+    - `memory__empty`: No description
+    - `memory__gt`: No description
+    - `memory__gte`: No description
+    - `memory__lt`: No description
+    - `memory__lte`: No description
+    - `memory__n`: No description
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `platform`: Platform (slug)
+    - `platform__n`: Platform (slug)
+    - `platform_id`: Platform (ID)
+    - `platform_id__n`: Platform (ID)
+    - `primary_ip4_id`: Primary IPv4 (ID)
+    - `primary_ip4_id__n`: Primary IPv4 (ID)
+    - `primary_ip6_id`: Primary IPv6 (ID)
+    - `primary_ip6_id__n`: Primary IPv6 (ID)
+    - `q`: Search
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `role`: Role (slug)
+    - `role__n`: Role (slug)
+    - `role_id`: Role (ID)
+    - `role_id__n`: Role (ID)
+    - `serial`: No description
+    - `serial__empty`: No description
+    - `serial__ic`: No description
+    - `serial__ie`: No description
+    - `serial__iew`: No description
+    - `serial__isw`: No description
+    - `serial__n`: No description
+    - `serial__nic`: No description
+    - `serial__nie`: No description
+    - `serial__niew`: No description
+    - `serial__nisw`: No description
+    - `site`: Site (slug)
+    - `site__n`: Site (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+    - `vcpus`: No description
+    - `vcpus__empty`: No description
+    - `vcpus__gt`: No description
+    - `vcpus__gte`: No description
+    - `vcpus__lt`: No description
+    - `vcpus__lte`: No description
+    - `vcpus__n`: No description
+    - `virtual_disk_count`: No description
+    - `virtual_disk_count__empty`: No description
+    - `virtual_disk_count__gt`: No description
+    - `virtual_disk_count__gte`: No description
+    - `virtual_disk_count__lt`: No description
+    - `virtual_disk_count__lte`: No description
+    - `virtual_disk_count__n`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/virtualization/virtual-machines/**
+  - Post a list of virtual machine objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/virtualization/virtual-machines/**
+  - Put a list of virtual machine objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/virtualization/virtual-machines/**
+  - Patch a list of virtual machine objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/virtualization/virtual-machines/**
+  - Delete a list of virtual machine objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/virtualization/virtual-machines/{id}/**
+  - Get a virtual machine object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual machine.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/virtualization/virtual-machines/{id}/**
+  - Put a virtual machine object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual machine.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/virtualization/virtual-machines/{id}/**
+  - Patch a virtual machine object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual machine.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/virtualization/virtual-machines/{id}/**
+  - Delete a virtual machine object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this virtual machine.
+  - **Responses:**
+    - `204`: No response body
+
+- **POST /api/virtualization/virtual-machines/{id}/render-config/**
+  - Resolve and render the preferred ConfigTemplate for this Device.
+  - **Parameters:**
+    - `format`: No description
+    - `id`: A unique integer value identifying this virtual machine.
+  - **Responses:**
+    - `200`: 
+
+- **GET /api/vpn/ike-policies/**
+  - Get a list of IKE policy objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `ike_proposal`: No description
+    - `ike_proposal__n`: No description
+    - `ike_proposal_id`: No description
+    - `ike_proposal_id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `mode`: No description
+    - `mode__empty`: No description
+    - `mode__ic`: No description
+    - `mode__ie`: No description
+    - `mode__iew`: No description
+    - `mode__isw`: No description
+    - `mode__n`: No description
+    - `mode__nic`: No description
+    - `mode__nie`: No description
+    - `mode__niew`: No description
+    - `mode__nisw`: No description
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `preshared_key`: No description
+    - `preshared_key__ic`: No description
+    - `preshared_key__ie`: No description
+    - `preshared_key__iew`: No description
+    - `preshared_key__isw`: No description
+    - `preshared_key__n`: No description
+    - `preshared_key__nic`: No description
+    - `preshared_key__nie`: No description
+    - `preshared_key__niew`: No description
+    - `preshared_key__nisw`: No description
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+    - `version`: No description
+    - `version__ic`: No description
+    - `version__ie`: No description
+    - `version__iew`: No description
+    - `version__isw`: No description
+    - `version__n`: No description
+    - `version__nic`: No description
+    - `version__nie`: No description
+    - `version__niew`: No description
+    - `version__nisw`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/vpn/ike-policies/**
+  - Post a list of IKE policy objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/vpn/ike-policies/**
+  - Put a list of IKE policy objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/ike-policies/**
+  - Patch a list of IKE policy objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/ike-policies/**
+  - Delete a list of IKE policy objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/ike-policies/{id}/**
+  - Get a IKE policy object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IKE policy.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/vpn/ike-policies/{id}/**
+  - Put a IKE policy object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IKE policy.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/ike-policies/{id}/**
+  - Patch a IKE policy object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IKE policy.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/ike-policies/{id}/**
+  - Delete a IKE policy object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IKE policy.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/ike-proposals/**
+  - Get a list of IKE proposal objects.
+  - **Parameters:**
+    - `authentication_algorithm`: No description
+    - `authentication_algorithm__empty`: No description
+    - `authentication_algorithm__ic`: No description
+    - `authentication_algorithm__ie`: No description
+    - `authentication_algorithm__iew`: No description
+    - `authentication_algorithm__isw`: No description
+    - `authentication_algorithm__n`: No description
+    - `authentication_algorithm__nic`: No description
+    - `authentication_algorithm__nie`: No description
+    - `authentication_algorithm__niew`: No description
+    - `authentication_algorithm__nisw`: No description
+    - `authentication_method`: No description
+    - `authentication_method__empty`: No description
+    - `authentication_method__ic`: No description
+    - `authentication_method__ie`: No description
+    - `authentication_method__iew`: No description
+    - `authentication_method__isw`: No description
+    - `authentication_method__n`: No description
+    - `authentication_method__nic`: No description
+    - `authentication_method__nie`: No description
+    - `authentication_method__niew`: No description
+    - `authentication_method__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `encryption_algorithm`: No description
+    - `encryption_algorithm__empty`: No description
+    - `encryption_algorithm__ic`: No description
+    - `encryption_algorithm__ie`: No description
+    - `encryption_algorithm__iew`: No description
+    - `encryption_algorithm__isw`: No description
+    - `encryption_algorithm__n`: No description
+    - `encryption_algorithm__nic`: No description
+    - `encryption_algorithm__nie`: No description
+    - `encryption_algorithm__niew`: No description
+    - `encryption_algorithm__nisw`: No description
+    - `group`: Diffie-Hellman group ID
+    - `group__ic`: Diffie-Hellman group ID
+    - `group__ie`: Diffie-Hellman group ID
+    - `group__iew`: Diffie-Hellman group ID
+    - `group__isw`: Diffie-Hellman group ID
+    - `group__n`: Diffie-Hellman group ID
+    - `group__nic`: Diffie-Hellman group ID
+    - `group__nie`: Diffie-Hellman group ID
+    - `group__niew`: Diffie-Hellman group ID
+    - `group__nisw`: Diffie-Hellman group ID
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `ike_policy`: IKE policy (name)
+    - `ike_policy__n`: IKE policy (name)
+    - `ike_policy_id`: IKE policy (ID)
+    - `ike_policy_id__n`: IKE policy (ID)
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `sa_lifetime`: No description
+    - `sa_lifetime__empty`: No description
+    - `sa_lifetime__gt`: No description
+    - `sa_lifetime__gte`: No description
+    - `sa_lifetime__lt`: No description
+    - `sa_lifetime__lte`: No description
+    - `sa_lifetime__n`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/vpn/ike-proposals/**
+  - Post a list of IKE proposal objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/vpn/ike-proposals/**
+  - Put a list of IKE proposal objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/ike-proposals/**
+  - Patch a list of IKE proposal objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/ike-proposals/**
+  - Delete a list of IKE proposal objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/ike-proposals/{id}/**
+  - Get a IKE proposal object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IKE proposal.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/vpn/ike-proposals/{id}/**
+  - Put a IKE proposal object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IKE proposal.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/ike-proposals/{id}/**
+  - Patch a IKE proposal object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IKE proposal.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/ike-proposals/{id}/**
+  - Delete a IKE proposal object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IKE proposal.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/ipsec-policies/**
+  - Get a list of IPSec policy objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `ipsec_proposal`: No description
+    - `ipsec_proposal__n`: No description
+    - `ipsec_proposal_id`: No description
+    - `ipsec_proposal_id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `pfs_group`: Diffie-Hellman group for Perfect Forward Secrecy
+    - `pfs_group__ic`: Diffie-Hellman group for Perfect Forward Secrecy
+    - `pfs_group__ie`: Diffie-Hellman group for Perfect Forward Secrecy
+    - `pfs_group__iew`: Diffie-Hellman group for Perfect Forward Secrecy
+    - `pfs_group__isw`: Diffie-Hellman group for Perfect Forward Secrecy
+    - `pfs_group__n`: Diffie-Hellman group for Perfect Forward Secrecy
+    - `pfs_group__nic`: Diffie-Hellman group for Perfect Forward Secrecy
+    - `pfs_group__nie`: Diffie-Hellman group for Perfect Forward Secrecy
+    - `pfs_group__niew`: Diffie-Hellman group for Perfect Forward Secrecy
+    - `pfs_group__nisw`: Diffie-Hellman group for Perfect Forward Secrecy
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/vpn/ipsec-policies/**
+  - Post a list of IPSec policy objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/vpn/ipsec-policies/**
+  - Put a list of IPSec policy objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/ipsec-policies/**
+  - Patch a list of IPSec policy objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/ipsec-policies/**
+  - Delete a list of IPSec policy objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/ipsec-policies/{id}/**
+  - Get a IPSec policy object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IPSec policy.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/vpn/ipsec-policies/{id}/**
+  - Put a IPSec policy object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IPSec policy.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/ipsec-policies/{id}/**
+  - Patch a IPSec policy object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IPSec policy.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/ipsec-policies/{id}/**
+  - Delete a IPSec policy object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IPSec policy.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/ipsec-profiles/**
+  - Get a list of IPSec profile objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `ike_policy`: IKE policy (name)
+    - `ike_policy__n`: IKE policy (name)
+    - `ike_policy_id`: IKE policy (ID)
+    - `ike_policy_id__n`: IKE policy (ID)
+    - `ipsec_policy`: IPSec policy (name)
+    - `ipsec_policy__n`: IPSec policy (name)
+    - `ipsec_policy_id`: IPSec policy (ID)
+    - `ipsec_policy_id__n`: IPSec policy (ID)
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `mode`: No description
+    - `mode__empty`: No description
+    - `mode__ic`: No description
+    - `mode__ie`: No description
+    - `mode__iew`: No description
+    - `mode__isw`: No description
+    - `mode__n`: No description
+    - `mode__nic`: No description
+    - `mode__nie`: No description
+    - `mode__niew`: No description
+    - `mode__nisw`: No description
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/vpn/ipsec-profiles/**
+  - Post a list of IPSec profile objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/vpn/ipsec-profiles/**
+  - Put a list of IPSec profile objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/ipsec-profiles/**
+  - Patch a list of IPSec profile objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/ipsec-profiles/**
+  - Delete a list of IPSec profile objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/ipsec-profiles/{id}/**
+  - Get a IPSec profile object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IPSec profile.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/vpn/ipsec-profiles/{id}/**
+  - Put a IPSec profile object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IPSec profile.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/ipsec-profiles/{id}/**
+  - Patch a IPSec profile object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IPSec profile.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/ipsec-profiles/{id}/**
+  - Delete a IPSec profile object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IPSec profile.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/ipsec-proposals/**
+  - Get a list of IPSec proposal objects.
+  - **Parameters:**
+    - `authentication_algorithm`: No description
+    - `authentication_algorithm__empty`: No description
+    - `authentication_algorithm__ic`: No description
+    - `authentication_algorithm__ie`: No description
+    - `authentication_algorithm__iew`: No description
+    - `authentication_algorithm__isw`: No description
+    - `authentication_algorithm__n`: No description
+    - `authentication_algorithm__nic`: No description
+    - `authentication_algorithm__nie`: No description
+    - `authentication_algorithm__niew`: No description
+    - `authentication_algorithm__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `encryption_algorithm`: No description
+    - `encryption_algorithm__empty`: No description
+    - `encryption_algorithm__ic`: No description
+    - `encryption_algorithm__ie`: No description
+    - `encryption_algorithm__iew`: No description
+    - `encryption_algorithm__isw`: No description
+    - `encryption_algorithm__n`: No description
+    - `encryption_algorithm__nic`: No description
+    - `encryption_algorithm__nie`: No description
+    - `encryption_algorithm__niew`: No description
+    - `encryption_algorithm__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `ipsec_policy`: IPSec policy (name)
+    - `ipsec_policy__n`: IPSec policy (name)
+    - `ipsec_policy_id`: IPSec policy (ID)
+    - `ipsec_policy_id__n`: IPSec policy (ID)
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `sa_lifetime_data`: No description
+    - `sa_lifetime_data__empty`: No description
+    - `sa_lifetime_data__gt`: No description
+    - `sa_lifetime_data__gte`: No description
+    - `sa_lifetime_data__lt`: No description
+    - `sa_lifetime_data__lte`: No description
+    - `sa_lifetime_data__n`: No description
+    - `sa_lifetime_seconds`: No description
+    - `sa_lifetime_seconds__empty`: No description
+    - `sa_lifetime_seconds__gt`: No description
+    - `sa_lifetime_seconds__gte`: No description
+    - `sa_lifetime_seconds__lt`: No description
+    - `sa_lifetime_seconds__lte`: No description
+    - `sa_lifetime_seconds__n`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/vpn/ipsec-proposals/**
+  - Post a list of IPSec proposal objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/vpn/ipsec-proposals/**
+  - Put a list of IPSec proposal objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/ipsec-proposals/**
+  - Patch a list of IPSec proposal objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/ipsec-proposals/**
+  - Delete a list of IPSec proposal objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/ipsec-proposals/{id}/**
+  - Get a IPSec proposal object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IPSec proposal.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/vpn/ipsec-proposals/{id}/**
+  - Put a IPSec proposal object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IPSec proposal.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/ipsec-proposals/{id}/**
+  - Patch a IPSec proposal object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IPSec proposal.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/ipsec-proposals/{id}/**
+  - Delete a IPSec proposal object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this IPSec proposal.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/l2vpn-terminations/**
+  - Get a list of L2VPN termination objects.
+  - **Parameters:**
+    - `assigned_object_id`: No description
+    - `assigned_object_id__empty`: No description
+    - `assigned_object_id__gt`: No description
+    - `assigned_object_id__gte`: No description
+    - `assigned_object_id__lt`: No description
+    - `assigned_object_id__lte`: No description
+    - `assigned_object_id__n`: No description
+    - `assigned_object_type`: No description
+    - `assigned_object_type__n`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `device`: Device (name)
+    - `device__n`: Device (name)
+    - `device_id`: Device (ID)
+    - `device_id__n`: Device (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `interface`: Interface (name)
+    - `interface__n`: Interface (name)
+    - `interface_id`: Interface (ID)
+    - `interface_id__n`: Interface (ID)
+    - `l2vpn`: L2VPN (slug)
+    - `l2vpn__n`: L2VPN (slug)
+    - `l2vpn_id`: L2VPN (ID)
+    - `l2vpn_id__n`: L2VPN (ID)
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `region`: No description
+    - `region_id`: No description
+    - `site`: No description
+    - `site_id`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+    - `virtual_machine`: Virtual machine (name)
+    - `virtual_machine__n`: Virtual machine (name)
+    - `virtual_machine_id`: Virtual machine (ID)
+    - `virtual_machine_id__n`: Virtual machine (ID)
+    - `vlan`: VLAN (name)
+    - `vlan__n`: VLAN (name)
+    - `vlan_id`: VLAN (ID)
+    - `vlan_id__n`: VLAN (ID)
+    - `vlan_vid`: VLAN number (1-4094)
+    - `vlan_vid__empty`: VLAN number (1-4094)
+    - `vlan_vid__gt`: VLAN number (1-4094)
+    - `vlan_vid__gte`: VLAN number (1-4094)
+    - `vlan_vid__lt`: VLAN number (1-4094)
+    - `vlan_vid__lte`: VLAN number (1-4094)
+    - `vlan_vid__n`: VLAN number (1-4094)
+    - `vminterface`: VM interface (name)
+    - `vminterface__n`: VM interface (name)
+    - `vminterface_id`: VM Interface (ID)
+    - `vminterface_id__n`: VM Interface (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/vpn/l2vpn-terminations/**
+  - Post a list of L2VPN termination objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/vpn/l2vpn-terminations/**
+  - Put a list of L2VPN termination objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/l2vpn-terminations/**
+  - Patch a list of L2VPN termination objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/l2vpn-terminations/**
+  - Delete a list of L2VPN termination objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/l2vpn-terminations/{id}/**
+  - Get a L2VPN termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this L2VPN termination.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/vpn/l2vpn-terminations/{id}/**
+  - Put a L2VPN termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this L2VPN termination.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/l2vpn-terminations/{id}/**
+  - Patch a L2VPN termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this L2VPN termination.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/l2vpn-terminations/{id}/**
+  - Delete a L2VPN termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this L2VPN termination.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/l2vpns/**
+  - Get a list of L2VPN objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `export_target`: Export target (name)
+    - `export_target__n`: Export target (name)
+    - `export_target_id`: Export target
+    - `export_target_id__n`: Export target
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `identifier`: No description
+    - `identifier__empty`: No description
+    - `identifier__gt`: No description
+    - `identifier__gte`: No description
+    - `identifier__lt`: No description
+    - `identifier__lte`: No description
+    - `identifier__n`: No description
+    - `import_target`: Import target (name)
+    - `import_target__n`: Import target (name)
+    - `import_target_id`: Import target
+    - `import_target_id__n`: Import target
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `type`: No description
+    - `type__empty`: No description
+    - `type__ic`: No description
+    - `type__ie`: No description
+    - `type__iew`: No description
+    - `type__isw`: No description
+    - `type__n`: No description
+    - `type__nic`: No description
+    - `type__nie`: No description
+    - `type__niew`: No description
+    - `type__nisw`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/vpn/l2vpns/**
+  - Post a list of L2VPN objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/vpn/l2vpns/**
+  - Put a list of L2VPN objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/l2vpns/**
+  - Patch a list of L2VPN objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/l2vpns/**
+  - Delete a list of L2VPN objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/l2vpns/{id}/**
+  - Get a L2VPN object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this L2VPN.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/vpn/l2vpns/{id}/**
+  - Put a L2VPN object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this L2VPN.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/l2vpns/{id}/**
+  - Patch a L2VPN object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this L2VPN.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/l2vpns/{id}/**
+  - Delete a L2VPN object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this L2VPN.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/tunnel-groups/**
+  - Get a list of tunnel group objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/vpn/tunnel-groups/**
+  - Post a list of tunnel group objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/vpn/tunnel-groups/**
+  - Put a list of tunnel group objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/tunnel-groups/**
+  - Patch a list of tunnel group objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/tunnel-groups/**
+  - Delete a list of tunnel group objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/tunnel-groups/{id}/**
+  - Get a tunnel group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tunnel group.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/vpn/tunnel-groups/{id}/**
+  - Put a tunnel group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tunnel group.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/tunnel-groups/{id}/**
+  - Patch a tunnel group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tunnel group.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/tunnel-groups/{id}/**
+  - Delete a tunnel group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tunnel group.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/tunnel-terminations/**
+  - Get a list of tunnel termination objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `interface`: Interface (name)
+    - `interface__n`: Interface (name)
+    - `interface_id`: Interface (ID)
+    - `interface_id__n`: Interface (ID)
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `outside_ip_id`: Outside IP (ID)
+    - `outside_ip_id__n`: Outside IP (ID)
+    - `q`: Search
+    - `role`: No description
+    - `role__empty`: No description
+    - `role__ic`: No description
+    - `role__ie`: No description
+    - `role__iew`: No description
+    - `role__isw`: No description
+    - `role__n`: No description
+    - `role__nic`: No description
+    - `role__nie`: No description
+    - `role__niew`: No description
+    - `role__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `termination_id`: No description
+    - `termination_id__empty`: No description
+    - `termination_id__gt`: No description
+    - `termination_id__gte`: No description
+    - `termination_id__lt`: No description
+    - `termination_id__lte`: No description
+    - `termination_id__n`: No description
+    - `termination_type`: No description
+    - `termination_type__n`: No description
+    - `tunnel`: Tunnel (name)
+    - `tunnel__n`: Tunnel (name)
+    - `tunnel_id`: Tunnel (ID)
+    - `tunnel_id__n`: Tunnel (ID)
+    - `updated_by_request`: No description
+    - `vminterface`: VM interface (name)
+    - `vminterface__n`: VM interface (name)
+    - `vminterface_id`: VM interface (ID)
+    - `vminterface_id__n`: VM interface (ID)
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/vpn/tunnel-terminations/**
+  - Post a list of tunnel termination objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/vpn/tunnel-terminations/**
+  - Put a list of tunnel termination objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/tunnel-terminations/**
+  - Patch a list of tunnel termination objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/tunnel-terminations/**
+  - Delete a list of tunnel termination objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/tunnel-terminations/{id}/**
+  - Get a tunnel termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tunnel termination.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/vpn/tunnel-terminations/{id}/**
+  - Put a tunnel termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tunnel termination.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/tunnel-terminations/{id}/**
+  - Patch a tunnel termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tunnel termination.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/tunnel-terminations/{id}/**
+  - Delete a tunnel termination object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tunnel termination.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/tunnels/**
+  - Get a list of tunnel objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `encapsulation`: No description
+    - `encapsulation__empty`: No description
+    - `encapsulation__ic`: No description
+    - `encapsulation__ie`: No description
+    - `encapsulation__iew`: No description
+    - `encapsulation__isw`: No description
+    - `encapsulation__n`: No description
+    - `encapsulation__nic`: No description
+    - `encapsulation__nie`: No description
+    - `encapsulation__niew`: No description
+    - `encapsulation__nisw`: No description
+    - `group`: Tunnel group (slug)
+    - `group__n`: Tunnel group (slug)
+    - `group_id`: Tunnel group (ID)
+    - `group_id__n`: Tunnel group (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `ipsec_profile`: IPSec profile (name)
+    - `ipsec_profile__n`: IPSec profile (name)
+    - `ipsec_profile_id`: IPSec profile (ID)
+    - `ipsec_profile_id__n`: IPSec profile (ID)
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `tunnel_id`: No description
+    - `tunnel_id__empty`: No description
+    - `tunnel_id__gt`: No description
+    - `tunnel_id__gte`: No description
+    - `tunnel_id__lt`: No description
+    - `tunnel_id__lte`: No description
+    - `tunnel_id__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/vpn/tunnels/**
+  - Post a list of tunnel objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/vpn/tunnels/**
+  - Put a list of tunnel objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/tunnels/**
+  - Patch a list of tunnel objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/tunnels/**
+  - Delete a list of tunnel objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/vpn/tunnels/{id}/**
+  - Get a tunnel object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tunnel.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/vpn/tunnels/{id}/**
+  - Put a tunnel object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tunnel.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/vpn/tunnels/{id}/**
+  - Patch a tunnel object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tunnel.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/vpn/tunnels/{id}/**
+  - Delete a tunnel object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this tunnel.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/wireless/wireless-lan-groups/**
+  - Get a list of wireless LAN group objects.
+  - **Parameters:**
+    - `ancestor`: No description
+    - `ancestor__n`: No description
+    - `ancestor_id`: No description
+    - `ancestor_id__n`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `parent`: No description
+    - `parent__n`: No description
+    - `parent_id`: No description
+    - `parent_id__n`: No description
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/wireless/wireless-lan-groups/**
+  - Post a list of wireless LAN group objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/wireless/wireless-lan-groups/**
+  - Put a list of wireless LAN group objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/wireless/wireless-lan-groups/**
+  - Patch a list of wireless LAN group objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/wireless/wireless-lan-groups/**
+  - Delete a list of wireless LAN group objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/wireless/wireless-lan-groups/{id}/**
+  - Get a wireless LAN group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this wireless LAN group.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/wireless/wireless-lan-groups/{id}/**
+  - Put a wireless LAN group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this wireless LAN group.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/wireless/wireless-lan-groups/{id}/**
+  - Patch a wireless LAN group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this wireless LAN group.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/wireless/wireless-lan-groups/{id}/**
+  - Delete a wireless LAN group object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this wireless LAN group.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/wireless/wireless-lans/**
+  - Get a list of wireless LAN objects.
+  - **Parameters:**
+    - `auth_cipher`: No description
+    - `auth_cipher__empty`: No description
+    - `auth_cipher__ic`: No description
+    - `auth_cipher__ie`: No description
+    - `auth_cipher__iew`: No description
+    - `auth_cipher__isw`: No description
+    - `auth_cipher__n`: No description
+    - `auth_cipher__nic`: No description
+    - `auth_cipher__nie`: No description
+    - `auth_cipher__niew`: No description
+    - `auth_cipher__nisw`: No description
+    - `auth_psk`: No description
+    - `auth_psk__empty`: No description
+    - `auth_psk__ic`: No description
+    - `auth_psk__ie`: No description
+    - `auth_psk__iew`: No description
+    - `auth_psk__isw`: No description
+    - `auth_psk__n`: No description
+    - `auth_psk__nic`: No description
+    - `auth_psk__nie`: No description
+    - `auth_psk__niew`: No description
+    - `auth_psk__nisw`: No description
+    - `auth_type`: No description
+    - `auth_type__empty`: No description
+    - `auth_type__ic`: No description
+    - `auth_type__ie`: No description
+    - `auth_type__iew`: No description
+    - `auth_type__isw`: No description
+    - `auth_type__n`: No description
+    - `auth_type__nic`: No description
+    - `auth_type__nie`: No description
+    - `auth_type__niew`: No description
+    - `auth_type__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `group`: No description
+    - `group__n`: No description
+    - `group_id`: No description
+    - `group_id__n`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `interface_id`: No description
+    - `interface_id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: No description
+    - `location__n`: No description
+    - `location_id`: No description
+    - `location_id__n`: No description
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `scope_id`: No description
+    - `scope_id__empty`: No description
+    - `scope_id__gt`: No description
+    - `scope_id__gte`: No description
+    - `scope_id__lt`: No description
+    - `scope_id__lte`: No description
+    - `scope_id__n`: No description
+    - `scope_type`: No description
+    - `scope_type__n`: No description
+    - `site`: Site (slug)
+    - `site__n`: Site (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `ssid`: No description
+    - `ssid__empty`: No description
+    - `ssid__ic`: No description
+    - `ssid__ie`: No description
+    - `ssid__iew`: No description
+    - `ssid__isw`: No description
+    - `ssid__n`: No description
+    - `ssid__nic`: No description
+    - `ssid__nie`: No description
+    - `ssid__niew`: No description
+    - `ssid__nisw`: No description
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+    - `vlan_id`: No description
+    - `vlan_id__n`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/wireless/wireless-lans/**
+  - Post a list of wireless LAN objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/wireless/wireless-lans/**
+  - Put a list of wireless LAN objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/wireless/wireless-lans/**
+  - Patch a list of wireless LAN objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/wireless/wireless-lans/**
+  - Delete a list of wireless LAN objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/wireless/wireless-lans/{id}/**
+  - Get a wireless LAN object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this wireless LAN.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/wireless/wireless-lans/{id}/**
+  - Put a wireless LAN object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this wireless LAN.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/wireless/wireless-lans/{id}/**
+  - Patch a wireless LAN object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this wireless LAN.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/wireless/wireless-lans/{id}/**
+  - Delete a wireless LAN object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this wireless LAN.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/wireless/wireless-links/**
+  - Get a list of wireless link objects.
+  - **Parameters:**
+    - `auth_cipher`: No description
+    - `auth_cipher__empty`: No description
+    - `auth_cipher__ic`: No description
+    - `auth_cipher__ie`: No description
+    - `auth_cipher__iew`: No description
+    - `auth_cipher__isw`: No description
+    - `auth_cipher__n`: No description
+    - `auth_cipher__nic`: No description
+    - `auth_cipher__nie`: No description
+    - `auth_cipher__niew`: No description
+    - `auth_cipher__nisw`: No description
+    - `auth_psk`: No description
+    - `auth_psk__empty`: No description
+    - `auth_psk__ic`: No description
+    - `auth_psk__ie`: No description
+    - `auth_psk__iew`: No description
+    - `auth_psk__isw`: No description
+    - `auth_psk__n`: No description
+    - `auth_psk__nic`: No description
+    - `auth_psk__nie`: No description
+    - `auth_psk__niew`: No description
+    - `auth_psk__nisw`: No description
+    - `auth_type`: No description
+    - `auth_type__empty`: No description
+    - `auth_type__ic`: No description
+    - `auth_type__ie`: No description
+    - `auth_type__iew`: No description
+    - `auth_type__isw`: No description
+    - `auth_type__n`: No description
+    - `auth_type__nic`: No description
+    - `auth_type__nie`: No description
+    - `auth_type__niew`: No description
+    - `auth_type__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `distance`: No description
+    - `distance__empty`: No description
+    - `distance__gt`: No description
+    - `distance__gte`: No description
+    - `distance__lt`: No description
+    - `distance__lte`: No description
+    - `distance__n`: No description
+    - `distance_unit`: * `km` - Kilometers
+* `m` - Meters
+* `mi` - Miles
+* `ft` - Feet
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `interface_a_id`: No description
+    - `interface_a_id__n`: No description
+    - `interface_b_id`: No description
+    - `interface_b_id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `ssid`: No description
+    - `ssid__empty`: No description
+    - `ssid__ic`: No description
+    - `ssid__ie`: No description
+    - `ssid__iew`: No description
+    - `ssid__isw`: No description
+    - `ssid__n`: No description
+    - `ssid__nic`: No description
+    - `ssid__nie`: No description
+    - `ssid__niew`: No description
+    - `ssid__nisw`: No description
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+- **POST /api/wireless/wireless-links/**
+  - Post a list of wireless link objects.
+  - **Responses:**
+    - `201`: 
+
+- **PUT /api/wireless/wireless-links/**
+  - Put a list of wireless link objects.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/wireless/wireless-links/**
+  - Patch a list of wireless link objects.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/wireless/wireless-links/**
+  - Delete a list of wireless link objects.
+  - **Responses:**
+    - `204`: No response body
+
+- **GET /api/wireless/wireless-links/{id}/**
+  - Get a wireless link object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this wireless link.
+  - **Responses:**
+    - `200`: 
+
+- **PUT /api/wireless/wireless-links/{id}/**
+  - Put a wireless link object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this wireless link.
+  - **Responses:**
+    - `200`: 
+
+- **PATCH /api/wireless/wireless-links/{id}/**
+  - Patch a wireless link object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this wireless link.
+  - **Responses:**
+    - `200`: 
+
+- **DELETE /api/wireless/wireless-links/{id}/**
+  - Delete a wireless link object.
+  - **Parameters:**
+    - `id`: A unique integer value identifying this wireless link.
+  - **Responses:**
+    - `204`: No response body

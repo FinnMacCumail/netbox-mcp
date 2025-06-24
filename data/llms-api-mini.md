@@ -1,0 +1,796 @@
+ NetBox REST API
+
+> Full documentation of the NetBox REST API for NetBox 4.2
+
+## Endpoints
+
+- **GET /api/circuits/circuit-group-assignments/**
+  - Get a list of Circuit group assignment objects.
+  - **Parameters:**
+    - `circuit`: No description
+    - `circuit_id`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `group`: Circuit group (slug)
+    - `group__n`: Circuit group (slug)
+    - `group_id`: Circuit group (ID)
+    - `group_id__n`: Circuit group (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `member_id`: No description
+    - `member_id__empty`: No description
+    - `member_id__gt`: No description
+    - `member_id__gte`: No description
+    - `member_id__lt`: No description
+    - `member_id__lte`: No description
+    - `member_id__n`: No description
+    - `member_type`: No description
+    - `member_type__n`: No description
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `priority`: * `primary` - Primary
+* `secondary` - Secondary
+* `tertiary` - Tertiary
+* `inactive` - Inactive
+    - `provider`: No description
+    - `provider_id`: No description
+    - `q`: Search
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+    - `virtual_circuit`: No description
+    - `virtual_circuit_id`: No description
+  - **Responses:**
+    - `200`: 
+
+     **GET /api/circuits/circuit-groups/**
+  - Get a list of circuit group objects.
+  - **Parameters:**
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+     **GET /api/circuits/circuit-terminations/**
+  - Get a list of circuit termination objects.
+  - **Parameters:**
+    - `cable_end`: * `A` - A
+* `B` - B
+    - `cable_id`: Cable (ID)
+    - `cable_id__n`: Cable (ID)
+    - `cabled`: No description
+    - `circuit_id`: Circuit
+    - `circuit_id__n`: Circuit
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: No description
+    - `location__n`: No description
+    - `location_id`: No description
+    - `location_id__n`: No description
+    - `mark_connected`: No description
+    - `modified_by_request`: No description
+    - `occupied`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `port_speed`: No description
+    - `port_speed__empty`: No description
+    - `port_speed__gt`: No description
+    - `port_speed__gte`: No description
+    - `port_speed__lt`: No description
+    - `port_speed__lte`: No description
+    - `port_speed__n`: No description
+    - `pp_info`: No description
+    - `pp_info__empty`: No description
+    - `pp_info__ic`: No description
+    - `pp_info__ie`: No description
+    - `pp_info__iew`: No description
+    - `pp_info__isw`: No description
+    - `pp_info__n`: No description
+    - `pp_info__nic`: No description
+    - `pp_info__nie`: No description
+    - `pp_info__niew`: No description
+    - `pp_info__nisw`: No description
+    - `provider`: Provider (slug)
+    - `provider__n`: Provider (slug)
+    - `provider_id`: Provider (ID)
+    - `provider_id__n`: Provider (ID)
+    - `provider_network_id`: ProviderNetwork (ID)
+    - `provider_network_id__n`: ProviderNetwork (ID)
+    - `q`: Search
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site (slug)
+    - `site__n`: Site (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `tag`: No description
+    - `tag__n`: No description
+    - `term_side`: * `A` - A
+* `Z` - Z
+    - `termination_id`: No description
+    - `termination_id__empty`: No description
+    - `termination_id__gt`: No description
+    - `termination_id__gte`: No description
+    - `termination_id__lt`: No description
+    - `termination_id__lte`: No description
+    - `termination_id__n`: No description
+    - `termination_type`: No description
+    - `termination_type__n`: No description
+    - `updated_by_request`: No description
+    - `upstream_speed`: No description
+    - `upstream_speed__empty`: No description
+    - `upstream_speed__gt`: No description
+    - `upstream_speed__gte`: No description
+    - `upstream_speed__lt`: No description
+    - `upstream_speed__lte`: No description
+    - `upstream_speed__n`: No description
+    - `xconnect_id`: No description
+    - `xconnect_id__empty`: No description
+    - `xconnect_id__ic`: No description
+    - `xconnect_id__ie`: No description
+    - `xconnect_id__iew`: No description
+    - `xconnect_id__isw`: No description
+    - `xconnect_id__n`: No description
+    - `xconnect_id__nic`: No description
+    - `xconnect_id__nie`: No description
+    - `xconnect_id__niew`: No description
+    - `xconnect_id__nisw`: No description
+  - **Responses:**
+    - `200`: 
+
+    - **GET /api/circuits/circuit-types/**
+  - Get a list of circuit type objects.
+  - **Parameters:**
+    - `color`: No description
+    - `color__empty`: No description
+    - `color__ic`: No description
+    - `color__ie`: No description
+    - `color__iew`: No description
+    - `color__isw`: No description
+    - `color__n`: No description
+    - `color__nic`: No description
+    - `color__nie`: No description
+    - `color__niew`: No description
+    - `color__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `modified_by_request`: No description
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `slug`: No description
+    - `slug__empty`: No description
+    - `slug__ic`: No description
+    - `slug__ie`: No description
+    - `slug__iew`: No description
+    - `slug__isw`: No description
+    - `slug__n`: No description
+    - `slug__nic`: No description
+    - `slug__nie`: No description
+    - `slug__niew`: No description
+    - `slug__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+    ...ect
+
+    - **GET /api/dcim/cables/**
+  - Get a list of cable objects.
+  - **Parameters:**
+    - `circuittermination_id`: No description
+    - `color`: No description
+    - `color__empty`: No description
+    - `color__ic`: No description
+    - `color__ie`: No description
+    - `color__iew`: No description
+    - `color__isw`: No description
+    - `color__n`: No description
+    - `color__nic`: No description
+    - `color__nie`: No description
+    - `color__niew`: No description
+    - `color__nisw`: No description
+    - `consoleport_id`: No description
+    - `consoleserverport_id`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: No description
+    - `device_id`: No description
+    - `frontport_id`: No description
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `interface_id`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `length`: No description
+    - `length__empty`: No description
+    - `length__gt`: No description
+    - `length__gte`: No description
+    - `length__lt`: No description
+    - `length__lte`: No description
+    - `length__n`: No description
+    - `length_unit`: * `km` - Kilometers
+* `m` - Meters
+* `cm` - Centimeters
+* `mi` - Miles
+* `ft` - Feet
+* `in` - Inches
+    - `limit`: Number of results to return per page.
+    - `location`: No description
+    - `location_id`: No description
+    - `modified_by_request`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `powerfeed_id`: No description
+    - `poweroutlet_id`: No description
+    - `powerport_id`: No description
+    - `q`: Search
+    - `rack`: No description
+    - `rack_id`: No description
+    - `rearport_id`: No description
+    - `site`: No description
+    - `site_id`: No description
+    - `status`: No description
+    - `status__empty`: No description
+    - `status__ic`: No description
+    - `status__ie`: No description
+    - `status__iew`: No description
+    - `status__isw`: No description
+    - `status__n`: No description
+    - `status__nic`: No description
+    - `status__nie`: No description
+    - `status__niew`: No description
+    - `status__nisw`: No description
+    - `tag`: No description
+    - `tag__n`: No description
+    - `tenant`: Tenant (slug)
+    - `tenant__n`: Tenant (slug)
+    - `tenant_group`: No description
+    - `tenant_group__n`: No description
+    - `tenant_group_id`: No description
+    - `tenant_group_id__n`: No description
+    - `tenant_id`: Tenant (ID)
+    - `tenant_id__n`: Tenant (ID)
+    - `termination_a_id`: No description
+    - `termination_a_type`: No description
+    - `termination_a_type__n`: No description
+    - `termination_b_id`: No description
+    - `termination_b_type`: No description
+    - `termination_b_type__n`: No description
+    - `type`: No description
+    - `type__empty`: No description
+    - `type__ic`: No description
+    - `type__ie`: No description
+    - `type__iew`: No description
+    - `type__isw`: No description
+    - `type__n`: No description
+    - `type__nic`: No description
+    - `type__nie`: No description
+    - `type__niew`: No description
+    - `type__nisw`: No description
+    - `unterminated`: Unterminated
+    - `updated_by_request`: No description
+  - **Responses:**
+    - `200`: 
+
+    - **GET /api/dcim/front-ports/**
+  - Get a list of front port objects.
+  - **Parameters:**
+    - `cable_end`: * `A` - A
+* `B` - B
+    - `cable_id`: Cable (ID)
+    - `cable_id__n`: Cable (ID)
+    - `cabled`: No description
+    - `color`: No description
+    - `color__empty`: No description
+    - `color__ic`: No description
+    - `color__ie`: No description
+    - `color__iew`: No description
+    - `color__isw`: No description
+    - `color__n`: No description
+    - `color__nic`: No description
+    - `color__nie`: No description
+    - `color__niew`: No description
+    - `color__nisw`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: Device (name)
+    - `device__n`: Device (name)
+    - `device_id`: Device (ID)
+    - `device_id__n`: Device (ID)
+    - `device_role`: Device role (slug)
+    - `device_role__n`: Device role (slug)
+    - `device_role_id`: Device role (ID)
+    - `device_role_id__n`: Device role (ID)
+    - `device_status`: No description
+    - `device_status__empty`: No description
+    - `device_status__ic`: No description
+    - `device_status__ie`: No description
+    - `device_status__iew`: No description
+    - `device_status__isw`: No description
+    - `device_status__n`: No description
+    - `device_status__nic`: No description
+    - `device_status__nie`: No description
+    - `device_status__niew`: No description
+    - `device_status__nisw`: No description
+    - `device_type`: Device type (model)
+    - `device_type__n`: Device type (model)
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: Location (slug)
+    - `location__n`: Location (slug)
+    - `location_id`: Location (ID)
+    - `location_id__n`: Location (ID)
+    - `mark_connected`: No description
+    - `modified_by_request`: No description
+    - `module_id`: Module (ID)
+    - `module_id__n`: Module (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `occupied`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `rack`: Rack (name)
+    - `rack__n`: Rack (name)
+    - `rack_id`: Rack (ID)
+    - `rack_id__n`: Rack (ID)
+    - `rear_port_id`: No description
+    - `rear_port_id__n`: No description
+    - `rear_port_position`: No description
+    - `rear_port_position__empty`: No description
+    - `rear_port_position__gt`: No description
+    - `rear_port_position__gte`: No description
+    - `rear_port_position__lt`: No description
+    - `rear_port_position__lte`: No description
+    - `rear_port_position__n`: No description
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site name (slug)
+    - `site__n`: Site name (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `tag`: No description
+    - `tag__n`: No description
+    - `type`: No description
+    - `type__empty`: No description
+    - `type__ic`: No description
+    - `type__ie`: No description
+    - `type__iew`: No description
+    - `type__isw`: No description
+    - `type__n`: No description
+    - `type__nic`: No description
+    - `type__nie`: No description
+    - `type__niew`: No description
+    - `type__nisw`: No description
+    - `updated_by_request`: No description
+    - `virtual_chassis`: Virtual Chassis
+    - `virtual_chassis__n`: Virtual Chassis
+    - `virtual_chassis_id`: Virtual Chassis (ID)
+    - `virtual_chassis_id__n`: Virtual Chassis (ID)
+  - **Responses:**
+    - `200`: 
+
+    ...ect
+
+    - **GET /api/dcim/power-ports/**
+  - Get a list of power port objects.
+  - **Parameters:**
+    - `allocated_draw`: No description
+    - `allocated_draw__empty`: No description
+    - `allocated_draw__gt`: No description
+    - `allocated_draw__gte`: No description
+    - `allocated_draw__lt`: No description
+    - `allocated_draw__lte`: No description
+    - `allocated_draw__n`: No description
+    - `cable_end`: * `A` - A
+* `B` - B
+    - `cable_id`: Cable (ID)
+    - `cable_id__n`: Cable (ID)
+    - `cabled`: No description
+    - `connected`: No description
+    - `created`: No description
+    - `created__empty`: No description
+    - `created__gt`: No description
+    - `created__gte`: No description
+    - `created__lt`: No description
+    - `created__lte`: No description
+    - `created__n`: No description
+    - `created_by_request`: No description
+    - `description`: No description
+    - `description__empty`: No description
+    - `description__ic`: No description
+    - `description__ie`: No description
+    - `description__iew`: No description
+    - `description__isw`: No description
+    - `description__n`: No description
+    - `description__nic`: No description
+    - `description__nie`: No description
+    - `description__niew`: No description
+    - `description__nisw`: No description
+    - `device`: Device (name)
+    - `device__n`: Device (name)
+    - `device_id`: Device (ID)
+    - `device_id__n`: Device (ID)
+    - `device_role`: Device role (slug)
+    - `device_role__n`: Device role (slug)
+    - `device_role_id`: Device role (ID)
+    - `device_role_id__n`: Device role (ID)
+    - `device_status`: No description
+    - `device_status__empty`: No description
+    - `device_status__ic`: No description
+    - `device_status__ie`: No description
+    - `device_status__iew`: No description
+    - `device_status__isw`: No description
+    - `device_status__n`: No description
+    - `device_status__nic`: No description
+    - `device_status__nie`: No description
+    - `device_status__niew`: No description
+    - `device_status__nisw`: No description
+    - `device_type`: Device type (model)
+    - `device_type__n`: Device type (model)
+    - `device_type_id`: Device type (ID)
+    - `device_type_id__n`: Device type (ID)
+    - `id`: No description
+    - `id__empty`: No description
+    - `id__gt`: No description
+    - `id__gte`: No description
+    - `id__lt`: No description
+    - `id__lte`: No description
+    - `id__n`: No description
+    - `label`: No description
+    - `label__empty`: No description
+    - `label__ic`: No description
+    - `label__ie`: No description
+    - `label__iew`: No description
+    - `label__isw`: No description
+    - `label__n`: No description
+    - `label__nic`: No description
+    - `label__nie`: No description
+    - `label__niew`: No description
+    - `label__nisw`: No description
+    - `last_updated`: No description
+    - `last_updated__empty`: No description
+    - `last_updated__gt`: No description
+    - `last_updated__gte`: No description
+    - `last_updated__lt`: No description
+    - `last_updated__lte`: No description
+    - `last_updated__n`: No description
+    - `limit`: Number of results to return per page.
+    - `location`: Location (slug)
+    - `location__n`: Location (slug)
+    - `location_id`: Location (ID)
+    - `location_id__n`: Location (ID)
+    - `mark_connected`: No description
+    - `maximum_draw`: No description
+    - `maximum_draw__empty`: No description
+    - `maximum_draw__gt`: No description
+    - `maximum_draw__gte`: No description
+    - `maximum_draw__lt`: No description
+    - `maximum_draw__lte`: No description
+    - `maximum_draw__n`: No description
+    - `modified_by_request`: No description
+    - `module_id`: Module (ID)
+    - `module_id__n`: Module (ID)
+    - `name`: No description
+    - `name__empty`: No description
+    - `name__ic`: No description
+    - `name__ie`: No description
+    - `name__iew`: No description
+    - `name__isw`: No description
+    - `name__n`: No description
+    - `name__nic`: No description
+    - `name__nie`: No description
+    - `name__niew`: No description
+    - `name__nisw`: No description
+    - `occupied`: No description
+    - `offset`: The initial index from which to return the results.
+    - `ordering`: Which field to use when ordering the results.
+    - `q`: Search
+    - `rack`: Rack (name)
+    - `rack__n`: Rack (name)
+    - `rack_id`: Rack (ID)
+    - `rack_id__n`: Rack (ID)
+    - `region`: No description
+    - `region__n`: No description
+    - `region_id`: No description
+    - `region_id__n`: No description
+    - `site`: Site name (slug)
+    - `site__n`: Site name (slug)
+    - `site_group`: No description
+    - `site_group__n`: No description
+    - `site_group_id`: No description
+    - `site_group_id__n`: No description
+    - `site_id`: Site (ID)
+    - `site_id__n`: Site (ID)
+    - `tag`: No description
+    - `tag__n`: No description
+    - `type`: Physical port type
+    - `type__empty`: No description
+    - `type__ic`: Physical port type
+    - `type__ie`: Physical port type
+    - `type__iew`: Physical port type
+    - `type__isw`: Physical port type
+    - `type__n`: Physical port type
+    - `type__nic`: Physical port type
+    - `type__nie`: Physical port type
+    - `type__niew`: Physical port type
+    - `type__nisw`: Physical port type
+    - `updated_by_request`: No description
+    - `virtual_chassis`: Virtual Chassis
+    - `virtual_chassis__n`: Virtual Chassis
+    - `virtual_chassis_id`: Virtual Chassis (ID)
+    - `virtual_chassis_id__n`: Virtual Chassis (ID)
+  - **Responses:**
+    - `200`: 
+
+    ..ect
+
