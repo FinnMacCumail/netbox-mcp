@@ -70,11 +70,13 @@ ALLOWED_FILTERS = {
     "racks": {"site", "status", "role", "tag", "q"},
     "devices": {"site", "rack", "role", "status", "manufacturer", "tag", "q"},
     "ip-addresses": {"address", "vrf", "status", "q"},
+    "sites": {"name", "slug", "status", "region", "tag", "q"},
     # Add more as needed...
 }
 
 FRIENDLY_FILTERS = {
-    "site_name": "site", "datacenter": "site", "rack_role": "role", "device_type": "type", "ip": "address", "search": "q"
+    "site_name": "site", "datacenter": "site", "rack_role": "role", "device_type": "type", "ip": "address", "search": "q",
+    "site_slug": "slug", "datacenter_name": "name"
 }
 
 def normalize_object_type(obj_type: str) -> str:
