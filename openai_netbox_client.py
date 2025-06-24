@@ -195,6 +195,16 @@ async def main():
                     function_name = tool_call.function.name
                     args = json.loads(tool_call.function.arguments)
 
+                    # If the assistant requests site data without a filter,
+                    # add one to narrow the results to the Syracuse datacenter.
+                    if (
+                        function_name == "netbox_get_objects"
+                        and args.get("object_type") == "sites"
+                        and not args.get("filters")
+                    ):
+                        args["filters"] = {"name": "Syracuse"}
+                        print("Applying site name filter for Syracuse")
+
                     result = await session.call_tool(function_name, arguments=args)
                     print(f"\n🔹 Executed {function_name} with args {args}\n🔸 Result: {result.content[0].text}")
 
