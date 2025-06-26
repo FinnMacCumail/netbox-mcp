@@ -320,7 +320,7 @@ if __name__ == "__main__":
     # Initialize the client
     client = NetBoxRestClient(
         url="https://demo.netbox.dev/",  # Replace with your NetBox URL
-        token="49f10eadae0958c7ca66c5b35e707c1925249b1f",             # Replace with your API token
+        token="3e9c7fda26a1d31e015ab375b2136441d347c11b",             # Replace with your API token
         verify_ssl=True                          # Set to False if using self-signed certs
     )
 
