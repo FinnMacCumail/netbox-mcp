@@ -174,7 +174,7 @@ async def main():
             ]
 
 
-            messages = [{"role": "user", "content": "Tell me all about the Syracuse datacenter."}]
+            messages = [{"role": "user", "content": "Tell me all about the DM-Syracuse datacenter."}]
 
             # First OpenAI call with available tools
             response = await openai_client.chat.completions.create(
@@ -202,12 +202,16 @@ async def main():
                         and args.get("object_type") == "sites"
                         and not args.get("filters")
                     ):
-                        args["filters"] = {"name": "Syracuse"}
-                        print("Applying site name filter for Syracuse")
+                        args["filters"] = {"name": "DM-Syracuse"}
+                        print("Applying site name filter for DM-Syracuse")
 
                     result = await session.call_tool(function_name, arguments=args)
-                    print(f"\n🔹 Executed {function_name} with args {args}\n🔸 Result: {result.content[0].text}")
+                    # if result.content:
+                    #     print(f"\n🔹 Executed {function_name} with args {args}\n🔸 Result: {result.content[0].text}")
+                    # else:
+                    #     print(f"\n🔹 Executed {function_name} with args {args}\n🔸 Result: [No content returned]")
 
+                    #print(f"\n🧪 Raw result: {result}")
                     # Append result text (extracted from content) to messages
                     messages.append({"role": "assistant", "content": None, "tool_calls": [tool_call]})
                     messages.append({
