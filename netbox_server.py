@@ -123,8 +123,8 @@ def netbox_get_changelogs(filters: dict):
     return netbox.get(endpoint, params=filters)
 
 if __name__ == "__main__":
-    netbox_url = os.getenv("NETBOX_URL", "https://demo.netbox.dev/")
-    netbox_token = os.getenv("NETBOX_TOKEN", "bfbaf981fec164a7eacb01b9d6927e83bad43d78")
+    netbox_url = os.getenv("NETBOX_URL", "http://localhost:8000/")
+    netbox_token = os.getenv("NETBOX_TOKEN", "4ab203e0949fd1bde910ad0a9bb4ac5784950cd2")
     if not netbox_url or not netbox_token:
         raise ValueError("NETBOX_URL and NETBOX_TOKEN must be set in environment or hardcoded.")
     netbox = NetBoxRestClient(url=netbox_url, token=netbox_token)

@@ -319,8 +319,8 @@ class NetBoxRestClient(NetBoxClientBase):
 if __name__ == "__main__":
     # Initialize the client
     client = NetBoxRestClient(
-        url="https://demo.netbox.dev/",  # Replace with your NetBox URL
-        token="49f10eadae0958c7ca66c5b35e707c1925249b1f",             # Replace with your API token
+        url="http://localhost:8000/",  # Replace with your NetBox URL
+        token="4ab203e0949fd1bde910ad0a9bb4ac5784950cd2",             # Replace with your API token
         verify_ssl=True                          # Set to False if using self-signed certs
     )
 
